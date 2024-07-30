@@ -1,0 +1,37 @@
+# VuePress 默认临时文件目录
+/docs/.vuepress/.temp
+# VuePress 默认缓存目录
+/docs/.vuepress/.cache
+# VuePress 默认构建生成的静态文件目录
+/docs/.vuepress/dist
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+.DS_Store
+dist
+dist-ssr
+coverage
+*.local
+
+/cypress/videos/
+/cypress/screenshots/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+*.tsbuildinfo
