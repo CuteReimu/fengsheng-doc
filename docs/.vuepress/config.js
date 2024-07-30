@@ -14,20 +14,24 @@ export default defineUserConfig({
 
     navbar: [
       {text: '首页', link: '/'},
+      {text: '新手入门', link: '/welcome'},
       {
         text: '角色技能',
         children: ['/skills/base', '/skills/extend1', '/skills/extend2'],
       },
+      {text: 'FAQ', link: '/faq'},
     ],
 
     sidebar: {
+      '/welcome': 'heading',
       '/skills': [
         {
           title: "角色技能",
           collapsible: false,
           children: ["base", "extend1", "extend2"],
         }
-      ]
+      ],
+      '/faq': 'heading',
     }
   }),
 
@@ -72,6 +76,39 @@ export default defineUserConfig({
               return {
                 tag: tag,
                 attrs: { ...attrs, style: "color: black;" },
+                content: content,
+              };
+          },
+        },
+        {
+          matcher: "潜伏",
+          replacer: ({ tag, attrs, content }) => {
+            if (tag === "strong")
+              return {
+                tag: tag,
+                attrs: { ...attrs, style: "color: red;" },
+                content: content,
+              };
+          },
+        },
+        {
+          matcher: "军情",
+          replacer: ({ tag, attrs, content }) => {
+            if (tag === "strong")
+              return {
+                tag: tag,
+                attrs: { ...attrs, style: "color: blue;" },
+                content: content,
+              };
+          },
+        },
+        {
+          matcher: "神秘人",
+          replacer: ({ tag,  attrs, content }) => {
+            if (tag === "strong")
+              return {
+                tag: tag,
+                attrs: { ...attrs, style: "color: green;" },
                 content: content,
               };
           },
