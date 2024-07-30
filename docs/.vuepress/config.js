@@ -16,7 +16,7 @@ export default defineUserConfig({
       {text: '首页', link: '/'},
       {
         text: '角色技能',
-        children: ['/skills/base', '/skills/extend1'],
+        children: ['/skills/base', '/skills/extend1', '/skills/extend2'],
       },
     ],
 
@@ -25,7 +25,7 @@ export default defineUserConfig({
         {
           title: "角色技能",
           collapsible: false,
-          children: ["base", "extend1"],
+          children: ["base", "extend1", "extend2"],
         }
       ]
     }
@@ -37,6 +37,46 @@ export default defineUserConfig({
     mdEnhancePlugin({
       // 开启标记
       mark: true,
+      // 启用提示容器
+      hint: true,
+      // 开启属性支持
+      attrs: true,
+      // 样式化
+      stylize: [
+        {
+          matcher: /^红色?/,
+          replacer: ({ tag, attrs, content }) => {
+            if (tag === "strong")
+              return {
+                tag: tag,
+                attrs: { ...attrs, style: "color: red;" },
+                content: content,
+              };
+          },
+        },
+        {
+          matcher: /^蓝色?/,
+          replacer: ({ tag, attrs, content }) => {
+            if (tag === "strong")
+              return {
+                tag: tag,
+                attrs: { ...attrs, style: "color: blue;" },
+                content: content,
+              };
+          },
+        },
+        {
+          matcher: /^黑色?/,
+          replacer: ({ tag,  attrs, content }) => {
+            if (tag === "strong")
+              return {
+                tag: tag,
+                attrs: { ...attrs, style: "color: black;" },
+                content: content,
+              };
+          },
+        },
+      ],
     }),
   ],
 })
