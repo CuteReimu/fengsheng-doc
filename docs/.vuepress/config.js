@@ -20,6 +20,10 @@ export default defineUserConfig({
         children: ['/skills/base', '/skills/extend1', '/skills/extend2'],
       },
       {text: 'FAQ', link: '/faq'},
+      {
+        text: '新手攻略',
+        children: ['/guide/video_introduction'],
+      },
     ],
 
     sidebar: {
@@ -65,6 +69,17 @@ export default defineUserConfig({
               return {
                 tag: tag,
                 attrs: { ...attrs, style: "color: blue;" },
+                content: content,
+              };
+          },
+        },
+        {
+          matcher: /^绿色?/,
+          replacer: ({ tag,  attrs, content }) => {
+            if (tag === "strong")
+              return {
+                tag: tag,
+                attrs: { ...attrs, style: "color: green;" },
                 content: content,
               };
           },
