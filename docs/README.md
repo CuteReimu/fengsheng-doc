@@ -1,7 +1,7 @@
 ---
 home: true
 title: 《风声·谍战篇》FAQ
-heroImage: https://vuejs.press/images/hero.png
+heroImage: /images/head.jpg
 actions:
   - text: 新手入门
     link: /welcome

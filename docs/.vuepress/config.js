@@ -10,7 +10,7 @@ export default defineUserConfig({
   description: '这是《风声·谍战篇》相关的FAQ文档',
 
   theme: defaultTheme({
-    logo: 'https://vuejs.press/images/hero.png',
+    logo: '/images/head.jpg',
 
     navbar: [
       {text: '首页', link: '/'},
