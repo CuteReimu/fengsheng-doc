@@ -14,21 +14,34 @@ export default defineUserConfig({
     logo: '/images/head.jpg',
     navbar: [
       { text: '首页', link: '/' },
-      { text: '新手入门', link: '/welcome' },
+      {
+        text: '新手入门',
+        children: ['/welcome/welcome', '/welcome/video_introduction'],
+      },
       {
         text: '角色技能',
         children: ['/skills/base', '/skills/extend1', '/skills/extend2'],
       },
       {
         text: '攻略文档',
-        children: ['/guide/video_introduction', '/guide/how_to_play', '/guide/faq'],
+        children: [
+          {
+            text: '官方规则',
+            children: ['/guide/how_to_play', '/guide/faq'],
+          },
+          {
+            text: '个人攻略',
+            children: ['/strategy/tech'],
+          }
+        ],
       },
     ],
 
     sidebar: {
-      '/welcome': 'heading',
+      '/welcome': ['welcome', "video_introduction"],
       '/skills': ["base", "extend1", "extend2"],
-      '/guide': ["video_introduction", "how_to_play", "faq"],
+      '/guide': ["how_to_play", "faq"],
+      '/strategy': ['tech'],
     }
   }),
 

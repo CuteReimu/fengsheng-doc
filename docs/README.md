@@ -4,13 +4,13 @@ heroImage: /images/head.jpg
 tagline: null
 actions:
   - text: 新手入门
-    link: /welcome
+    link: /welcome/welcome
     type: primary
   - text: 角色技能
     link: /skills/base
     type: primary
-  - text: 新手攻略
-    link: /guide/video_introduction
+  - text: 游戏说明书
+    link: /guide/how_to_play
     type: primary
 ---
 
