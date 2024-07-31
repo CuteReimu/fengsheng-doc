@@ -97,7 +97,7 @@ export default defineUserConfig({
           },
         },
         {
-          matcher: "潜伏",
+          matcher: "潜伏战线",
           replacer: ({ tag, attrs, content }) => {
             if (tag === "strong")
               return {
@@ -108,7 +108,7 @@ export default defineUserConfig({
           },
         },
         {
-          matcher: "军情",
+          matcher: "特工机关",
           replacer: ({ tag, attrs, content }) => {
             if (tag === "strong")
               return {
