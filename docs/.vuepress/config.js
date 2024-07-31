@@ -21,14 +21,14 @@ export default defineUserConfig({
       },
       {
         text: '攻略文档',
-        children: ['/guide/video_introduction', '/guide/faq'],
+        children: ['/guide/video_introduction', '/guide/how_to_play', '/guide/faq'],
       },
     ],
 
     sidebar: {
       '/welcome': 'heading',
       '/skills': ["base", "extend1", "extend2"],
-      '/guide': ["video_introduction", "faq"],
+      '/guide': ["video_introduction", "how_to_play", "faq"],
     }
   }),
 
@@ -45,7 +45,7 @@ export default defineUserConfig({
       // 样式化
       stylize: [
         {
-          matcher: /^红色?/,
+          matcher: /^红色?$/,
           replacer: ({ tag, attrs, content }) => {
             if (tag === "strong")
               return {
@@ -56,7 +56,7 @@ export default defineUserConfig({
           },
         },
         {
-          matcher: /^蓝色?/,
+          matcher: /^蓝色?$/,
           replacer: ({ tag, attrs, content }) => {
             if (tag === "strong")
               return {
@@ -67,7 +67,7 @@ export default defineUserConfig({
           },
         },
         {
-          matcher: /^绿色?/,
+          matcher: /^绿色?$/,
           replacer: ({ tag, attrs, content }) => {
             if (tag === "strong")
               return {
@@ -78,7 +78,7 @@ export default defineUserConfig({
           },
         },
         {
-          matcher: /^黑色?/,
+          matcher: /^黑色?$/,
           replacer: ({ tag, attrs, content }) => {
             if (tag === "strong")
               return {

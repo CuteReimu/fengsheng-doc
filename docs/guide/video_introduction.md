@@ -26,7 +26,7 @@
 
 当前回合玩家，选择一张手牌当作情报面朝下传递，如果不能传递则会直接失败，不触发死亡。
 
-带瞄准标志的情报可以对一名玩家锁定，令其必须选择接收。情报传递方式一共有三种：
+带<svg width="20px" height="20px"><circle cx="10" cy="10" r="9" stroke="black" stroke-width="1" fill="white" stroke-dasharray="1 1"/><circle cx="10" cy="10" r="6" stroke="black" stroke-width="1" fill="white" stroke-dasharray="1 1"/><circle cx="10" cy="10" r="2" stroke="black" stroke-width="1" fill="white" stroke-dasharray="1 1"/><line x1="0" y1="10" x2="19" y2="10" stroke="black" stroke-width="1"/><line x1="10" y1="0" x2="10" y2="19" stroke="black" stroke-width="1"/></svg>标志的情报可以对一名玩家锁定，令其必须选择接收。情报传递方式一共有三种：
 
 - **向左&larr;**：按照**顺时针**传递情报，左边的第一个人不接收时，按照顺时针方向传给左边的下家，直到有人选择接收时，停止情报传递，进入争夺阶段，并且情报传递到传出者时，传出者**必须选择接收**。
 - **向右&rarr;**：与向左&larr;同理，只是改为逆时针传递。
