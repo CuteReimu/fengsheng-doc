@@ -75,8 +75,8 @@
 
 在【试探】【密令】的右下角会显示其描述中的颜色，例如：
 
-- 【试探】右下角显示<span style="color:white; background-color:red;">+1</span><span style="color:white; background-color:blue;">-1</span><span style="color:white; background-color:green;">-1</span>，代表**潜伏**摸一张牌，**军情**或**神秘人**弃一张牌。
-- 【密令】右下角显示<span style="color:white; background-color:red;">东</span><span style="color:white; background-color:blue;">西</span><span style="color:white; background-color:black;">静</span>，代表“东风”对应**红色**，“西风”对应**蓝色**，“静风”对应**黑色**。
+- 【试探】右下角显示<span style="color:white; background-color:var(--red-color);">+1</span><span style="color:white; background-color:var(--blue-color);">-1</span><span style="color:white; background-color:var(--green-color);">-1</span>，代表**潜伏**摸一张牌，**军情**或**神秘人**弃一张牌。
+- 【密令】右下角显示<span style="color:white; background-color:var(--red-color);">东</span><span style="color:white; background-color:var(--blue-color);">西</span><span style="color:white; background-color:var(--green-color);">静</span>，代表“东风”对应**红色**，“西风”对应**蓝色**，“静风”对应**黑色**。
 
 ## 角色技能
 

@@ -1,25 +1,26 @@
-import {defaultTheme} from '@vuepress/theme-default'
-import {defineUserConfig} from 'vuepress/cli'
-import {viteBundler} from '@vuepress/bundler-vite'
-import {mdEnhancePlugin} from "vuepress-plugin-md-enhance";
+import { defaultTheme } from '@vuepress/theme-default'
+import { defineUserConfig } from 'vuepress/cli'
+import { viteBundler } from '@vuepress/bundler-vite'
+import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
 
 export default defineUserConfig({
   lang: 'ZH-CN',
 
   title: '《风声·谍战篇》FAQ',
   description: '这是《风声·谍战篇》相关的FAQ文档',
-
+  head: [
+    ["link", { rel: "icon", href: '/images/head.jpg' }],
+  ],
   theme: defaultTheme({
     logo: '/images/head.jpg',
-
     navbar: [
-      {text: '首页', link: '/'},
-      {text: '新手入门', link: '/welcome'},
+      { text: '首页', link: '/' },
+      { text: '新手入门', link: '/welcome' },
       {
         text: '角色技能',
         children: ['/skills/base', '/skills/extend1', '/skills/extend2'],
       },
-      {text: 'FAQ', link: '/faq'},
+      { text: 'FAQ', link: '/faq' },
       {
         text: '新手攻略',
         children: ['/guide/video_introduction'],
@@ -57,7 +58,7 @@ export default defineUserConfig({
             if (tag === "strong")
               return {
                 tag: tag,
-                attrs: { ...attrs, style: "color: red;" },
+                attrs: { ...attrs, class: "red" },
                 content: content,
               };
           },
@@ -68,29 +69,29 @@ export default defineUserConfig({
             if (tag === "strong")
               return {
                 tag: tag,
-                attrs: { ...attrs, style: "color: blue;" },
+                attrs: { ...attrs, class: "blue" },
                 content: content,
               };
           },
         },
         {
           matcher: /^绿色?/,
-          replacer: ({ tag,  attrs, content }) => {
+          replacer: ({ tag, attrs, content }) => {
             if (tag === "strong")
               return {
                 tag: tag,
-                attrs: { ...attrs, style: "color: green;" },
+                attrs: { ...attrs, class: "green" },
                 content: content,
               };
           },
         },
         {
           matcher: /^黑色?/,
-          replacer: ({ tag,  attrs, content }) => {
+          replacer: ({ tag, attrs, content }) => {
             if (tag === "strong")
               return {
                 tag: tag,
-                attrs: { ...attrs, style: "color: black;" },
+                attrs: { ...attrs, class: "black" },
                 content: content,
               };
           },
@@ -101,7 +102,7 @@ export default defineUserConfig({
             if (tag === "strong")
               return {
                 tag: tag,
-                attrs: { ...attrs, style: "color: red;" },
+                attrs: { ...attrs, class: "red" },
                 content: content,
               };
           },
@@ -112,18 +113,18 @@ export default defineUserConfig({
             if (tag === "strong")
               return {
                 tag: tag,
-                attrs: { ...attrs, style: "color: blue;" },
+                attrs: { ...attrs, class: "blue" },
                 content: content,
               };
           },
         },
         {
           matcher: "神秘人",
-          replacer: ({ tag,  attrs, content }) => {
+          replacer: ({ tag, attrs, content }) => {
             if (tag === "strong")
               return {
                 tag: tag,
-                attrs: { ...attrs, style: "color: green;" },
+                attrs: { ...attrs, class: "green" },
                 content: content,
               };
           },
