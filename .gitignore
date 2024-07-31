@@ -35,3 +35,5 @@ coverage
 *.sw?
 
 *.tsbuildinfo
+
+.obsidian/*
