@@ -1,7 +1,7 @@
 ---
 home: true
-title: 《风声·谍战篇》FAQ
 heroImage: /images/head.jpg
+tagline: null
 actions:
   - text: 新手入门
     link: /welcome

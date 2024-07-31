@@ -7,7 +7,6 @@ export default defineUserConfig({
   lang: 'ZH-CN',
 
   title: '《风声·谍战篇》FAQ',
-  description: '这是《风声·谍战篇》相关的FAQ文档',
   head: [
     ["link", { rel: "icon", href: '/images/head.jpg' }],
   ],
@@ -20,23 +19,16 @@ export default defineUserConfig({
         text: '角色技能',
         children: ['/skills/base', '/skills/extend1', '/skills/extend2'],
       },
-      { text: 'FAQ', link: '/faq' },
       {
-        text: '新手攻略',
-        children: ['/guide/video_introduction'],
+        text: '攻略文档',
+        children: ['/guide/video_introduction', '/guide/faq'],
       },
     ],
 
     sidebar: {
       '/welcome': 'heading',
-      '/skills': [
-        {
-          title: "角色技能",
-          collapsible: false,
-          children: ["base", "extend1", "extend2"],
-        }
-      ],
-      '/faq': 'heading',
+      '/skills': ["base", "extend1", "extend2"],
+      '/guide': ["video_introduction", "faq"],
     }
   }),
 
