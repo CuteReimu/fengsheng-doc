@@ -7,7 +7,7 @@ actions:
     link: /welcome
     type: primary
   - text: 角色技能
-    link: /skills/extend2
+    link: /skills/base
     type: primary
   - text: 新手攻略
     link: /guide/video_introduction
