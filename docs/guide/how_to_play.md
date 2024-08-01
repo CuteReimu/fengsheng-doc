@@ -33,6 +33,10 @@
 - **特工机关**：本阵营的任意一名玩家收集了三张**蓝色**情报，则所有**特工机关**玩家共同胜利。
 - **神秘人**：每名**神秘人**的胜利条件各不相同，须达成身份牌上描述的胜利条件。存在多名**神秘人**玩家时，他们将各自为战，单独胜利。
 
+::: info 提示
+截止二扩为止一共有7种不同的**神秘人**身份牌。[点击跳转](../welcome/welcome.html#关于身份)
+:::
+
 ### 三、分发角色牌
 
 1. 角色牌分为两类：**隐藏**和**公开**，可以根据角色牌上是否有隐藏标记来区分。
@@ -48,7 +52,7 @@
 
 1. 随机选择一名玩家成为先手玩家。
 
-::: info 笔者注
+::: info 提示
 随着桌游附带了几张提示牌，其中一张背面有诗。可以将提示牌洗匀后随机分发给每名玩家，提示牌背面有诗的玩家成为先手玩家。
 :::
 
@@ -89,7 +93,7 @@
 
 <div style="align-items: center;">
 
-如果情报牌带有<svg width="20px" height="20px"><circle cx="10" cy="10" r="9" stroke="black" stroke-width="1" fill="white" stroke-dasharray="1 1"/><circle cx="10" cy="10" r="6" stroke="black" stroke-width="1" fill="white" stroke-dasharray="1 1"/><circle cx="10" cy="10" r="2" stroke="black" stroke-width="1" fill="white" stroke-dasharray="1 1"/><line x1="0" y1="10" x2="19" y2="10" stroke="black" stroke-width="1"/><line x1="10" y1="0" x2="10" y2="19" stroke="black" stroke-width="1"/></svg>，传出者可以宣言“<span style="color: red;">锁定</span>”一位玩家，当情报传递到该玩家面前时，该玩家<span style="color: red;">必须</span>选择接收情报，不能让情报继续传递。
+如果情报牌带有![锁定](/images/lock.svg)，传出者可以宣言“<span style="color: red;">锁定</span>”一位玩家，当情报传递到该玩家面前时，该玩家<span style="color: red;">必须</span>选择接收情报，不能让情报继续传递。
 
 </div>
 
