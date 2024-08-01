@@ -20,7 +20,7 @@
 
 ### **出牌阶段**
 
-只有当前回合玩家，可以使用**出牌阶段**的卡牌和技能，比如[【平衡】](../welcome/welcome.html#卡牌效果)[【澄清】](../welcome/welcome.html#卡牌效果)[【威逼】](../welcome/welcome.html#卡牌效果)[【利诱】](../welcome/welcome.html#卡牌效果)等。不再使用卡牌和技能后，进入传递阶段
+只有当前回合玩家，可以使用**出牌阶段**的卡牌和技能，比如[【平衡】](welcome.html#卡牌效果)[【澄清】](welcome.html#卡牌效果)[【威逼】](welcome.html#卡牌效果)[【利诱】](welcome.html#卡牌效果)等。不再使用卡牌和技能后，进入传递阶段
 
 ### **传递阶段**
 
