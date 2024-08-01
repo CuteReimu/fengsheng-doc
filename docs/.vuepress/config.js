@@ -35,6 +35,7 @@ export default defineUserConfig({
           }
         ],
       },
+      { text: '历史赛季', link: '/toplist' },
     ],
 
     sidebar: {
@@ -42,6 +43,7 @@ export default defineUserConfig({
       '/skills': ["base", "extend1", "extend2"],
       '/guide': ["how_to_play", "faq"],
       '/strategy': ['tech'],
+      '/toplist': 'heading',
     }
   }),
 
