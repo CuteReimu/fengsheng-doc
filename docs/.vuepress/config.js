@@ -2,6 +2,11 @@ import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress/cli'
 import { viteBundler } from '@vuepress/bundler-vite'
 import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
+import dotenv from 'dotenv'
+import * as path from "node:path";
+
+dotenv.config({path: path.resolve(process.cwd(), '.env.local')})
+dotenv.config()
 
 export default defineUserConfig({
   lang: 'ZH-CN',
@@ -12,6 +17,8 @@ export default defineUserConfig({
   ],
   theme: defaultTheme({
     logo: '/images/head.jpg',
+    lastUpdatedText: "修改日期",
+    contributorsText: "贡献者",
     navbar: [
       { text: '首页', link: '/' },
       {
@@ -36,6 +43,7 @@ export default defineUserConfig({
         ],
       },
       { text: '历史赛季', link: '/toplist' },
+      {text: '游戏状态', link: '/game_status'},
     ],
 
     sidebar: {
@@ -44,6 +52,7 @@ export default defineUserConfig({
       '/guide': ["how_to_play", "faq"],
       '/strategy': ['tech'],
       '/toplist': 'heading',
+      '/game_status': false,
     }
   }),
 

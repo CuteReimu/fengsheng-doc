@@ -1,0 +1,68 @@
+<template>
+  <el-row>
+    <el-button plain @click="doRequest">刷新</el-button>
+  </el-row>
+  <el-row>
+    <el-text v-if="gs.length === 0" size="large">当前没有房间</el-text>
+  </el-row>
+  <el-row v-for="game in gs">
+    <el-text>房间-{{ game.id }}（{{ game.turn === 0 ? "未开局" : "第" + game.turn + "回合" }}）</el-text>
+    <el-table :data="game.players" style="width: 100%;">
+      <el-table-column prop="name" label="玩家"/>
+      <el-table-column prop="role_name" label="角色"/>
+      <el-table-column label="状态">
+        <template #default="scope">
+          <el-text v-html="getStatus(game.players[scope.$index])"/>
+        </template>
+      </el-table-column>
+      <el-table-column prop="cards" label="手牌数"/>
+      <el-table-column label="情报">
+        <template #default="scope">
+          <el-button type="danger" circle v-if="game.players[scope.$index].message_cards.length >= 3">
+            {{ game.players[scope.$index].message_cards[1] }}
+          </el-button>
+          <el-button type="primary" circle v-if="game.players[scope.$index].message_cards.length >= 3">
+            {{ game.players[scope.$index].message_cards[2] }}
+          </el-button>
+          <el-button type="info" circle v-if="game.players[scope.$index].message_cards.length >= 3">
+            {{ game.players[scope.$index].message_cards[0] }}
+          </el-button>
+        </template>
+      </el-table-column>
+    </el-table>
+  </el-row>
+</template>
+
+<script setup>
+import {onMounted, ref} from "vue";
+import Axios from "axios";
+import {ElRow, ElText, ElButton, ElTable, ElTableColumn} from "element-plus";
+
+const gs = ref([]);
+
+const getStatus = (player) => {
+  if (!player.alive) {
+    return "已死亡"
+  }
+  if (player.is_turn) {
+    return "回合"
+  }
+  return ""
+}
+
+const doRequest = () => {
+  Axios.get(import.meta.env.VITE_REQUEST_URL, {}).then((response) => {
+    console.log(response.data);
+    gs.value = response.data;
+  }).catch((error) => {
+    console.error(error);
+  })
+};
+
+onMounted(() => {
+  doRequest();
+});
+</script>
+
+<style scoped>
+</style>

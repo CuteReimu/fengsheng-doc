@@ -28,6 +28,8 @@ jobs:
         rm -rf node_modules
         rm -f package-lock.json
         npm cache clean --force
+    - name: Prepare environment
+      run: echo "VITE_REQUEST_URL=${{ secrets.VITE_REQUEST_URL }}" > .env.local
     - name: Build
       run: |
         npm install
