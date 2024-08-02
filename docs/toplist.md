@@ -1,3 +1,8 @@
+---
+lastUpdated: false
+contributors: false
+---
+
 # 历史赛季
 
 *以下都是以当赛季达到过的最高分数进行排名，只收录🥇 III及以上的玩家。*
