@@ -16,6 +16,7 @@ footer: |
   和
   <a href="https://github.com/Death-alter/TheMessage" class="external-link" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">客户端代码仓库</a>
   。
+search: false
 ---
 
 ::: info 关于我们
