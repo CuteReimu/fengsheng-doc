@@ -6,7 +6,7 @@
     <el-text v-if="gs.length === 0" size="large">当前没有房间</el-text>
   </el-row>
   <el-row v-for="game in gs">
-    <el-text>房间-{{ game.id }}（{{ game.turn === 0 ? "未开局" : "第" + game.turn + "回合" }}）</el-text>
+    <el-text>房间-{{ game.id }}（{{ game.turn === 0 ? "未开局" : "第" + game.turn + "回合，已开局" + (game.play_time/60000).toFixed(0) + "分钟" }}）</el-text>
     <el-table :data="game.players" style="width: 100%;">
       <el-table-column prop="name" label="玩家"/>
       <el-table-column prop="role_name" label="角色"/>
