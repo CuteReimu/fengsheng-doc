@@ -2,6 +2,7 @@ import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress/cli'
 import { viteBundler } from '@vuepress/bundler-vite'
 import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
+import { searchProPlugin } from "vuepress-plugin-search-pro";
 import dotenv from 'dotenv'
 import * as path from "node:path";
 
@@ -146,6 +147,9 @@ export default defineUserConfig({
           },
         },
       ],
+    }),
+    searchProPlugin({
+      indexContent: true,
     }),
   ],
 })
