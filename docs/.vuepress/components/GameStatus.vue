@@ -61,7 +61,6 @@
 import { onMounted, ref } from "vue";
 import Axios from "axios";
 import { ElRow, ElText, ElButton, ElTable, ElTableColumn } from "element-plus";
-import "element-plus/theme-chalk/dark/css-vars.css";
 
 const gs = ref([]);
 
