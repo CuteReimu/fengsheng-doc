@@ -93,6 +93,10 @@ onMounted(() => {
   margin: 0;
 }
 
+:deep(.el-table__body-wrapper .el-table__body) {
+  margin: 0;
+}
+
 :deep(th) {
   border: none;
 }
