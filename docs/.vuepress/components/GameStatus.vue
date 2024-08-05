@@ -95,7 +95,7 @@ onMounted(() => {
   margin: 0;
 }
 
-:deep(.el-table__body-wrapper.el-table__body) {
+:deep(.el-table__body-wrapper .el-table__body) {
   margin: 0;
 }
 
