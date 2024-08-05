@@ -19,16 +19,16 @@
             "分钟"
       }}）</el-text
     >
-    <el-table :data="game.players" style="width: 100%" border>
-      <el-table-column prop="name" label="玩家" />
-      <el-table-column prop="role_name" label="角色" />
+    <el-table :data="game.players" border>
+      <el-table-column prop="name" label="玩家" :min-width="140" />
+      <el-table-column prop="role_name" label="角色" :min-width="90" />
       <el-table-column label="状态">
         <template #default="scope">
           <el-text v-html="getStatus(game.players[scope.$index])" />
         </template>
       </el-table-column>
       <el-table-column prop="cards" label="手牌数" />
-      <el-table-column label="情报">
+      <el-table-column label="情报" :min-width="150">
         <template #default="scope">
           <el-button
             type="danger"
