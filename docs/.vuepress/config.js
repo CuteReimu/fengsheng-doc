@@ -39,7 +39,13 @@ export default defineUserConfig({
           },
           {
             text: '个人攻略',
-            children: ['/strategy/tech'],
+            children: [
+              '/strategy/tech',
+              {
+                text: '规则速览',
+                link: '/strategy/simplified_rules'
+              },
+            ],
           }
         ],
       },
