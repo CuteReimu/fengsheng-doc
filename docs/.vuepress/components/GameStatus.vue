@@ -3,7 +3,9 @@
     <el-button plain @click="doRequest">刷新</el-button>
   </el-row>
   <el-row>
-    <el-text v-if="gs.length === 0" size="large">当前没有房间</el-text>
+    <el-text v-if="gs.length === 0" size="large" style="margin-top: 10px"
+      >当前没有房间</el-text
+    >
   </el-row>
   <el-row v-for="game in gs">
     <el-text style="margin: 10px 0"
@@ -59,6 +61,7 @@
 import { onMounted, ref } from "vue";
 import Axios from "axios";
 import { ElRow, ElText, ElButton, ElTable, ElTableColumn } from "element-plus";
+import "element-plus/theme-chalk/dark/css-vars.css";
 
 const gs = ref([]);
 
@@ -93,7 +96,7 @@ onMounted(() => {
   margin: 0;
 }
 
-:deep(.el-table__body-wrapper .el-table__body) {
+:deep(.el-table__body-wrapper.el-table__body) {
   margin: 0;
 }
 
