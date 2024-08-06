@@ -35,7 +35,7 @@ search: false
 
 <p class="hint-container-title">特别鸣谢</p>
 
-- 游卡风声设计师：二宽
+- 游卡风声设计师：金国恩、二宽
 - 程序开发与规则整理：奇葩の灵梦、Death
 - 宣传与文档编写：惑星
 - 服务器赞助：奇葩の灵梦、星ztx、wyyd、阿揣、惑星
