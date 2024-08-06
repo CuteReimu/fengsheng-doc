@@ -24,26 +24,30 @@ export default defineUserConfig({
       { text: '首页', link: '/' },
       {
         text: '新手入门',
-        children: ['/welcome/welcome', '/welcome/video_introduction'],
+        prefix: '/welcome',
+        children: ['welcome', 'video_introduction', 'score_and_season'],
       },
       {
         text: '角色技能',
-        children: ['/skills/base', '/skills/extend1', '/skills/extend2'],
+        prefix: '/skills',
+        children: ['base', 'extend1', 'extend2'],
       },
       {
         text: '攻略文档',
         children: [
           {
             text: '官方规则',
-            children: ['/guide/how_to_play', '/guide/faq'],
+            prefix: '/guide',
+            children: ['how_to_play', 'faq'],
           },
           {
             text: '个人攻略',
+            prefix: '/strategy',
             children: [
-              '/strategy/tech',
+              'tech',
               {
                 text: '规则速览',
-                link: '/strategy/simplified_rules'
+                link: 'simplified_rules'
               },
             ],
           }
@@ -54,7 +58,7 @@ export default defineUserConfig({
     ],
 
     sidebar: {
-      '/welcome': ['welcome', "video_introduction"],
+      '/welcome': ['welcome', 'video_introduction', 'score_and_season'],
       '/skills': ["base", "extend1", "extend2"],
       '/guide': ["how_to_play", "faq"],
       '/strategy': ['tech'],
@@ -73,6 +77,8 @@ export default defineUserConfig({
       hint: true,
       // 开启属性支持
       attrs: true,
+      // 使用 KaTeX 启用 TeX 支持
+      katex: true,
       // 样式化
       stylize: [
         {
