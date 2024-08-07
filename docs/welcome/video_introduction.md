@@ -1,7 +1,7 @@
 ---
 order: 2
 author: 惑星
-pageInfo: ["Author"]
+pageInfo: [ "Author", "Date" ]
 ---
 
 # 视频攻略
