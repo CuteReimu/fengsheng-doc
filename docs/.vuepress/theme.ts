@@ -144,4 +144,6 @@ export default hopeTheme({
       filter: (page) => page.path.indexOf('/', 1) !== -1,
     },
   },
+
+  breadcrumb: false,
 });
