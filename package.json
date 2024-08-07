@@ -15,13 +15,13 @@
     "katex": "^0.16.11",
     "vue": "^3.4.31",
     "vuepress": "2.0.0-rc.14",
-    "vuepress-theme-hope": "2.0.0-rc.52"
+    "vuepress-theme-hope": "2.0.0-rc.52",
+    "dotenv": "^16.4.5",
+    "vuepress-plugin-md-enhance": "^2.0.0-rc.52",
+    "vuepress-plugin-search-pro": "^2.0.0-rc.52"
   },
   "dependencies": {
     "axios": "^1.7.3",
-    "dotenv": "^16.4.5",
-    "element-plus": "^2.7.8",
-    "vuepress-plugin-md-enhance": "^2.0.0-rc.52",
-    "vuepress-plugin-search-pro": "^2.0.0-rc.52"
+    "element-plus": "^2.7.8"
   }
 }

@@ -5,24 +5,24 @@ export default sidebar([
     text: '新手入门',
     collapsible: true,
     prefix: '/welcome',
-    children: ['welcome', 'video_introduction', 'score_and_season'],
+    children: ['welcome.md', 'video_introduction.md', 'score_and_season.md'],
   },
   {
     text: '角色技能',
     collapsible: true,
     prefix: '/skills',
-    children: ['base', 'extend1', 'extend2'],
+    children: ['base.md', 'extend1.md', 'extend2.md'],
   },
   {
     text: '官方规则',
     collapsible: true,
     prefix: '/guide',
-    children: ['how_to_play', 'faq'],
+    children: ['how_to_play.md', 'faq.md'],
   },
   {
     text: '个人攻略',
     collapsible: true,
     prefix: '/strategy',
-    children: ['tech', 'simplified_rules'],
+    children: ['tech.md', 'simplified_rules.md'],
   },
 ]);
