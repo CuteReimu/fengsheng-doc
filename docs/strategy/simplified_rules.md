@@ -1,6 +1,7 @@
 ---
 order: 2
 author: 惑星
+shortTitle: 规则速览
 ---
 
 # 一页读懂风声规则

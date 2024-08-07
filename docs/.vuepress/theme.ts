@@ -109,5 +109,11 @@ export default hopeTheme({
     },
   },
 
-  breadcrumb: false,
+  footer: "我们的项目完全开源，如果你想要对项目做贡献，可以前往我们的" +
+    "  <a href=\"https://github.com/CuteReimu/TheMessage\" class=\"external-link\" target=\"_blank\" rel=\"noopener noreferrer\">服务端代码仓库</a>" +
+    "  和" +
+    "  <a href=\"https://github.com/Death-alter/TheMessage\" class=\"external-link\" target=\"_blank\" rel=\"noopener noreferrer\">客户端代码仓库</a>" +
+    "  。",
+  copyright: false,
+  displayFooter: true,
 });
