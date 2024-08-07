@@ -42,14 +42,34 @@ export default hopeTheme({
     {text: '游戏状态', link: '/game_status'},
   ],
 
-  sidebar: {
-    '/welcome': 'structure',
-    '/skills': 'structure',
-    '/guide': 'structure',
-    '/strategy': 'structure',
-    '/toplist': false,
-    '/game_status': false,
-  },
+  sidebar: [
+    {
+      text: '新手入门',
+      prefix: '/welcome',
+      children: ['welcome', 'video_introduction', 'score_and_season'],
+    },
+    {
+      text: '角色技能',
+      prefix: '/skills',
+      children: ['base', 'extend1', 'extend2'],
+    },
+    {
+      text: '官方规则',
+      prefix: '/guide',
+      children: [
+        {text: '游戏说明书', link: 'how_to_play'},
+        {text: '官方FAQ 2.0', link: 'faq'},
+      ],
+    },
+    {
+      text: '个人攻略',
+      prefix: '/strategy',
+      children: [
+        {text: '基本技巧', link: 'tech'},
+        {text: '规则速览', link: 'simplified_rules'},
+      ],
+    },
+  ],
 
   plugins: {
     mdEnhance: {
@@ -65,77 +85,77 @@ export default hopeTheme({
       stylize: [
         {
           matcher: /^红色?$/,
-          replacer: ({ tag, attrs, content }) => {
+          replacer: ({tag, attrs, content}) => {
             if (tag === "strong")
               return {
                 tag: tag,
-                attrs: { ...attrs, class: "red" },
+                attrs: {...attrs, class: "red"},
                 content: content,
               };
           },
         },
         {
           matcher: /^蓝色?$/,
-          replacer: ({ tag, attrs, content }) => {
+          replacer: ({tag, attrs, content}) => {
             if (tag === "strong")
               return {
                 tag: tag,
-                attrs: { ...attrs, class: "blue" },
+                attrs: {...attrs, class: "blue"},
                 content: content,
               };
           },
         },
         {
           matcher: /^绿色?$/,
-          replacer: ({ tag, attrs, content }) => {
+          replacer: ({tag, attrs, content}) => {
             if (tag === "strong")
               return {
                 tag: tag,
-                attrs: { ...attrs, class: "green" },
+                attrs: {...attrs, class: "green"},
                 content: content,
               };
           },
         },
         {
           matcher: /^黑色?$/,
-          replacer: ({ tag, attrs, content }) => {
+          replacer: ({tag, attrs, content}) => {
             if (tag === "strong")
               return {
                 tag: tag,
-                attrs: { ...attrs, class: "black" },
+                attrs: {...attrs, class: "black"},
                 content: content,
               };
           },
         },
         {
           matcher: "潜伏战线",
-          replacer: ({ tag, attrs, content }) => {
+          replacer: ({tag, attrs, content}) => {
             if (tag === "strong")
               return {
                 tag: tag,
-                attrs: { ...attrs, class: "red" },
+                attrs: {...attrs, class: "red"},
                 content: content,
               };
           },
         },
         {
           matcher: "特工机关",
-          replacer: ({ tag, attrs, content }) => {
+          replacer: ({tag, attrs, content}) => {
             if (tag === "strong")
               return {
                 tag: tag,
-                attrs: { ...attrs, class: "blue" },
+                attrs: {...attrs, class: "blue"},
                 content: content,
               };
           },
         },
         {
           matcher: "神秘人",
-          replacer: ({ tag, attrs, content }) => {
+          replacer: ({tag, attrs, content}) => {
             if (tag === "strong")
               return {
                 tag: tag,
-                attrs: { ...attrs, class: "green" },
+                attrs: {...attrs, class: "green"},
                 content: content,
               };
           },
