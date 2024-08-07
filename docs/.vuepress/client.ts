@@ -9,12 +9,6 @@ export default defineClientConfig({
     app.use(ElementPlus);
     app.component('GameStatus', GameStatus);
 
-    // 动态添加引用黑夜模式 CSS 的 <link> 标签
-    const link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = 'https://unpkg.com/element-plus/theme-chalk/dark/css-vars.css';
-    link.id = 'dark-theme-css';
-
     // 监听 html 元素的 data-theme 属性变化
     const observer = new MutationObserver((mutations) => {
       mutations.forEach((mutation) => {

@@ -1,5 +1,8 @@
 ---
-order: 1
+order: 2
+author:
+  - 二宽
+  - 惑星
 ---
 
 # 官方FAQ 2.0

@@ -2,6 +2,9 @@ import {hopeTheme} from "vuepress-theme-hope";
 
 export default hopeTheme({
   logo: '/images/head.jpg',
+  darkmode: 'toggle',
+  print: false,
+  fullscreen: true,
   navbar: [
     {text: '首页', link: '/'},
     {

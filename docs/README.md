@@ -1,7 +1,6 @@
 ---
 home: true
 heroImage: /images/head.jpg
-tagline: null
 actions:
   - text: 新手入门
     link: /welcome/welcome

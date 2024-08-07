@@ -1,8 +1,6 @@
 import theme from "./theme.js";
 import {defineUserConfig} from 'vuepress';
 import {viteBundler} from '@vuepress/bundler-vite';
-import {mdEnhancePlugin} from "vuepress-plugin-md-enhance";
-import {searchProPlugin} from "vuepress-plugin-search-pro";
 import dotenv from 'dotenv';
 import * as path from "node:path";
 

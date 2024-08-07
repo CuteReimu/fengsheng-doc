@@ -1,6 +1,7 @@
 ---
 lastUpdated: false
 contributors: false
+pageInfo: false
 ---
 
 # 历史赛季

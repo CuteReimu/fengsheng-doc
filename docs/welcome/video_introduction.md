@@ -1,6 +1,7 @@
 ---
 order: 3
 author: 惑星
+pageInfo: ["Author"]
 ---
 
 # 视频攻略
