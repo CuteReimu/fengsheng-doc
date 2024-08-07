@@ -77,7 +77,6 @@ const getStatus = (player) => {
 const doRequest = () => {
   Axios.get(import.meta.env.VITE_REQUEST_URL, {})
     .then((response) => {
-      console.log(response.data);
       gs.value = response.data;
     })
     .catch((error) => {

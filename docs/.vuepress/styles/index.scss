@@ -5,7 +5,7 @@
   --black-color: #000000;
 }
 
-html.dark {
+html[data-theme="dark"] {
   --red-color: #f58d8b;
   --blue-color: #7c80ec;
   --green-color: #8bf194;
