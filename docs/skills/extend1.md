@@ -1,5 +1,5 @@
 ---
-sidebarDepth: 0
+order: 2
 ---
 
 # 铁屋子（一扩）

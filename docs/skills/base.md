@@ -1,5 +1,5 @@
 ---
-sidebarDepth: 0
+order: 1
 ---
 
 # 基础角色

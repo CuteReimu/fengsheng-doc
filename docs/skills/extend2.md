@@ -1,5 +1,5 @@
 ---
-sidebarDepth: 0
+order: 3
 ---
 
 # 老洋房（二扩）
