@@ -1,12 +1,14 @@
 ---
+shortTitle: 官方FAQ 2.0
 icon: book
 order: 2
 author:
+  - 官方文档
   - 二宽
   - 惑星
 ---
 
-# 官方FAQ 2.0
+# 官方FAQ 2.0（含玩家补充）
 
 此为风声说明的解释补充，请搭配说明书使用。
 

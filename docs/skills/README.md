@@ -4,7 +4,7 @@ icon: book
 index: false
 lastUpdated: false
 contributors: false
-pageInfo: false
+pageInfo: ["Author"]
 author:
   - 二宽
   - 奇葩の灵梦
