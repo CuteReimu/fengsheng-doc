@@ -1,2 +1,4 @@
 docs/** -linguist-documentation
 docs/.vuepress/** -linguist-documentation
+
+*.md linguist-detectable
