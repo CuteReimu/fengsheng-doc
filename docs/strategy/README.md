@@ -1,7 +1,8 @@
 ---
 title: 个人攻略
 index: false
-icon: laptop-code
+lastUpdated: false
+contributors: false
 pageInfo: false
 ---
 
