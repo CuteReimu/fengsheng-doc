@@ -5,6 +5,9 @@ import sidebar from "./sidebar.js";
 
 export default hopeTheme({
   iconAssets: "fontawesome",
+  repo: 'https://github.com/CuteReimu/fengsheng-doc',
+  docsDir: 'docs',
+  docsBranch: 'master',
   logo: '/images/head.jpg',
   darkmode: 'toggle',
   print: false,
