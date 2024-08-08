@@ -9,3 +9,7 @@ editLink: false
 ---
 
 <GameStatus></GameStatus>
+
+<script setup>
+import GameStatus from "@GameStatus";
+</script>

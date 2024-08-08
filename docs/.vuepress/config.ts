@@ -2,16 +2,19 @@ import theme from "./theme.js";
 import { defineUserConfig } from 'vuepress';
 import { viteBundler } from '@vuepress/bundler-vite';
 import dotenv from 'dotenv';
-import * as path from "node:path";
-import AutoImport from 'unplugin-auto-import/vite'
-import Components from 'unplugin-vue-components/vite'
-import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
-import vue from '@vitejs/plugin-vue';
+import * as path2 from "node:path";
+import ElementPlus from 'unplugin-element-plus/vite';
+import { getDirname, path } from "vuepress/utils";
 
-dotenv.config({path: path.resolve(process.cwd(), '.env.local')})
+const __dirname = getDirname(import.meta.url);
+
+dotenv.config({path: path2.resolve(process.cwd(), '.env.local')})
 dotenv.config()
 
 export default defineUserConfig({
+  alias: {
+    "@GameStatus": path.resolve(__dirname, "components/GameStatus.vue"),
+  },
   lang: "zh-CN",
 
   title: '《风声·谍战篇》FAQ',
@@ -21,13 +24,9 @@ export default defineUserConfig({
   theme,
   bundler: viteBundler({
     viteOptions: {
+      ssr: { noExternal: ['element-plus'] },
       plugins: [
-        AutoImport({
-          resolvers: [ElementPlusResolver()],
-        }),
-        Components({
-          resolvers: [ElementPlusResolver()],
-        }),
+        ElementPlus({}),
       ],
     }
   }),
