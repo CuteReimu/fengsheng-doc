@@ -1,2 +1,2 @@
 docs/** linguist-vendored=false
-docs/**/.* linguist-vendored=false
+docs/.vuepress/** linguist-vendored=false
