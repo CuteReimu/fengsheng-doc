@@ -1,4 +1,5 @@
 ---
+icon: lightbulb
 order: 1
 author: 奇葩の灵梦
 ---

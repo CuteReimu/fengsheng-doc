@@ -1,12 +1,15 @@
 ---
 home: true
+icon: home
 title: 风声·谍战篇
 heroImage: /images/head.jpg
 actions:
   - text: 新手入门
+    icon: lightbulb
     link: /welcome/welcome
     type: primary
   - text: 大神风采
+    icon: trophy
     link: /toplist
     type: secondary
 ---

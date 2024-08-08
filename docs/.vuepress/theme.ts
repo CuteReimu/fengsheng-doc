@@ -4,6 +4,7 @@ import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 
 export default hopeTheme({
+  iconAssets: "fontawesome",
   logo: '/images/head.jpg',
   darkmode: 'toggle',
   print: false,

@@ -1,4 +1,5 @@
 ---
+icon: trophy
 lastUpdated: false
 contributors: false
 pageInfo: false

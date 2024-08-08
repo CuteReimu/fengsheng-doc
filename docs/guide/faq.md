@@ -1,4 +1,5 @@
 ---
+icon: book
 order: 2
 author:
   - 二宽

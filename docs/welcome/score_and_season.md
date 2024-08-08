@@ -1,4 +1,5 @@
 ---
+icon: trophy
 order: 3
 author: 奇葩の灵梦
 ---

@@ -1,4 +1,5 @@
 ---
+icon: lightbulb
 order: 2
 author: 惑星
 shortTitle: 规则速览
