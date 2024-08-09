@@ -4,7 +4,10 @@ icon: lightbulb
 index: false
 lastUpdated: false
 contributors: false
-pageInfo: false
+pageInfo: ["Author"]
+author:
+  - 奇葩の灵梦
+  - 惑星
 ---
 
 <Catalog></Catalog>

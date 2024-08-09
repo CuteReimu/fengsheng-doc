@@ -6,7 +6,7 @@ export default sidebar([
     icon: 'lightbulb',
     collapsible: true,
     prefix: '/welcome',
-    children: ['welcome.md', 'video_introduction.md', 'score_and_season.md'],
+    children: ['welcome.md', 'video_introduction.md', 'score_and_season.md', 'welcome_simplified.md'],
   },
   {
     text: '角色技能',

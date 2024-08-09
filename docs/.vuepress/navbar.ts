@@ -9,25 +9,25 @@ export default navbar([
   {
     text: '新手入门',
     icon: 'lightbulb',
-    link: '/welcome/welcome.md',
+    link: '/welcome/',
     activeMatch: '^/welcome/',
   },
   {
     text: '角色技能',
     icon: 'book',
-    link: '/skills/base.md',
+    link: '/skills/',
     activeMatch: '^/skills/',
   },
   {
     text: '官方规则',
     icon: 'book',
-    link: '/guide/how_to_play.md',
+    link: '/guide/',
     activeMatch: '^/guide/',
   },
   {
     text: '个人攻略',
     icon: 'lightbulb',
-    link: '/strategy/tech.md',
+    link: '/strategy/',
     activeMatch: '^/strategy/',
   },
   {
