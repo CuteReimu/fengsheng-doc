@@ -100,7 +100,7 @@ order: 1
 
 <div style="align-items: center;">
 
-如果情报牌带有![锁定](/images/lock.svg)，传出者可以宣言“<span style="color: red;">锁定</span>”一位玩家，当情报传递到该玩家面前时，该玩家<span style="color: red;">必须</span>选择接收情报，不能让情报继续传递。
+如果情报牌带有<img src="/images/lock.png" width="20" height="20" alt="锁定">，传出者可以宣言“<span style="color: red;">锁定</span>”一位玩家，当情报传递到该玩家面前时，该玩家<span style="color: red;">必须</span>选择接收情报，不能让情报继续传递。
 
 </div>
 
