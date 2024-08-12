@@ -1,11 +1,11 @@
 ---
-icon: lightbulb
-order: 2
+icon: book
+order: 3
 author: 惑星
 shortTitle: 规则速览
 ---
 
-# 一页读懂风声规则
+# 三分钟读懂规则
 
 游戏开始时，你会获得一个身份：
 

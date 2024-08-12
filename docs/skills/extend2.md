@@ -1,5 +1,5 @@
 ---
-icon: book
+icon: address-book
 order: 3
 author:
   - 二宽

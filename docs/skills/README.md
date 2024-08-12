@@ -1,6 +1,6 @@
 ---
 title: 角色技能
-icon: book
+icon: address-book
 index: false
 lastUpdated: false
 contributors: false

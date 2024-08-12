@@ -1,5 +1,5 @@
 ---
-icon: book
+icon: address-book
 order: 2
 author:
   - 奇葩の灵梦

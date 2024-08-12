@@ -10,7 +10,7 @@ export default sidebar([
   },
   {
     text: '角色技能',
-    icon: 'book',
+    icon: 'address-book',
     collapsible: true,
     prefix: '/skills',
     children: ['base.md', 'extend1.md', 'extend2.md'],
@@ -27,6 +27,6 @@ export default sidebar([
     icon: 'lightbulb',
     collapsible: true,
     prefix: '/strategy',
-    children: ['tech.md', 'simplified_rules.md'],
+    children: ['how_to_select_role.md', 'tech.md', 'simplified_rules.md'],
   },
 ]);

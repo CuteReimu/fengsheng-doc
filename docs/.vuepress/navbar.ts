@@ -14,7 +14,7 @@ export default navbar([
   },
   {
     text: '角色技能',
-    icon: 'book',
+    icon: 'address-book',
     link: '/skills/',
     activeMatch: '^/skills/',
   },
