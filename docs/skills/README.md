@@ -5,11 +5,7 @@ index: false
 lastUpdated: false
 contributors: false
 pageInfo: ["Author"]
-author:
-  - 二宽
-  - 奇葩の灵梦
-  - Death
-  - 惑星
+author: 奇葩の灵梦
 ---
 
 <Catalog></Catalog>
