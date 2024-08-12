@@ -147,7 +147,7 @@ author:
 
 ::: tip 举例
 - [李宁玉](../skills/base.md#l-李宁玉-译电科科长)的身份是[诱变者](../welcome/welcome.md#关于身份)，[李宁玉](../skills/base.md#l-李宁玉-译电科科长)死亡，发动技能**遗志**将一张手牌置入另一名角色的情报区，导致达成了[诱变者](../welcome/welcome.md#关于身份)的胜利条件，[李宁玉](../skills/base.md#l-李宁玉-译电科科长)可以宣胜。
-- [李宁玉](../skills/base.md#l-李宁玉-译电科科长)的身份是[诱变者](../welcome/welcome.md#关于身份)，[李宁玉](../skills/base.md#l-李宁玉-译电科科长)死亡，发动技能**遗志**将一张手牌置入[老汉](../skills/base.md#l-老汉-裘家二太太)的情报区，导致[老汉](../skills/base.md#l-老汉-裘家二太太)濒死，无人拯救后[老汉](../skills/base.md#l-老汉-裘家二太太)发动技能**如归**将一张情报置入当前回合角色的情报区，导致达成了[诱变者](../welcome/welcome.md#关于身份)的胜利条件，[李宁玉](../skills/base.md#l-李宁玉-译电科科长)可以宣胜。
+- [李宁玉](../skills/base.md#l-李宁玉-译电科科长)的身份是[诱变者](../welcome/welcome.md#关于身份)，[李宁玉](../skills/base.md#l-李宁玉-译电科科长)死亡，发动技能**遗志**将一张**黑色**手牌置入[老汉](../skills/base.md#l-老汉-裘家二太太)的情报区，导致[老汉](../skills/base.md#l-老汉-裘家二太太)濒死，无人拯救[老汉](../skills/base.md#l-老汉-裘家二太太)死亡发动技能**如归**将一张情报置入当前回合角色的情报区，导致达成了[诱变者](../welcome/welcome.md#关于身份)的胜利条件，[李宁玉](../skills/base.md#l-李宁玉-译电科科长)可以宣胜。
 - [李宁玉](../skills/base.md#l-李宁玉-译电科科长)的身份是[诱变者](../welcome/welcome.md#关于身份)，[李宁玉](../skills/base.md#l-李宁玉-译电科科长)在争夺阶段死亡后，在当回合其他角色接收情报导致达成了[诱变者](../welcome/welcome.md#关于身份)的胜利条件，[李宁玉](../skills/base.md#l-李宁玉-译电科科长)不能宣胜。
 :::
 
