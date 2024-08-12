@@ -111,6 +111,13 @@ export default hopeTheme({
       indexContent: true,
       filter: (page) => page.path.indexOf('/', 1) !== -1,
     },
+    photoSwipe: false,
+    notice: [{
+      path: "/",
+      title: "已知bug",
+      content: "<ul><li>在争夺阶段有人进入濒死状态，盛老板发动技能<strong>如臂指使</strong>查看其他角色手牌时，无法令其他角色使用澄清。</li><li>李书云发动技能<strong>定论</strong>将待收情报收归手牌时，在手牌中并没有这张牌。</li></ul>",
+      showOnce: true,
+    }],
   },
 
   footer: "我们的项目完全开源，如果你想要对项目做贡献，可以前往我们的" +
