@@ -20,7 +20,7 @@ export default sidebar([
     icon: 'book',
     collapsible: true,
     prefix: '/guide',
-    children: ['how_to_play.md', 'faq.md', 'advanced.md'],
+    children: ['how_to_play.md', 'announcement.md', 'faq.md', 'advanced.md'],
   },
   {
     text: '个人攻略',

@@ -1,8 +1,7 @@
 ---
 shortTitle: 官方FAQ 2.0
-description: 含玩家补充
 icon: book
-order: 2
+order: 3
 author:
   - 官方文档
   - 二宽

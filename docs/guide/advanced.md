@@ -2,7 +2,7 @@
 shortTitle: 进阶规则
 author: 官方文档
 icon: book
-order: 3
+order: 4
 ---
 
 # 游卡《风声》进阶规则1.1  含羁绊规则
