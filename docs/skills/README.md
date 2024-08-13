@@ -2,8 +2,6 @@
 title: 角色技能
 icon: address-book
 index: false
-lastUpdated: false
-contributors: false
 author: 奇葩の灵梦
 ---
 
