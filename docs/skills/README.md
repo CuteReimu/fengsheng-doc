@@ -4,7 +4,6 @@ icon: address-book
 index: false
 lastUpdated: false
 contributors: false
-pageInfo: ["Author"]
 author: 奇葩の灵梦
 ---
 
