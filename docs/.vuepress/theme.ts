@@ -11,7 +11,6 @@ export default hopeTheme({
   logo: '/images/head.jpg',
   darkmode: 'toggle',
   print: false,
-  fullscreen: true,
   navbarLayout: {
     start: ["Brand"],
     center: [],
