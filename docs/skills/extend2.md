@@ -61,8 +61,13 @@ author:
 
 ::: tip 关于“变则通”技能
 - 例如陈大耳发动技能，宣言[【截获】](../welcome/welcome.md#卡牌效果)本回合只能当做[【调包】](../welcome/welcome.md#卡牌效果)使用，那么：
-  - 李宁玉的技能**应变**就无法再将[【截获】](../welcome/welcome.md#卡牌效果)当[【误导】](../welcome/welcome.md#卡牌效果)使用了。
-  - 鄭文先使用[【截获】](../welcome/welcome.md#卡牌效果)当做[【调包】](../welcome/welcome.md#卡牌效果)使用，可以触发其技能**换日**。
+  - [李宁玉（SP）](base.md#l-李宁玉-sp-译电科科长)的技能**应变**就无法再将[【截获】](../welcome/welcome.md#卡牌效果)当[【误导】](../welcome/welcome.md#卡牌效果)使用了。
+  - [鄭文先](base.md#z-鄭文先-日伪报社主编)使用[【截获】](../welcome/welcome.md#卡牌效果)当做[【调包】](../welcome/welcome.md#卡牌效果)使用，可以触发其技能**换日**。
+- 技能**变则通**只会对手牌产生影响，例如：
+  - 无论陈大耳如何宣言，[鄭文先](base.md#z-鄭文先-日伪报社主编)都可以发动**偷天**视为使用了[【截获】](../welcome/welcome.md#卡牌效果)。
+- 技能**变则通**只会对手牌中原本卡牌名称为“A”的卡牌产生影响，例如陈大耳宣言[【调包】](../welcome/welcome.md#卡牌效果)本回合只能当[【截获】](../welcome/welcome.md#卡牌效果)使用，那么：
+  - [李宁玉（SP）](base.md#l-李宁玉-sp-译电科科长)的[【调包】](../welcome/welcome.md#卡牌效果)本回合只能当[【截获】](../welcome/welcome.md#卡牌效果)使用。
+  - [李宁玉（SP）](base.md#l-李宁玉-sp-译电科科长)不能再通过技能**应变**把原本卡牌名称为[【调包】](../welcome/welcome.md#卡牌效果)的卡牌当[【误导】](../welcome/welcome.md#卡牌效果)使用。
 :::
 
 ## H-韩梅（特务处长）<HopeIcon icon="venus" class="red" /><MaskIcon />
