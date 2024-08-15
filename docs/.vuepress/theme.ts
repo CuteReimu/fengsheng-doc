@@ -12,6 +12,12 @@ export default hopeTheme({
   darkmode: 'toggle',
   print: false,
   fullscreen: true,
+  navbarLayout: {
+    start: ["Brand"],
+    center: [],
+    end: ["Links", "Language", "Repo", "Outlook", "Search"],
+  },
+
   navbar,
 
   sidebar,
