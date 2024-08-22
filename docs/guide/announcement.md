@@ -1,11 +1,23 @@
 ---
-shortTitle: 勘误
 icon: bullhorn
 order: 2
 author: 官方文档
 ---
 
-# 关于“密令”的勘误
+# 官方公告
+
+## 引入一扩后建议对卡牌数量进行调整
+
+在引入一扩卡牌[风云变幻](../welcome/welcome.md#卡牌效果)后，知晓身份会更加容易，建议将[试探](../welcome/welcome.md#卡牌效果)减至12张，[澄清](../welcome/welcome.md#卡牌效果)减至6张。
+
+- [试探](../welcome/welcome.md#卡牌效果)的减少方式见[进阶规则 &rarr; 风声身份体验加强](advanced.md#风声身份体验加强)。
+- 减少两张[澄清](../welcome/welcome.md#卡牌效果)（**黑色**，&uarr;，<img src="/images/lock.png" width="20" height="20" alt="锁定">）。
+
+::: warning 注意
+目前线上的5-8人游戏中都已经按照此种方法减少了[试探](../welcome/welcome.md#卡牌效果)和[澄清](../welcome/welcome.md#卡牌效果)的数量。
+:::
+
+## 关于“密令”的勘误
 
 一扩《铁屋子》中的游戏牌[“密令”](../welcome/welcome.md#卡牌效果)个别暗号颜色出现几率稍高，为了调整至概率均衡，二扩《老洋房》中附带了一张[“密令”](../welcome/welcome.md#卡牌效果)。
 
