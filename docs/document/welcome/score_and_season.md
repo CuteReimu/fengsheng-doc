@@ -153,7 +153,7 @@ score *= (100.0 - all_win_rate) / (100.0 - min(50.0, max(8.0, secret_win_rate)))
 var winnerTotalScore = winnerScores.sumOf { score ->
     score.coerceIn(180..1900)
 }
-val winnerAveScore = winnerTotalScore / winners.size
+val winnerAveScore = winnerTotalScore / winnerScores.size
 
 var loserTotalScore = loserScores.sumOf { score ->
     score.coerceIn(180..1900)
