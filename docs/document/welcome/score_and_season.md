@@ -79,36 +79,50 @@ author: 奇葩の灵梦
 
 然后我们可以根据过往的游戏数据得到不同**神秘人**任务胜率。如果你的身份是**神秘人**：
 
-- 如果你赢了，则得分为 $\text{上述固定分数}\times\dfrac{\text{人均胜率}}{\text{神秘任务的胜率}}$
+- 如果你赢了，则得分为 $\text{上述固定分数}\times\dfrac{\text{所有身份平均胜率}}{\text{神秘任务的胜率}}$
 
-- 如果你输了，则扣分为 $\text{上述固定分数}\times\dfrac{100\%-\text{人均胜率}}{100\%-\text{神秘任务的胜率}}$
+- 如果你输了，则扣分为 $\text{上述固定分数}\times\dfrac{100\%-\text{所有身份平均胜率}}{100\%-\text{神秘任务的胜率}}$
 
 ::: tip 举例
-你是5人局双面间谍，人均胜率为 $34.88\%$ ，双面间谍胜率为 $29.71\%$ ：
+你是5人局双面间谍，所有身份人均胜率为 $34.88\%$ ，双面间谍胜率为 $29.71\%$ ：
 
 - 你赢了的得分为 $14\times\dfrac{34.88\%}{29.71\%} \simeq 16.436$
 
 - 你输了的扣分为 $7\times\dfrac{100\%-34.88\%}{100\%-29.71\%} \simeq 5.677$
 :::
 
-**特别说明**
+:::特别说明
 
 1. 上述所说的不同**神秘人**任务胜率只计算**不含人机**的对局，并且会根据实时胜率动态变化。
 2. 如果是9人局，因为样本太少，则取8人局的胜率。
 3. 某些身份胜率过低或过高（与样本太少也有关），倍率会变得很大，可能会出现赢一局获得几百分的不可控情况，影响公平性。因此我们取 $8\%$ ~ $50\%$ 为合理的胜率区间，超出这个区间的胜率会被限制在这个区间内进行计算。
+
+:::
 
 ::: code-tabs#code
 
 @tab Kotlin
 
 ```kotlin
-rate = rate.coerceIn(8.0..50.0)
+// allWinRate 为所有身份平均胜率，secretWinRate 为神秘任务的胜率
+
+// 赢了的得分计算方式
+score *= allWinRate / secretWinRate.coerceIn(8.0..50.0)
+
+// 输了的扣分计算方式
+score *= (100.0 - allWinRate) / (100.0 - secretWinRate.coerceIn(8.0..50.0))
 ```
 
 @tab Python
 
 ```python
-rate = min(50.0, max(8.0, rate))
+# all_win_rate 为所有身份平均胜率，secret_win_rate 为神秘任务的胜率
+
+# 赢了的得分计算方式
+score *= all_win_rate / min(50.0, max(8.0, secret_win_rate))
+
+# 输了的扣分计算方式
+score *= (100.0 - all_win_rate) / (100.0 - min(50.0, max(8.0, secret_win_rate)))
 ```
 
 :::
@@ -124,28 +138,47 @@ rate = min(50.0, max(8.0, rate))
 - 如果赢的人平均分比输的人平均分少 $200$ 分，则分数变化增加 $20\%$ ，变为 $1.2$ 倍。
 :::
 
-**特例**
+::: info 特例
 
-- 如果你的分数过高或过低，倍率会变得很大，影响公平性。因此我们取 $180$ ~ $1900$ 分为合理的分数区间，超出这个区间的分数会被限制在这个区间内进行计算。
+1. 如果你的分数过高或过低，意义就不大了。因此我们取 $180$ ~ $1900$ 分为合理的分数区间，超出这个区间的分数会被限制在这个区间内进行计算。
+2. 如果赢的人平均分比输的人平均分多太多，即使赢了分数也没变化，会影响游戏性。因此我们规定，这一步导致的分数减少时，最多减少 $90\%$ （减少至 $0.1$ 倍）。由此，当一个高分玩家作为神秘人单独赢了一局时，分数不会增加太少。
+
+:::
 
 ::: code-tabs#code
 
 @tab Kotlin
 
 ```kotlin
-var totalScore = winnerScores.sumOf { score ->
+var winnerTotalScore = winnerScores.sumOf { score ->
     score.coerceIn(180..1900)
 }
-val winnerAveScore = totalScore / winners.size
+val winnerAveScore = winnerTotalScore / winners.size
+
+var loserTotalScore = loserScores.sumOf { score ->
+    score.coerceIn(180..1900)
+}
+val loserAveScore = loserTotalScore / loserScores.size
+
+// 每10分变化1%
+val multiply = max(1.0 + (loserAveScore - winnerAveScore) / 10 / 100.0, 0.1)
 ```
 
 @tab Python
 
 ```python
-total_score = 0
+winner_total_score = 0
 for score in winnerScores:
-    total_score += min(1900, max(180, score))
-winner_ave_score = total_score // total_count
+    winner_total_score += min(1900, max(180, score))
+winner_ave_score = winner_total_score // len(winnerScores)
+
+loser_total_score = 0
+for score in loserScores:
+    loser_total_score += min(1900, max(180, score))
+loser_ave_score = loser_total_score // len(loserScores)
+
+# 每10分变化1%
+multiply = max(1.0 + (loser_ave_score - winner_ave_score) // 10 / 100, 0.1)
 ```
 
 :::
@@ -190,10 +223,12 @@ v = math.ceil(round(v * 10) / 10)
 
 :::
 
-**特例**
+::: info 特例
 
-1. 为防止分差超过 $1000$ 分，导致分数变化超过 $100\%$ 而使倍率变为负数，额外规定：如果你赢了，至少能得 $1$ 分，如果你输了，至少扣 $1$ 分。
+1. 为防止减分倍率过大导致赢了得0分和输了扣0分的情况，额外规定：如果你赢了，至少能得 $1$ 分，如果你输了，至少扣 $1$ 分。
 2. 如果全场所有人都赢了或者所有人都输了，则这局不计分。
+
+:::
 
 <style scoped>
   table {
