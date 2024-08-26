@@ -31,6 +31,10 @@ export default hopeTheme({
       attrs: true,
       // 使用 KaTeX 启用 TeX 支持
       katex: true,
+      // 代码块分组
+      codetabs: true,
+      // 剧透
+      spoiler: true,
       // 样式化
       stylize: [
         {
