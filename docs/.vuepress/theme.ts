@@ -22,6 +22,14 @@ export default hopeTheme({
   sidebar,
 
   plugins: {
+    // 代码块
+    shiki: {
+      langs: ['kotlin', 'python'],
+      themes: {
+        light: "one-light",
+        dark: "one-dark-pro",
+      },
+    },
     mdEnhance: {
       // 开启标记
       mark: true,

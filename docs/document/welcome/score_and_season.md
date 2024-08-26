@@ -87,6 +87,7 @@ author: 奇葩の灵梦
 你是5人局双面间谍，人均胜率为 $34.88\%$ ，双面间谍胜率为 $29.71\%$ ：
 
 - 你赢了的得分为 $14\times\dfrac{34.88\%}{29.71\%} \simeq 16.436$
+
 - 你输了的扣分为 $7\times\dfrac{100\%-34.88\%}{100\%-29.71\%} \simeq 5.677$
 :::
 
@@ -118,6 +119,11 @@ rate = min(50.0, max(8.0, rate))
 
 再计算所有赢的人的平均分和所有输的人的平均分之差，每差 $10$ 分（不足 $10$ 分的部分直接舍掉），分数变化 $1\%$ 。
 
+::: tip 举例
+- 如果赢的人平均分比输的人平均分多 $200$ 分，则分数变化减少 $20\%$ ，变为 $0.8$ 倍。
+- 如果赢的人平均分比输的人平均分少 $200$ 分，则分数变化增加 $20\%$ ，变为 $1.2$ 倍。
+:::
+
 **特例**
 
 - 如果你的分数过高或过低，倍率会变得很大，影响公平性。因此我们取 $180$ ~ $1900$ 分为合理的分数区间，超出这个区间的分数会被限制在这个区间内进行计算。
@@ -127,13 +133,19 @@ rate = min(50.0, max(8.0, rate))
 @tab Kotlin
 
 ```kotlin
-score = score.coerceIn(180..1900)
+var totalScore = winnerScores.sumOf { score ->
+    score.coerceIn(180..1900)
+}
+val winnerAveScore = totalScore / winners.size
 ```
 
 @tab Python
 
 ```python
-score = min(1900, max(180, score))
+total_score = 0
+for score in winnerScores:
+    total_score += min(1900, max(180, score))
+winner_ave_score = total_score // total_count
 ```
 
 :::
