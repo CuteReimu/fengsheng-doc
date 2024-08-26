@@ -9,8 +9,8 @@ export default navbar([
   {
     text: '文档',
     icon: 'book',
-    link: '/welcome/',
-    activeMatch: '^/\\w+/',
+    link: '/document/',
+    activeMatch: '^/document/',
   },
   {
     text: '赛季',

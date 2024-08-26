@@ -6,12 +6,13 @@ heroImage: /images/head.jpg
 actions:
   - text: 新手入门
     icon: lightbulb
-    link: /welcome/welcome
+    link: /document/welcome/welcome
     type: primary
   - text: 大神风采
     icon: trophy
     link: /toplist
     type: secondary
+breadcrumbExclude: true
 ---
 
 ::: info 关于我们
