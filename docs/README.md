@@ -35,8 +35,9 @@ breadcrumbExclude: true
 <p class="hint-container-title">特别鸣谢</p>
 
 - 游卡风声设计师：老金、二宽
-- 程序开发与规则整理：奇葩の灵梦、Death
-- 宣传与文档编写：惑星
+- 服务器开发：奇葩の灵梦
+- 客户端开发：Death
+- AI开发：奇葩の灵梦、惑星、南宫先森
 - 服务器赞助：星ztx、wyyd、阿揣、惑星
 - 以及对《风声》热爱的你们
 
