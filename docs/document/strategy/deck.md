@@ -7,12 +7,161 @@ author: 奇葩の灵梦
 
 # 牌堆构成（个人整理）
 
+## 分类
+
 ::: info 注意
-- 有一张[密令](../welcome/welcome.md#卡牌效果)的颜色在某些版本是错误的，具体见[官方公告](../guide/announcement.md#关于密令的勘误)，本表格中是修正后的数据。
+- 根据[官方公告](../guide/announcement#引入一扩后建议对卡牌数量进行调整)，引入一扩后建议对卡牌数量进行调整，以下统计数据全部基于调整后的卡牌数量。
 :::
 
-<el-table :data="deck" :row-class-name="tableRowClassName" border>
-  <el-table-column prop="name" sortable label="卡牌" min-width="90" align="center"/>
+### 按照牌类型分类
+
+::: chart
+
+```js
+const config = {
+  type: "bar",
+  data: {
+    labels: ["试探", "平衡", "威逼", "利诱", "澄清", "破译", "调包", "截获", "误导", "风云变幻", "密令", "调虎离山", "欲擒故纵"],
+    datasets: [{
+      label: "数量",
+      data: [12, 8, 14, 8, 6, 10, 12, 12, 10, 2, 6, 4, 6],
+      hoverOffset: 4
+    }]
+  },
+  options: {
+    plugins: {
+      legend: {
+        display: false,
+      },
+    },
+  }
+};
+```
+
+:::
+
+### 按照方向分类
+
+::: chart
+
+```js
+const config = {
+  type: "doughnut",
+  data: {
+    labels: ["←", "↑", "→"],
+    datasets: [{
+      label: "数量",
+      data: [38, 34, 38],
+      hoverOffset: 4,
+      rotation: 180,
+    }]
+  },
+  options: {
+    plugins: {
+      legend: {
+        position: "right",
+      },
+    },
+  }
+};
+```
+
+:::
+### 按照颜色分类
+
+::: chart
+
+```js
+const config = {
+  type: "doughnut",
+  data: {
+    labels: ["红", "红黑", "黑", "蓝黑", "蓝", "红蓝"],
+    datasets: [{
+      label: "数量",
+      data: [25, 12, 32, 12, 25, 4],
+      hoverOffset: 4,
+      backgroundColor: ["#e10602", "#700301", "#000000", "#141970", "#2932e1", "#e132e1"],
+      rotation: 2 / 110 * 360,
+    }]
+  },
+  options: {
+    cutout: 1,
+    plugins: {
+      legend: {
+        position: "right",
+      },
+    },
+  }
+};
+```
+
+:::
+
+### 按照锁定分类
+
+::: chart
+
+```js
+const config = {
+  type: "doughnut",
+  data: {
+    labels: ["锁定", "无锁"],
+    datasets: [{
+      label: "数量",
+      data: [41, 69],
+      hoverOffset: 4,
+    }]
+  },
+  options: {
+    plugins: {
+      legend: {
+        position: "right",
+      },
+    },
+  }
+};
+```
+
+:::
+
+## 详细牌堆构成
+
+::: info 注意
+- 有一张[密令](../welcome/welcome.md#卡牌效果)的颜色在某些版本是错误的，具体见[官方公告](../guide/announcement.md#关于-密令-的勘误)，本表格中是修正后的数据。
+- 根据[官方公告](../guide/announcement#引入一扩后建议对卡牌数量进行调整)，引入一扩后建议对卡牌数量进行调整，你可以点击下方滑块切换显示。
+:::
+
+<el-switch
+  inactive-text="显示数量调整后卡牌"
+  active-text="显示全部118张卡牌"
+  v-model="disableLines"
+  inline-prompt
+  style="--el-switch-off-color: #13ce66"
+/>
+
+<el-table :data="deck" border>
+  <el-table-column
+    prop="name"
+    label="卡牌"
+    min-width="90"
+    align="center"
+    :filters="[
+      { text: '试探', value: '试探' },
+      { text: '平衡', value: '平衡' },
+      { text: '威逼', value: '威逼' },
+      { text: '利诱', value: '利诱' },
+      { text: '澄清', value: '澄清' },
+      { text: '破译', value: '破译' },
+      { text: '调包', value: '调包' },
+      { text: '截获', value: '截获' },
+      { text: '误导', value: '误导' },
+      { text: '风云变幻', value: '风云变幻' },
+      { text: '密令', value: '密令' },
+      { text: '调虎离山', value: '调虎离山' },
+      { text: '欲擒故纵', value: '欲擒故纵' },
+    ]"
+    :filter-method="filterHandler"
+  />
   <el-table-column prop="color" sortable label="颜色" min-width="80" align="center">
     <template #default="scope">
       <div v-html="getColor(scope.row.color)"></div>
@@ -23,12 +172,12 @@ author: 奇葩の灵梦
       {{ scope.row.dir == "Up" ? "&uarr;" : scope.row.dir == "Left" ? "&larr;" : "&rarr;" }}
     </template>
   </el-table-column>
-  <el-table-column label="锁定" min-width="60" align="center">
+  <el-table-column prop="lockable" label="锁定" min-width="60" align="center">
     <template #default="scope">
-      <img src="/images/lock.png" width="20" height="20" alt="锁定" v-if="scope.row.lockable">
+      {{ scope.row.lockable ? "锁定" : "" }}
     </template>
   </el-table-column>
-  <el-table-column prop="comment" label="备注" align="center">
+  <el-table-column label="备注" align="center">
     <template #default="scope">
       <div v-html="getComment(scope.row.name, scope.row.comment)"></div>
     </template>
@@ -37,7 +186,13 @@ author: 奇葩の灵梦
 
 <script setup>
 import "element-plus/theme-chalk/dark/css-vars.css";
-import { ElTable, ElTableColumn } from "element-plus";
+import { ref, computed } from "vue";
+import { ElTable, ElTableColumn, ElSwitch, ElText } from "element-plus";
+
+const filterHandler = (value, row, column) => {
+  const property = column['property'];
+  return row[property] === value;
+};
 
 const getColor = (colors) => {
   return colors.map((color) => {
@@ -65,7 +220,6 @@ const getComment = (name, comment) => {
     let s = "";
     for (let i in comment) {
       s += `<span style="color:white; background-color:var(--${comment[i].toLowerCase()}-color);">`;
-      console.log(i);
       switch (Number(i)) {
       case 0: s += "东"; break;
       case 1: s += "西"; break;
@@ -78,129 +232,130 @@ const getComment = (name, comment) => {
   return comment;
 };
 
-const disabledLines = [0, 3, 8, 11, 13, 16, 54, 55];
-const tableRowClassName = ({row, rowIndex}) => disabledLines.includes(rowIndex) ? 'warning-row' : '';
-
-const deck = [
-  {name: "试探", color: ["Black"], dir: "Right", lockable: false, comment: ["Black"]},
-  {name: "试探", color: ["Black"], dir: "Right", lockable: false, comment: ["Blue"]},
-  {name: "试探", color: ["Black"], dir: "Right", lockable: false, comment: ["Red", "Black"]},
-  {name: "试探", color: ["Black"], dir: "Left", lockable: false, comment: ["Red", "Blue"]},
-  {name: "试探", color: ["Black"], dir: "Left", lockable: false, comment: ["Blue", "Black"]},
-  {name: "试探", color: ["Black"], dir: "Left", lockable: false, comment: ["Red"]},
-  {name: "试探", color: ["Red"], dir: "Right", lockable: false, comment: ["Black"]},
-  {name: "试探", color: ["Red"], dir: "Right", lockable: false, comment: ["Blue"]},
-  {name: "试探", color: ["Red"], dir: "Right", lockable: false, comment: ["Red", "Black"]},
-  {name: "试探", color: ["Red"], dir: "Left", lockable: false, comment: ["Red", "Blue"]},
-  {name: "试探", color: ["Red"], dir: "Left", lockable: false, comment: ["Blue", "Black"]},
-  {name: "试探", color: ["Red"], dir: "Left", lockable: false, comment: ["Red"]},
-  {name: "试探", color: ["Blue"], dir: "Right", lockable: false, comment: ["Black"]},
-  {name: "试探", color: ["Blue"], dir: "Right", lockable: false, comment: ["Blue"]},
-  {name: "试探", color: ["Blue"], dir: "Right", lockable: false, comment: ["Red", "Black"]},
-  {name: "试探", color: ["Blue"], dir: "Left", lockable: false, comment: ["Red", "Blue"]},
-  {name: "试探", color: ["Blue"], dir: "Left", lockable: false, comment: ["Blue", "Black"]},
-  {name: "试探", color: ["Blue"], dir: "Left", lockable: false, comment: ["Red"]},
-  {name: "平衡", color: ["Black"], dir: "Left", lockable: true},
-  {name: "平衡", color: ["Black"], dir: "Right", lockable: true},
-  {name: "平衡", color: ["Blue"], dir: "Left", lockable: true},
-  {name: "平衡", color: ["Red"], dir: "Right", lockable: true},
-  {name: "平衡", color: ["Red", "Black"], dir: "Up", lockable: false},
-  {name: "平衡", color: ["Blue", "Black"], dir: "Up", lockable: false},
-  {name: "平衡", color: ["Red", "Black"], dir: "Left", lockable: false},
-  {name: "平衡", color: ["Blue", "Black"], dir: "Right", lockable: false},
-  {name: "威逼", color: ["Red"], dir: "Left", lockable: false},
-  {name: "威逼", color: ["Red"], dir: "Left", lockable: false},
-  {name: "威逼", color: ["Red"], dir: "Left", lockable: false},
-  {name: "威逼", color: ["Red"], dir: "Right", lockable: false},
-  {name: "威逼", color: ["Blue"], dir: "Left", lockable: false},
-  {name: "威逼", color: ["Blue"], dir: "Right", lockable: false},
-  {name: "威逼", color: ["Blue"], dir: "Right", lockable: false},
-  {name: "威逼", color: ["Blue"], dir: "Right", lockable: false},
-  {name: "威逼", color: ["Black"], dir: "Left", lockable: false},
-  {name: "威逼", color: ["Black"], dir: "Left", lockable: false},
-  {name: "威逼", color: ["Black"], dir: "Right", lockable: false},
-  {name: "威逼", color: ["Black"], dir: "Right", lockable: false},
-  {name: "威逼", color: ["Blue", "Black"], dir: "Left", lockable: false},
-  {name: "威逼", color: ["Red", "Black"], dir: "Right", lockable: false},
-  {name: "利诱", color: ["Black"], dir: "Left", lockable: true},
-  {name: "利诱", color: ["Black"], dir: "Right", lockable: true},
-  {name: "利诱", color: ["Black"], dir: "Left", lockable: true},
-  {name: "利诱", color: ["Black"], dir: "Right", lockable: true},
-  {name: "利诱", color: ["Black"], dir: "Left", lockable: true},
-  {name: "利诱", color: ["Black"], dir: "Right", lockable: true},
-  {name: "利诱", color: ["Blue"], dir: "Left", lockable: true},
-  {name: "利诱", color: ["Red"], dir: "Right", lockable: true},
-  {name: "澄清", color: ["Red"], dir: "Up", lockable: true},
-  {name: "澄清", color: ["Red"], dir: "Up", lockable: true},
-  {name: "澄清", color: ["Black"], dir: "Up", lockable: true},
-  {name: "澄清", color: ["Black"], dir: "Up", lockable: true},
-  {name: "澄清", color: ["Blue"], dir: "Up", lockable: true},
-  {name: "澄清", color: ["Blue"], dir: "Up", lockable: true},
-  {name: "澄清", color: ["Black"], dir: "Up", lockable: true},
-  {name: "澄清", color: ["Black"], dir: "Up", lockable: true},
-  {name: "破译", color: ["Red", "Black"], dir: "Left", lockable: true},
-  {name: "破译", color: ["Blue", "Black"], dir: "Left", lockable: true},
-  {name: "破译", color: ["Red"], dir: "Left", lockable: true},
-  {name: "破译", color: ["Blue"], dir: "Left", lockable: true},
-  {name: "破译", color: ["Black"], dir: "Left", lockable: true},
-  {name: "破译", color: ["Red", "Black"], dir: "Right", lockable: true},
-  {name: "破译", color: ["Blue", "Black"], dir: "Right", lockable: true},
-  {name: "破译", color: ["Red"], dir: "Right", lockable: true},
-  {name: "破译", color: ["Blue"], dir: "Right", lockable: true},
-  {name: "破译", color: ["Black"], dir: "Right", lockable: true},
-  {name: "调包", color: ["Red"], dir: "Up", lockable: false},
-  {name: "调包", color: ["Red"], dir: "Left", lockable: false},
-  {name: "调包", color: ["Red"], dir: "Right", lockable: false},
-  {name: "调包", color: ["Blue"], dir: "Up", lockable: false},
-  {name: "调包", color: ["Blue"], dir: "Left", lockable: false},
-  {name: "调包", color: ["Blue"], dir: "Right", lockable: false},
-  {name: "调包", color: ["Black"], dir: "Left", lockable: false},
-  {name: "调包", color: ["Black"], dir: "Right", lockable: false},
-  {name: "调包", color: ["Red", "Black"], dir: "Up", lockable: false},
-  {name: "调包", color: ["Red", "Black"], dir: "Right", lockable: false},
-  {name: "调包", color: ["Blue", "Black"], dir: "Up", lockable: false},
-  {name: "调包", color: ["Blue", "Black"], dir: "Left", lockable: false},
-  {name: "截获", color: ["Red"], dir: "Up", lockable: false},
-  {name: "截获", color: ["Red"], dir: "Up", lockable: false},
-  {name: "截获", color: ["Red"], dir: "Up", lockable: true},
-  {name: "截获", color: ["Blue"], dir: "Up", lockable: false},
-  {name: "截获", color: ["Blue"], dir: "Up", lockable: false},
-  {name: "截获", color: ["Blue"], dir: "Up", lockable: true},
-  {name: "截获", color: ["Black"], dir: "Up", lockable: false},
-  {name: "截获", color: ["Black"], dir: "Up", lockable: false},
-  {name: "截获", color: ["Black"], dir: "Up", lockable: true},
-  {name: "截获", color: ["Black"], dir: "Up", lockable: true},
-  {name: "截获", color: ["Blue", "Black"], dir: "Up", lockable: false},
-  {name: "截获", color: ["Red", "Black"], dir: "Up", lockable: false},
-  {name: "误导", color: ["Red"], dir: "Up", lockable: false},
-  {name: "误导", color: ["Red"], dir: "Left", lockable: false},
-  {name: "误导", color: ["Red"], dir: "Right", lockable: false},
-  {name: "误导", color: ["Blue"], dir: "Up", lockable: false},
-  {name: "误导", color: ["Blue"], dir: "Left", lockable: false},
-  {name: "误导", color: ["Blue"], dir: "Right", lockable: false},
-  {name: "误导", color: ["Black"], dir: "Left", lockable: false},
-  {name: "误导", color: ["Black"], dir: "Right", lockable: false},
-  {name: "误导", color: ["Blue", "Black"], dir: "Left", lockable: false},
-  {name: "误导", color: ["Red", "Black"], dir: "Right", lockable: false},
-  {name: "风云变幻", color: ["Black"], dir: "Up", lockable: true},
-  {name: "风云变幻", color: ["Black"], dir: "Up", lockable: true},
-  {name: "密令", color: ["Blue", "Black"], dir: "Up", lockable: true, comment: ["Blue", "Black", "Red"]},
-  {name: "密令", color: ["Blue"], dir: "Right", lockable: false, comment: ["Black", "Blue", "Red"]},
-  {name: "密令", color: ["Blue"], dir: "Left", lockable: false, comment: ["Blue", "Red", "Black"]},
-  {name: "密令", color: ["Red", "Black"], dir: "Up", lockable: true, comment: ["Red", "Black", "Blue"]},
-  {name: "密令", color: ["Red"], dir: "Left", lockable: false, comment: ["Black", "Red", "Blue"]},
-  {name: "密令", color: ["Red"], dir: "Right", lockable: false, comment: ["Red", "Blue", "Black"]},
-  {name: "调虎离山", color: ["Black"], dir: "Up", lockable: false},
-  {name: "调虎离山", color: ["Black"], dir: "Up", lockable: true},
-  {name: "调虎离山", color: ["Red", "Black"], dir: "Left", lockable: true},
-  {name: "调虎离山", color: ["Blue", "Black"], dir: "Right", lockable: true},
-  {name: "欲擒故纵", color: ["Red", "Black"], dir: "Up", lockable: false},
-  {name: "欲擒故纵", color: ["Red", "Blue"], dir: "Left", lockable: false},
-  {name: "欲擒故纵", color: ["Red", "Blue"], dir: "Right", lockable: false},
-  {name: "欲擒故纵", color: ["Blue", "Black"], dir: "Up", lockable: false},
-  {name: "欲擒故纵", color: ["Red", "Blue"], dir: "Left", lockable: false},
-  {name: "欲擒故纵", color: ["Red", "Blue"], dir: "Right", lockable: false},
+const deck1 = [
+  {id: 1, name: "试探", color: ["Black"], dir: "Right", lockable: false, comment: ["Black"]},
+  {id: 2, name: "试探", color: ["Black"], dir: "Right", lockable: false, comment: ["Blue"]},
+  {id: 3, name: "试探", color: ["Black"], dir: "Right", lockable: false, comment: ["Red", "Black"]},
+  {id: 4, name: "试探", color: ["Black"], dir: "Left", lockable: false, comment: ["Red", "Blue"]},
+  {id: 5, name: "试探", color: ["Black"], dir: "Left", lockable: false, comment: ["Blue", "Black"]},
+  {id: 6, name: "试探", color: ["Black"], dir: "Left", lockable: false, comment: ["Red"]},
+  {id: 7, name: "试探", color: ["Red"], dir: "Right", lockable: false, comment: ["Black"]},
+  {id: 8, name: "试探", color: ["Red"], dir: "Right", lockable: false, comment: ["Blue"]},
+  {id: 9, name: "试探", color: ["Red"], dir: "Right", lockable: false, comment: ["Red", "Black"]},
+  {id: 10, name: "试探", color: ["Red"], dir: "Left", lockable: false, comment: ["Red", "Blue"]},
+  {id: 11, name: "试探", color: ["Red"], dir: "Left", lockable: false, comment: ["Blue", "Black"]},
+  {id: 12, name: "试探", color: ["Red"], dir: "Left", lockable: false, comment: ["Red"]},
+  {id: 13, name: "试探", color: ["Blue"], dir: "Right", lockable: false, comment: ["Black"]},
+  {id: 14, name: "试探", color: ["Blue"], dir: "Right", lockable: false, comment: ["Blue"]},
+  {id: 15, name: "试探", color: ["Blue"], dir: "Right", lockable: false, comment: ["Red", "Black"]},
+  {id: 16, name: "试探", color: ["Blue"], dir: "Left", lockable: false, comment: ["Red", "Blue"]},
+  {id: 17, name: "试探", color: ["Blue"], dir: "Left", lockable: false, comment: ["Blue", "Black"]},
+  {id: 18, name: "试探", color: ["Blue"], dir: "Left", lockable: false, comment: ["Red"]},
+  {id: 19, name: "平衡", color: ["Black"], dir: "Left", lockable: true},
+  {id: 20, name: "平衡", color: ["Black"], dir: "Right", lockable: true},
+  {id: 21, name: "平衡", color: ["Blue"], dir: "Left", lockable: true},
+  {id: 22, name: "平衡", color: ["Red"], dir: "Right", lockable: true},
+  {id: 23, name: "平衡", color: ["Red", "Black"], dir: "Up", lockable: false},
+  {id: 24, name: "平衡", color: ["Blue", "Black"], dir: "Up", lockable: false},
+  {id: 25, name: "平衡", color: ["Red", "Black"], dir: "Left", lockable: false},
+  {id: 26, name: "平衡", color: ["Blue", "Black"], dir: "Right", lockable: false},
+  {id: 27, name: "威逼", color: ["Red"], dir: "Left", lockable: false},
+  {id: 28, name: "威逼", color: ["Red"], dir: "Left", lockable: false},
+  {id: 29, name: "威逼", color: ["Red"], dir: "Left", lockable: false},
+  {id: 30, name: "威逼", color: ["Red"], dir: "Right", lockable: false},
+  {id: 31, name: "威逼", color: ["Blue"], dir: "Left", lockable: false},
+  {id: 32, name: "威逼", color: ["Blue"], dir: "Right", lockable: false},
+  {id: 33, name: "威逼", color: ["Blue"], dir: "Right", lockable: false},
+  {id: 34, name: "威逼", color: ["Blue"], dir: "Right", lockable: false},
+  {id: 35, name: "威逼", color: ["Black"], dir: "Left", lockable: false},
+  {id: 36, name: "威逼", color: ["Black"], dir: "Left", lockable: false},
+  {id: 37, name: "威逼", color: ["Black"], dir: "Right", lockable: false},
+  {id: 38, name: "威逼", color: ["Black"], dir: "Right", lockable: false},
+  {id: 39, name: "威逼", color: ["Blue", "Black"], dir: "Left", lockable: false},
+  {id: 40, name: "威逼", color: ["Red", "Black"], dir: "Right", lockable: false},
+  {id: 41, name: "利诱", color: ["Black"], dir: "Left", lockable: true},
+  {id: 42, name: "利诱", color: ["Black"], dir: "Right", lockable: true},
+  {id: 43, name: "利诱", color: ["Black"], dir: "Left", lockable: true},
+  {id: 44, name: "利诱", color: ["Black"], dir: "Right", lockable: true},
+  {id: 45, name: "利诱", color: ["Black"], dir: "Left", lockable: true},
+  {id: 46, name: "利诱", color: ["Black"], dir: "Right", lockable: true},
+  {id: 47, name: "利诱", color: ["Blue"], dir: "Left", lockable: true},
+  {id: 48, name: "利诱", color: ["Red"], dir: "Right", lockable: true},
+  {id: 49, name: "澄清", color: ["Red"], dir: "Up", lockable: true},
+  {id: 50, name: "澄清", color: ["Red"], dir: "Up", lockable: true},
+  {id: 51, name: "澄清", color: ["Black"], dir: "Up", lockable: true},
+  {id: 52, name: "澄清", color: ["Black"], dir: "Up", lockable: true},
+  {id: 53, name: "澄清", color: ["Blue"], dir: "Up", lockable: true},
+  {id: 54, name: "澄清", color: ["Blue"], dir: "Up", lockable: true},
+  {id: 55, name: "澄清", color: ["Black"], dir: "Up", lockable: true},
+  {id: 56, name: "澄清", color: ["Black"], dir: "Up", lockable: true},
+  {id: 57, name: "破译", color: ["Red", "Black"], dir: "Left", lockable: true},
+  {id: 58, name: "破译", color: ["Blue", "Black"], dir: "Left", lockable: true},
+  {id: 59, name: "破译", color: ["Red"], dir: "Left", lockable: true},
+  {id: 60, name: "破译", color: ["Blue"], dir: "Left", lockable: true},
+  {id: 61, name: "破译", color: ["Black"], dir: "Left", lockable: true},
+  {id: 62, name: "破译", color: ["Red", "Black"], dir: "Right", lockable: true},
+  {id: 63, name: "破译", color: ["Blue", "Black"], dir: "Right", lockable: true},
+  {id: 64, name: "破译", color: ["Red"], dir: "Right", lockable: true},
+  {id: 65, name: "破译", color: ["Blue"], dir: "Right", lockable: true},
+  {id: 66, name: "破译", color: ["Black"], dir: "Right", lockable: true},
+  {id: 67, name: "调包", color: ["Red"], dir: "Up", lockable: false},
+  {id: 68, name: "调包", color: ["Red"], dir: "Left", lockable: false},
+  {id: 69, name: "调包", color: ["Red"], dir: "Right", lockable: false},
+  {id: 70, name: "调包", color: ["Blue"], dir: "Up", lockable: false},
+  {id: 71, name: "调包", color: ["Blue"], dir: "Left", lockable: false},
+  {id: 72, name: "调包", color: ["Blue"], dir: "Right", lockable: false},
+  {id: 73, name: "调包", color: ["Black"], dir: "Left", lockable: false},
+  {id: 74, name: "调包", color: ["Black"], dir: "Right", lockable: false},
+  {id: 75, name: "调包", color: ["Red", "Black"], dir: "Up", lockable: false},
+  {id: 76, name: "调包", color: ["Red", "Black"], dir: "Right", lockable: false},
+  {id: 77, name: "调包", color: ["Blue", "Black"], dir: "Up", lockable: false},
+  {id: 78, name: "调包", color: ["Blue", "Black"], dir: "Left", lockable: false},
+  {id: 79, name: "截获", color: ["Red"], dir: "Up", lockable: false},
+  {id: 80, name: "截获", color: ["Red"], dir: "Up", lockable: false},
+  {id: 81, name: "截获", color: ["Red"], dir: "Up", lockable: true},
+  {id: 82, name: "截获", color: ["Blue"], dir: "Up", lockable: false},
+  {id: 83, name: "截获", color: ["Blue"], dir: "Up", lockable: false},
+  {id: 84, name: "截获", color: ["Blue"], dir: "Up", lockable: true},
+  {id: 85, name: "截获", color: ["Black"], dir: "Up", lockable: false},
+  {id: 86, name: "截获", color: ["Black"], dir: "Up", lockable: false},
+  {id: 87, name: "截获", color: ["Black"], dir: "Up", lockable: true},
+  {id: 88, name: "截获", color: ["Black"], dir: "Up", lockable: true},
+  {id: 89, name: "截获", color: ["Blue", "Black"], dir: "Up", lockable: false},
+  {id: 90, name: "截获", color: ["Red", "Black"], dir: "Up", lockable: false},
+  {id: 91, name: "误导", color: ["Red"], dir: "Up", lockable: false},
+  {id: 92, name: "误导", color: ["Red"], dir: "Left", lockable: false},
+  {id: 93, name: "误导", color: ["Red"], dir: "Right", lockable: false},
+  {id: 94, name: "误导", color: ["Blue"], dir: "Up", lockable: false},
+  {id: 95, name: "误导", color: ["Blue"], dir: "Left", lockable: false},
+  {id: 96, name: "误导", color: ["Blue"], dir: "Right", lockable: false},
+  {id: 97, name: "误导", color: ["Black"], dir: "Left", lockable: false},
+  {id: 98, name: "误导", color: ["Black"], dir: "Right", lockable: false},
+  {id: 99, name: "误导", color: ["Blue", "Black"], dir: "Left", lockable: false},
+  {id: 100, name: "误导", color: ["Red", "Black"], dir: "Right", lockable: false},
+  {id: 101, name: "风云变幻", color: ["Black"], dir: "Up", lockable: true},
+  {id: 102, name: "风云变幻", color: ["Black"], dir: "Up", lockable: true},
+  {id: 103, name: "密令", color: ["Blue", "Black"], dir: "Up", lockable: true, comment: ["Blue", "Black", "Red"]},
+  {id: 104, name: "密令", color: ["Blue"], dir: "Right", lockable: false, comment: ["Black", "Blue", "Red"]},
+  {id: 105, name: "密令", color: ["Blue"], dir: "Left", lockable: false, comment: ["Blue", "Red", "Black"]},
+  {id: 106, name: "密令", color: ["Red", "Black"], dir: "Up", lockable: true, comment: ["Red", "Black", "Blue"]},
+  {id: 107, name: "密令", color: ["Red"], dir: "Left", lockable: false, comment: ["Black", "Red", "Blue"]},
+  {id: 108, name: "密令", color: ["Red"], dir: "Right", lockable: false, comment: ["Red", "Blue", "Black"]},
+  {id: 109, name: "调虎离山", color: ["Black"], dir: "Up", lockable: false},
+  {id: 110, name: "调虎离山", color: ["Black"], dir: "Up", lockable: true},
+  {id: 111, name: "调虎离山", color: ["Red", "Black"], dir: "Left", lockable: true},
+  {id: 112, name: "调虎离山", color: ["Blue", "Black"], dir: "Right", lockable: true},
+  {id: 113, name: "欲擒故纵", color: ["Red", "Black"], dir: "Up", lockable: false},
+  {id: 114, name: "欲擒故纵", color: ["Red", "Blue"], dir: "Left", lockable: false},
+  {id: 115, name: "欲擒故纵", color: ["Red", "Blue"], dir: "Right", lockable: false},
+  {id: 116, name: "欲擒故纵", color: ["Blue", "Black"], dir: "Up", lockable: false},
+  {id: 117, name: "欲擒故纵", color: ["Red", "Blue"], dir: "Left", lockable: false},
+  {id: 118, name: "欲擒故纵", color: ["Red", "Blue"], dir: "Right", lockable: false},
 ];
+const disabledLines = [0, 3, 8, 11, 13, 16, 54, 55];
+const deck2 = deck1.filter((card) => !disabledLines.includes(card.id - 1));
+const disableLines = ref(false); 
+const deck = computed(() => disableLines.value ? deck1 : deck2);
 </script>
 
 <style scoped>
@@ -218,9 +373,5 @@ const deck = [
 
 :deep(td) {
   border: none;
-}
-
-.warning-row {
-  --el-table-tr-bg-color: var(--el-color-warning-light-9);
 }
 </style>

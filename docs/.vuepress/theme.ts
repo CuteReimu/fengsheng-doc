@@ -43,6 +43,8 @@ export default hopeTheme({
       codetabs: true,
       // 剧透
       spoiler: true,
+      // 使用chart.js
+      chart: true,
       // 样式化
       stylize: [
         {

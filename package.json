@@ -13,6 +13,7 @@
   "devDependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.14",
     "@vueuse/shared": "^10.11.0",
+    "chart.js": "^4.4.4",
     "dotenv": "^16.4.5",
     "katex": "^0.16.11",
     "unplugin-element-plus": "^0.8.0",
