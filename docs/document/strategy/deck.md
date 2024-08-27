@@ -1,11 +1,11 @@
 ---
-shortTitle: 牌堆构成
 icon: book
 order: -1
 author: 奇葩の灵梦
+pageInfo: [ "Author", "Date" ]
 ---
 
-# 牌堆构成（个人整理）
+# 牌堆构成
 
 ## 分类
 
