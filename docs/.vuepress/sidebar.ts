@@ -31,5 +31,6 @@ export default sidebar({
       children: 'structure',
     },
   ],
+  '/develop/': 'structure',
   '/': false,
 });
