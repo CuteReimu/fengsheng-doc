@@ -1,11 +1,17 @@
 ---
 icon: book
 order: -1
-author: 奇葩の灵梦
+author:
+  - 奇葩の灵梦
+  - 惑星
 pageInfo: [ "Author", "Date" ]
 ---
 
 # 牌堆构成
+
+## 总览
+
+![](/images/deck.png)
 
 ## 分类
 
