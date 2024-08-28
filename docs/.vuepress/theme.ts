@@ -130,7 +130,6 @@ export default hopeTheme({
       indexContent: true,
       filter: (page) => page.path.indexOf('/', 1) !== -1,
     },
-    photoSwipe: false,
     linksCheck: {
       build: 'error',
     }
