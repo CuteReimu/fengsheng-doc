@@ -162,6 +162,10 @@ doSth(1, ::add) // 传入一个合适的函数
 doSth(1, { c -> c + 1 }) // 传入一个lambda表达式（lambda表达式本质就是一个函数，最后一行是返回值）
 doSth(1, { it + 1 }) // 可以不声明参数名，直接用it来表示参数
 doSth(1) { it + 1 } // 如果函数的最后一个参数是函数，可以放在括号外面
+doSth(1) {
+    if (it < 10) return@doSth it // lambda表达式可以提前return，但是要加@doSth指定到底返回的是哪个函数，否则会被误认为return外面的大函数。
+    it + 1
+}
 ```
 
 ## 对集合的优化
