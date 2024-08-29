@@ -46,6 +46,8 @@ export default hopeTheme({
       spoiler: true,
       // 使用chart.js
       chart: true,
+      // 使用思维导图
+      markmap: true,
       // 样式化
       stylize: [
         {
