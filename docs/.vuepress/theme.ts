@@ -135,7 +135,9 @@ export default hopeTheme({
     },
     linksCheck: {
       build: 'error',
-    }
+    },
+    sitemap: false,
+    seo: false,
   },
 
   footer: "我们的项目完全开源，如果你想要对项目做贡献，可以前往我们的" +

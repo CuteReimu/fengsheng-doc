@@ -1,6 +1,7 @@
 ---
 order: 2
 author: 奇葩の灵梦
+pageInfo: ["Author", "Date", "Word"]
 ---
 
 # 技能相关架构

@@ -1,6 +1,7 @@
 ---
 order: 1
 author: 奇葩の灵梦
+pageInfo: ["Author", "Date", "Word"]
 ---
 
 # 快速上手Kotlin
