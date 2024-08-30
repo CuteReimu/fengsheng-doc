@@ -104,25 +104,28 @@ author: 奇葩の灵梦
 @tab Kotlin
 
 ```kotlin
-// allWinRate 为所有身份平均胜率，secretWinRate 为神秘任务的胜率
+// if (你是神秘人) {
+    // allWinRate 为所有身份平均胜率，secretWinRate 为神秘任务的胜率
 
-// 赢了的得分计算方式
-score *= allWinRate / secretWinRate.coerceIn(8.0..50.0)
+    // 赢了的得分计算方式
+    score *= allWinRate / secretWinRate.coerceIn(8.0..50.0)
 
-// 输了的扣分计算方式
-score *= (100.0 - allWinRate) / (100.0 - secretWinRate.coerceIn(8.0..50.0))
+    // 输了的扣分计算方式
+    score *= (100.0 - allWinRate) / (100.0 - secretWinRate.coerceIn(8.0..50.0))
+// }
 ```
 
 @tab Python
 
 ```python
-# all_win_rate 为所有身份平均胜率，secret_win_rate 为神秘任务的胜率
+if 你是神秘人:
+    # all_win_rate 为所有身份平均胜率，secret_win_rate 为神秘任务的胜率
 
-# 赢了的得分计算方式
-score *= all_win_rate / min(50.0, max(8.0, secret_win_rate))
+    # 赢了的得分计算方式
+    score *= all_win_rate / min(50.0, max(8.0, secret_win_rate))
 
-# 输了的扣分计算方式
-score *= (100.0 - all_win_rate) / (100.0 - min(50.0, max(8.0, secret_win_rate)))
+    # 输了的扣分计算方式
+    score *= (100.0 - all_win_rate) / (100.0 - min(50.0, max(8.0, secret_win_rate)))
 ```
 
 :::
