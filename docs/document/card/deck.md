@@ -4,7 +4,7 @@ order: -1
 author:
   - 奇葩の灵梦
   - 惑星
-pageInfo: [ "Author", "Date" ]
+pageInfo: ["Author", "Date"]
 ---
 
 # 牌堆构成
@@ -15,37 +15,59 @@ pageInfo: [ "Author", "Date" ]
 
 ::: info 注意
 
-- 括号为未加入一扩时，试探和澄清的数量，加入一扩以后需要移除2张**红色**、2张**蓝色**、2张**黑色**试探，以及2张**黑色**澄清。
+- 括号为未加入一扩时，试探和澄清的数量，加入一扩以后需要移除 2 张**红色**、2 张**蓝色**、2 张**黑色**试探，以及 2 张**黑色**澄清。
   :::
 
 ## 分类
 
 ::: info 注意
+
 - 根据[官方公告](../guide/announcement.md#引入一扩后建议对卡牌数量进行调整)，引入一扩后建议对卡牌数量进行调整，以下统计数据全部基于调整后的卡牌数量。
-:::
+  :::
 
 ### 按照牌类型分类
 
-::: chart
+::: echarts
 
 ```js
-const config = {
-  type: "bar",
-  data: {
-    labels: ["试探", "平衡", "威逼", "利诱", "澄清", "破译", "调包", "截获", "误导", "风云变幻", "密令", "调虎离山", "欲擒故纵"],
-    datasets: [{
-      label: "数量",
-      data: [12, 8, 14, 8, 6, 10, 12, 12, 10, 2, 6, 4, 6],
-      hoverOffset: 4
-    }]
-  },
-  options: {
-    plugins: {
-      legend: {
-        display: false,
+const option = {
+  xAxis: [
+    {
+      type: "category",
+      axisLabel: {
+        interval: 0,
       },
+      data: [
+        "试探",
+        "平衡",
+        "威逼",
+        "利诱",
+        "澄清",
+        "破译",
+        "调包",
+        "截获",
+        "误导",
+        "风云变幻",
+        "密令",
+        "调虎离山",
+        "欲擒故纵",
+      ],
     },
-  }
+  ],
+  yAxis: {},
+  series: [
+    {
+      type: "bar",
+      data: [12, 8, 14, 8, 6, 10, 12, 12, 10, 2, 6, 4, 6],
+      label: {
+        show: true,
+      },
+      backgroundStyle: {
+        color: "rgba(194,35,117,1)",
+      },
+      colorBy: "data",
+    },
+  ],
 };
 ```
 
@@ -53,56 +75,79 @@ const config = {
 
 ### 按照方向分类
 
-::: chart
+::: echarts
 
 ```js
-const config = {
-  type: "doughnut",
-  data: {
-    labels: ["←", "↑", "→"],
-    datasets: [{
-      label: "数量",
-      data: [38, 34, 38],
-      hoverOffset: 4,
-      rotation: 180,
-    }]
-  },
-  options: {
-    plugins: {
-      legend: {
-        position: "right",
+const option = {
+  series: [
+    {
+      type: "pie",
+      data: [
+        {
+          value: 38,
+          name: "←",
+        },
+        {
+          value: 38,
+          name: "→",
+        },
+        {
+          value: 34,
+          name: "↑",
+        },
+      ],
+      label: {
+        show: true,
+        formatter: "【{b}】{c}\n{d}%",
       },
+      radius: ["40%", "60%"],
     },
-  }
+  ],
 };
 ```
 
 :::
+
 ### 按照颜色分类
 
-::: chart
+::: echarts
 
 ```js
-const config = {
-  type: "doughnut",
-  data: {
-    labels: ["红", "红黑", "黑", "蓝黑", "蓝", "红蓝"],
-    datasets: [{
-      label: "数量",
-      data: [25, 12, 32, 12, 25, 4],
-      hoverOffset: 4,
-      backgroundColor: ["#e10602", "#700301", "#000000", "#141970", "#2932e1", "#e132e1"],
-      rotation: 2 / 110 * 360,
-    }]
-  },
-  options: {
-    cutout: 1,
-    plugins: {
-      legend: {
-        position: "right",
+const option = {
+  series: [
+    {
+      type: "pie",
+      data: [
+        {
+          value: 25,
+          name: "纯红",
+        },
+        {
+          value: 25,
+          name: "纯蓝",
+        },
+        {
+          value: 32,
+          name: "纯黑",
+        },
+        { value: 12, name: "蓝黑" },
+        {
+          value: 12,
+          name: "红黑",
+        },
+        {
+          value: 4,
+          name: "红蓝",
+        },
+      ],
+      label: {
+        show: true,
+        formatter: "{b}:{c}\n{d}%",
       },
+      radius: ["40%", "60%"],
+      color:['rgb(255,0,0)','rgb(0,0,255)','rgb(0,0,0)','rgb(25,25,112)','rgb(139,0,0)','rgb(153,50,204)']
     },
-  }
+  ],
 };
 ```
 
@@ -110,26 +155,30 @@ const config = {
 
 ### 按照锁定分类
 
-::: chart
+::: echarts
 
 ```js
-const config = {
-  type: "doughnut",
-  data: {
-    labels: ["锁定", "无锁"],
-    datasets: [{
-      label: "数量",
-      data: [41, 69],
-      hoverOffset: 4,
-    }]
-  },
-  options: {
-    plugins: {
-      legend: {
-        position: "right",
+const option = {
+  series: [
+    {
+      type: "pie",
+      data: [
+        {
+          value: 41,
+          name: "锁定",
+        },
+        {
+          value: 69,
+          name: "无锁",
+        },
+      ],
+      label:{
+        show:true,
+        formatter:"{b}:{c}\n{d}%"
       },
+      radius: ["40%", "60%"],
     },
-  }
+  ],
 };
 ```
 
@@ -138,9 +187,10 @@ const config = {
 ## 详细牌堆构成
 
 ::: info 注意
+
 - 有一张[密令](../welcome/welcome.md#卡牌效果)的颜色在某些版本是错误的，具体见[官方公告](../guide/announcement.md#关于-密令-的勘误)，本表格中是修正后的数据。
 - 根据[官方公告](../guide/announcement.md#引入一扩后建议对卡牌数量进行调整)，引入一扩后建议对卡牌数量进行调整，你可以点击下方滑块切换显示。
-:::
+  :::
 
 <el-switch
   inactive-text="显示数量调整后卡牌"
