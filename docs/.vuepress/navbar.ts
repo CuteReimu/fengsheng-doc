@@ -13,6 +13,12 @@ export default navbar([
     activeMatch: '^/document/',
   },
   {
+    text: '开发',
+    icon: 'code',
+    link: '/develop/server/kotlin_intro.md',
+    activeMatch: '^/develop/',
+  },
+  {
     text: '赛季',
     icon: 'trophy',
     link: '/toplist',

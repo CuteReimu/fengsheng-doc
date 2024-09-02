@@ -24,11 +24,12 @@ export default hopeTheme({
   plugins: {
     // 代码块
     shiki: {
-      langs: ["kotlin", "python"],
+      langs: ["kotlin", "python", "java"],
       themes: {
         light: "one-light",
         dark: "one-dark-pro",
       },
+      notationErrorLevel: true,
     },
     mdEnhance: {
       // 开启标记
@@ -133,6 +134,8 @@ export default hopeTheme({
     linksCheck: {
       build: "error",
     },
+    sitemap: false,
+    seo: false,
   },
 
   footer:
