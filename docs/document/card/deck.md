@@ -40,14 +40,19 @@ const config = {
     },
     scales: {
       x: {
+        border: {
+          color: '#e5e5e5',
+        },
         grid: {
           display: false,
-          drawTicks: false,
         },
       },
       y: {
         border: {
           display: false
+        },
+        grid: {
+          color: '#e5e5e5',
         }
       },
     }
