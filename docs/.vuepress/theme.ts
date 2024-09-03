@@ -45,7 +45,7 @@ export default hopeTheme({
       // 剧透
       spoiler: true,
       // 使用chart.js
-      echarts: true,
+      chart: true,
       // 使用思维导图
       markmap: true,
       // 样式化

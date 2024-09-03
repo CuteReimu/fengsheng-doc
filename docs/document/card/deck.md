@@ -17,50 +17,28 @@ author:
 
 ![](/images/deck.png)
 
-
 ### 按照牌类型分类
 
-::: echarts
+::: chart
 
 ```js
-const option = {
-  xAxis: [
-    {
-      type: "category",
-      axisLabel: {
-        interval: 0,
-      },
-      data: [
-        "试探",
-        "平衡",
-        "威逼",
-        "利诱",
-        "澄清",
-        "破译",
-        "调包",
-        "截获",
-        "误导",
-        "风云变幻",
-        "密令",
-        "调虎离山",
-        "欲擒故纵",
-      ],
-    },
-  ],
-  yAxis: {},
-  series: [
-    {
-      type: "bar",
+const config = {
+  type: "bar",
+  data: {
+    labels: ["试探", "平衡", "威逼", "利诱", "澄清", "破译", "调包", "截获", "误导", "风云变幻", "密令", "调虎离山", "欲擒故纵"],
+    datasets: [{
+      label: "数量",
       data: [12, 8, 14, 8, 6, 10, 12, 12, 10, 2, 6, 4, 6],
-      label: {
-        show: true,
+      hoverOffset: 4
+    }]
+  },
+  options: {
+    plugins: {
+      legend: {
+        display: false,
       },
-      backgroundStyle: {
-        color: "rgba(194,35,117,1)",
-      },
-      colorBy: "data",
     },
-  ],
+  }
 };
 ```
 
@@ -68,79 +46,56 @@ const option = {
 
 ### 按照方向分类
 
-::: echarts
+::: chart
 
 ```js
-const option = {
-  series: [
-    {
-      type: "pie",
-      data: [
-        {
-          value: 38,
-          name: "←",
-        },
-        {
-          value: 38,
-          name: "→",
-        },
-        {
-          value: 34,
-          name: "↑",
-        },
-      ],
-      label: {
-        show: true,
-        formatter: "【{b}】{c}\n{d}%",
+const config = {
+  type: "doughnut",
+  data: {
+    labels: ["←", "↑", "→"],
+    datasets: [{
+      label: "数量",
+      data: [38, 34, 38],
+      hoverOffset: 4,
+      rotation: 180,
+    }]
+  },
+  options: {
+    plugins: {
+      legend: {
+        position: "right",
       },
-      radius: ["40%", "60%"],
     },
-  ],
+  }
 };
 ```
 
 :::
-
 ### 按照颜色分类
 
-::: echarts
+::: chart
 
 ```js
-const option = {
-  series: [
-    {
-      type: "pie",
-      data: [
-        {
-          value: 25,
-          name: "纯红",
-        },
-        {
-          value: 25,
-          name: "纯蓝",
-        },
-        {
-          value: 32,
-          name: "纯黑",
-        },
-        { value: 12, name: "蓝黑" },
-        {
-          value: 12,
-          name: "红黑",
-        },
-        {
-          value: 4,
-          name: "红蓝",
-        },
-      ],
-      label: {
-        show: true,
-        formatter: "{b}:{c}\n{d}%",
+const config = {
+  type: "doughnut",
+  data: {
+    labels: ["红", "红黑", "黑", "蓝黑", "蓝", "红蓝"],
+    datasets: [{
+      label: "数量",
+      data: [25, 12, 32, 12, 25, 4],
+      hoverOffset: 4,
+      backgroundColor: ["#ed6e86", "#c78793", "#a0a0a0", "#7ca0c3", "#57a0e5", "#a287b6"],
+      rotation: 2 / 110 * 360,
+    }]
+  },
+  options: {
+    cutout: 1,
+    plugins: {
+      legend: {
+        position: "right",
       },
-      radius: ["40%", "60%"],
-      color:['rgb(255,0,0)','rgb(0,0,255)','rgb(0,0,0)','rgb(25,25,112)','rgb(139,0,0)','rgb(153,50,204)']
     },
-  ],
+  }
 };
 ```
 
@@ -148,30 +103,26 @@ const option = {
 
 ### 按照锁定分类
 
-::: echarts
+::: chart
 
 ```js
-const option = {
-  series: [
-    {
-      type: "pie",
-      data: [
-        {
-          value: 41,
-          name: "锁定",
-        },
-        {
-          value: 69,
-          name: "无锁",
-        },
-      ],
-      label:{
-        show:true,
-        formatter:"{b}:{c}\n{d}%"
+const config = {
+  type: "doughnut",
+  data: {
+    labels: ["锁定", "无锁"],
+    datasets: [{
+      label: "数量",
+      data: [41, 69],
+      hoverOffset: 4,
+    }]
+  },
+  options: {
+    plugins: {
+      legend: {
+        position: "right",
       },
-      radius: ["40%", "60%"],
     },
-  ],
+  }
 };
 ```
 
