@@ -37,7 +37,7 @@ author: 奇葩の灵梦
 | T3 | [韩梅（SP）（军统特务）](../skills/extend2.md#h-韩梅-sp-军统特务)、[小九（SP）（情报站长）](../skills/extend2.md#x-小九-sp-情报站长)                        |
 
 ::: note 补充说明
-[秦无命（死士）](../skills/extend2.md#q-秦无命-死士)是两个极端，在身份为[镇压者](../welcome/welcome.md#关于身份)、[先行者](../welcome/welcome.md#关于身份)、[清道夫](../welcome/welcome.md#关于身份)时非常强，但是在其他身份时非常弱。
+[秦无命（死士）](../skills/extend2.md#q-秦无命-死士)是两个极端，在身份为[镇压者](../card/secret_task.md)、[先行者](../card/secret_task.md)、[清道夫](../card/secret_task.md)时非常强，但是在其他身份时非常弱。
 :::
 
 <style scoped>
