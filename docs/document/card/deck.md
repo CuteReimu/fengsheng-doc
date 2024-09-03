@@ -38,6 +38,19 @@ const config = {
         display: false,
       },
     },
+    scales: {
+      x: {
+        grid: {
+          display: false,
+          drawTicks: false,
+        },
+      },
+      y: {
+        border: {
+          display: false
+        }
+      },
+    }
   }
 };
 ```
@@ -84,7 +97,7 @@ const config = {
       label: "数量",
       data: [25, 12, 32, 12, 25, 4],
       hoverOffset: 4,
-      backgroundColor: ["#ed6e86", "#c78793", "#a0a0a0", "#7ca0c3", "#57a0e5", "#a287b6"],
+      backgroundColor: ["#ed6e86", "#9e4a5a", "#a0a0a0", "#3a6b99", "#57a0e5", "#9268f7"],
       rotation: 2 / 110 * 360,
     }]
   },
