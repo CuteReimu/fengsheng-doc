@@ -48,6 +48,8 @@ export default hopeTheme({
       chart: true,
       // 使用思维导图
       markmap: true,
+      // 脚注
+      footnote: true,
       // 样式化
       stylize: [
         {
