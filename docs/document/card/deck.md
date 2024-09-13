@@ -3,6 +3,7 @@ icon: book
 author:
   - 奇葩の灵梦
   - 惑星
+pageInfo: [ "Author", "Date" ]
 ---
 
 # 牌堆构成
