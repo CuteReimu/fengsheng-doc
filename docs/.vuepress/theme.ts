@@ -29,17 +29,14 @@ export default hopeTheme({
         light: "one-light",
         dark: "one-dark-pro",
       },
+      lineNumbers: false,
       notationErrorLevel: true,
     },
     mdEnhance: {
       // 开启标记
       mark: true,
-      // 启用提示容器
-      hint: true,
       // 开启属性支持
       attrs: true,
-      // 使用 KaTeX 启用 TeX 支持
-      katex: true,
       // 代码块分组
       codetabs: true,
       // 剧透
@@ -130,6 +127,12 @@ export default hopeTheme({
           },
         },
       ],
+    },
+    markdownHint: {
+      hint: true,
+    },
+    markdownMath: {
+      type: "katex",
     },
     searchPro: {
       indexContent: true,
