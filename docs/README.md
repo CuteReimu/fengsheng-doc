@@ -4,8 +4,8 @@ icon: home
 title: 风声·谍战篇
 heroImage: /images/head.jpg
 actions:
-  - text: 新手入门
-    icon: lightbulb
+  - text: 快速游玩
+    icon: play
     link: /document/welcome/welcome
     type: primary
   - text: 大神风采
