@@ -11,7 +11,7 @@
     "docs:update-package": "npx vp-update"
   },
   "devDependencies": {
-    "@vuepress/bundler-vite": "2.0.0-rc.14",
+    "@vuepress/bundler-vite": "2.0.0-rc.15",
     "@vueuse/shared": "^10.11.0",
     "chart.js": "^4.4.4",
     "dotenv": "^16.4.5",
@@ -19,12 +19,13 @@
     "markmap-lib": "^0.17.0",
     "markmap-toolbar": "^0.17.0",
     "markmap-view": "^0.17.0",
+    "sass-embedded": "^1.79.3",
     "unplugin-element-plus": "^0.8.0",
-    "vue": "^3.4.31",
-    "vuepress": "2.0.0-rc.14",
-    "vuepress-plugin-md-enhance": "^2.0.0-rc.52",
-    "vuepress-plugin-search-pro": "^2.0.0-rc.52",
-    "vuepress-theme-hope": "2.0.0-rc.52"
+    "vue": "^3.5.7",
+    "vuepress": "2.0.0-rc.15",
+    "vuepress-plugin-md-enhance": "^2.0.0-rc.54",
+    "vuepress-plugin-search-pro": "^2.0.0-rc.54",
+    "vuepress-theme-hope": "2.0.0-rc.56"
   },
   "dependencies": {
     "axios": "^1.7.4",
