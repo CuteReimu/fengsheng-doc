@@ -9,7 +9,7 @@ export default navbar([
   {
     text: '文档',
     icon: 'book',
-    link: '/document/',
+    link: '/document/welcome/welcome.md',
     activeMatch: '^/document/',
   },
   {
