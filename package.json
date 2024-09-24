@@ -23,9 +23,9 @@
     "unplugin-element-plus": "^0.8.0",
     "vue": "^3.5.7",
     "vuepress": "2.0.0-rc.15",
-    "vuepress-plugin-md-enhance": "^2.0.0-rc.53",
-    "vuepress-plugin-search-pro": "^2.0.0-rc.53",
-    "vuepress-theme-hope": "2.0.0-rc.53"
+    "vuepress-plugin-md-enhance": "^2.0.0-rc.54",
+    "vuepress-plugin-search-pro": "^2.0.0-rc.54",
+    "vuepress-theme-hope": "2.0.0-rc.56"
   },
   "dependencies": {
     "axios": "^1.7.4",
