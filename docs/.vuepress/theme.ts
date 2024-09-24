@@ -141,7 +141,7 @@ export default hopeTheme({
     // 支持搜索
     searchPro: {
       indexContent: true,
-      filter: (page) => page.path.indexOf("/", 1) !== -1,
+      filter: (page) => page.path.startsWith("/document/"),
     },
     linksCheck: {
       build: "error",
