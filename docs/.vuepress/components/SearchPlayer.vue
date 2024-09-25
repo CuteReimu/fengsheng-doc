@@ -1,7 +1,7 @@
 <template>
   <el-row>
     <div style="display: flex">
-    <el-input v-model="name" placeholder="用户名" clearable></el-input>
+    <el-input v-model="name" placeholder="用户名"></el-input>
     <el-button @click="doRequest" :disabled="!name">查询</el-button></div>
   </el-row>
   <el-row>
@@ -29,7 +29,7 @@ import { ref } from "vue";
 import Axios from "axios";
 import { ElRow, ElText, ElInput, ElButton, ElTable, ElTableColumn } from "element-plus";
 
-const name = ref("南宫先森");
+const name = ref("");
 const result = ref("");
 const winRate = ref([]);
 const history = ref([]);
