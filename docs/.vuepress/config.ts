@@ -14,6 +14,7 @@ dotenv.config()
 export default defineUserConfig({
   alias: {
     "@GameStatus": path.resolve(__dirname, "components/GameStatus.vue"),
+    "@SearchPlayer": path.resolve(__dirname, "components/SearchPlayer.vue"),
   },
   lang: "zh-CN",
 

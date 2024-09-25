@@ -7,24 +7,24 @@ export default navbar([
     link: '/',
   },
   {
-    text: '文档',
+    text: 'FAQ文档',
     icon: 'book',
     link: '/document/welcome/welcome.md',
     activeMatch: '^/document/',
   },
   {
-    text: '开发',
+    text: '开发相关',
     icon: 'code',
     link: '/develop/server/kotlin_intro.md',
     activeMatch: '^/develop/',
   },
   {
-    text: '赛季',
+    text: '过往赛季',
     icon: 'trophy',
     link: '/toplist',
   },
   {
-    text: '观战',
+    text: '游戏状态',
     icon: 'gamepad',
     link: '/game_status',
   },

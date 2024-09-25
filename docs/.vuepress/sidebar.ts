@@ -39,5 +39,29 @@ export default sidebar({
     },
   ],
   '/develop/': 'structure',
+  '/game_status': [
+    {
+      text: "观战",
+      icon: "gamepad",
+      link: "/game_status",
+    },
+    {
+      text: "查询",
+      icon: "magnifying-glass",
+      link: "/search",
+    },
+  ],
+  '/search': [
+    {
+      text: "观战",
+      icon: "gamepad",
+      link: "/game_status.md",
+    },
+    {
+      text: "查询",
+      icon: "magnifying-glass",
+      link: "/search.md",
+    },
+  ],
   '/': false,
 });

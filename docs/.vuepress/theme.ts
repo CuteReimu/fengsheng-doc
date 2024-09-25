@@ -17,6 +17,12 @@ export default hopeTheme({
     end: ["Links", "Language", "Repo", "Outlook", "Search"],
   },
 
+  encrypt: {
+    config: {
+      "/search": ["fs"],
+    },
+  },
+
   navbar,
 
   sidebar,

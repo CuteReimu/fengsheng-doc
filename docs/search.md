@@ -1,6 +1,6 @@
 ---
-title: 观战
-icon: gamepad
+title: 查询
+icon: magnifying-glass
 lastUpdated: false
 contributors: false
 pageInfo: false
@@ -9,8 +9,8 @@ next: false
 prev: false
 ---
 
-<GameStatus></GameStatus>
+<SearchPlayer></SearchPlayer>
 
 <script setup>
-import GameStatus from "@GameStatus";
+import SearchPlayer from "@SearchPlayer";
 </script>
