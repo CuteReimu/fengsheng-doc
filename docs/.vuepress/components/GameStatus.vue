@@ -20,7 +20,16 @@
       }}）</el-text
     >
     <el-table :data="game.players" border>
-      <el-table-column prop="name" label="玩家" :min-width="140" />
+      <el-table-column label="玩家" :min-width="140">
+        <template #default="scope">
+          <el-text v-if="game.players[scope.$index].name !== '机器人'">
+            <router-link :to="'search.md?name='+game.players[scope.$index].name" >
+              {{game.players[scope.$index].name}}
+            </router-link>
+          </el-text>
+          <el-text v-else>机器人</el-text>
+        </template>
+      </el-table-column>
       <el-table-column prop="role_name" label="角色" :min-width="90" />
       <el-table-column label="状态">
         <template #default="scope">

@@ -2,7 +2,7 @@
   <el-row>
     <div style="display: flex">
     <el-input v-model="name" placeholder="用户名"></el-input>
-    <el-button @click="doRequest" :disabled="!name">查询</el-button></div>
+    <el-button @click="onClickRequest" :disabled="!name">查询</el-button></div>
   </el-row>
   <el-row>
     <el-text size="large">{{ result }}</el-text>
@@ -25,15 +25,23 @@
 
 <script setup>
 import "element-plus/theme-chalk/dark/css-vars.css";
-import { ref } from "vue";
+import {onMounted, ref} from "vue";
 import Axios from "axios";
 import { ElRow, ElText, ElInput, ElButton, ElTable, ElTableColumn } from "element-plus";
+import { useRoute, useRouter } from "vue-router"
+
+const route = useRoute();
+const router = useRouter();
 
 const name = ref("");
 const result = ref("");
 const winRate = ref([]);
 const history = ref([]);
 
+const onClickRequest = () => {
+  router.push({ path: route.path, query: { name: name.value } });
+  doRequest();
+};
 const doRequest = () => {
   const url = import.meta.env.VITE_REQUEST_URL.replace("getallgames", "getscore?name=" + name.value)
   Axios.get(url, {})
@@ -76,6 +84,11 @@ const doRequest = () => {
       console.error(error);
     });
 };
+
+onMounted(() => {
+  name.value = route.query.name || "";
+  if (name.value) doRequest();
+})
 </script>
 
 <style scoped>
