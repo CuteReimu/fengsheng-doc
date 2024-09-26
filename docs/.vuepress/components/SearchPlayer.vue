@@ -7,6 +7,9 @@
   <el-row>
     <el-text size="large">{{ result }}</el-text>
   </el-row>
+  <el-row v-if="result.indexOf('剩余精力：0') !== -1">
+    <el-text size="small">如何获得精力？<router-link to="/document/welcome/score_and_season.md#精力系统">跳转到精力系统</router-link></el-text>
+  </el-row>
   <el-table border :data="winRate" v-if="winRate.length > 0">
     <el-table-column prop="role" label="身份"></el-table-column>
     <el-table-column prop="win_rate" label="胜率"></el-table-column>
