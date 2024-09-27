@@ -1,7 +1,7 @@
 <template>
   <el-row>
     <div style="display: flex">
-    <el-input v-model="name" placeholder="用户名"></el-input>
+    <el-autocomplete :fetch-suggestions="getHistory()" v-model="name" placeholder="用户名" :debounce="0"></el-autocomplete>
     <el-button @click="onClickRequest" :disabled="!name">查询</el-button></div>
   </el-row>
   <el-row>
@@ -30,7 +30,7 @@
 import "element-plus/theme-chalk/dark/css-vars.css";
 import {onMounted, ref} from "vue";
 import Axios from "axios";
-import { ElRow, ElText, ElInput, ElButton, ElTable, ElTableColumn } from "element-plus";
+import { ElRow, ElText, ElAutocomplete, ElButton, ElTable, ElTableColumn } from "element-plus";
 import { useRoute, useRouter } from "vue-router"
 
 const route = useRoute();
@@ -45,6 +45,7 @@ const onClickRequest = () => {
   router.push({ path: route.path, query: { name: name.value } });
   doRequest();
 };
+
 const doRequest = () => {
   const url = import.meta.env.VITE_REQUEST_URL.replace("getallgames", "getscore?name=" + name.value)
   Axios.get(url, {})
@@ -80,6 +81,15 @@ const doRequest = () => {
         } else {
           result.value += line;
         }
+        if (line.indexOf("总场次") !== -1) {
+          const searchHistory = getHistory().filter((v) => v.value !== name.value);
+          searchHistory.unshift({value: name.value});
+          if (searchHistory.length > 5) {
+            searchHistory.pop();
+          }
+          console.log(searchHistory);
+          localStorage.setItem("search_player_history", JSON.stringify(searchHistory));
+        }
       });
       history.value.reverse();
     })
@@ -88,10 +98,19 @@ const doRequest = () => {
     });
 };
 
+const getHistory = () => {
+  const history = localStorage.getItem("search_player_history");
+  if (history) {
+    return JSON.parse(history);
+  } else {
+    return [];
+  }
+};
+
 onMounted(() => {
   name.value = route.query.name || "";
   if (name.value) doRequest();
-})
+});
 </script>
 
 <style scoped>
