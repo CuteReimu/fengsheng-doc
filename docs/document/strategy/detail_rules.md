@@ -40,7 +40,6 @@ author: 奇葩の灵梦
 
 ::: tip 举例
 - [凌素秋](../skills/extend2.html#l-凌素秋-棋手)对[简先生](../skills/extend1.html#j-简先生-话剧演员)使用[试探](../card/card.html)，触发了[简先生](../skills/extend1.html#j-简先生-话剧演员)被[试探](../card/card.html)结算后的事件，[简先生](../skills/extend1.html#j-简先生-话剧演员)发动**从容应对**抽取了[凌素秋](../skills/extend2.html#l-凌素秋-棋手)一张手牌，此时对于前述事件没有其它触发类技能的结算。但由于产生了新的事件————[简先生](../skills/extend1.html#j-简先生-话剧演员)获取了[凌素秋](../skills/extend2.html#l-凌素秋-棋手)的手牌，因此[凌素秋](../skills/extend2.html#l-凌素秋-棋手)可以对[简先生](../skills/extend1.html#j-简先生-话剧演员)发动**寸步不让**。
-
 - [程小蝶（SP）](../skills/extend1.html#c-程小蝶-sp-梨园义士)发动**共焚**，将情报置入多名角色的情报区，全部结算后，即将回到**出牌阶段空闲时点**。此时先检查事件，有置入情报的事件，因此由[钱敏](../skills/extend1.html#q-钱敏-调查科员)发动**先发制人**，然后再进行收集情报类的胜利条件和濒死与死亡的结算。
 :::
 
