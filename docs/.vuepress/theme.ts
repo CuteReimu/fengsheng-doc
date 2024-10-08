@@ -28,6 +28,7 @@ export default hopeTheme({
   sidebar,
 
   plugins: {
+    git: process.env.NODE_ENV === "production",
     // 代码块
     shiki: {
       langs: ["kotlin", "python", "java"],
