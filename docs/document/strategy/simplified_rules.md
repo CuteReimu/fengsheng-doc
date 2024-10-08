@@ -1,6 +1,6 @@
 ---
 icon: book
-order: 3
+order: 4
 author: 惑星
 shortTitle: 规则速览
 ---
