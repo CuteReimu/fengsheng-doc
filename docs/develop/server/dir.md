@@ -37,7 +37,7 @@ pageInfo: ["Author", "Date", "Word"]
       - <HopeIcon icon="file" /> **role.proto** - 角色技能协议
     - <HopeIcon icon="folder" /> **resources** - 资源文件
   - <HopeIcon icon="folder" /> **test** - 单元测试代码
-  - <HopeIcon icon="file" /> **其它文件** - 工程相关文件
+- <HopeIcon icon="file" /> **其它文件** - 工程相关文件
 
 ---
 
