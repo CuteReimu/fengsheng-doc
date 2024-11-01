@@ -30,7 +30,8 @@ const config = {
     datasets: [{
       label: "数量",
       data: [12, 8, 14, 8, 6, 10, 12, 12, 10, 2, 6, 4, 6],
-      hoverOffset: 4
+      hoverOffset: 4,
+      backgroundColor: ["#9ad0f5"],
     }]
   },
   options: {
@@ -76,6 +77,7 @@ const config = {
       label: "数量",
       data: [38, 34, 38],
       hoverOffset: 4,
+      backgroundColor: ["#ff4069", "#36a2eb", "#ff9f40"],
       rotation: 180,
     }]
   },
@@ -133,6 +135,7 @@ const config = {
       label: "数量",
       data: [41, 69],
       hoverOffset: 4,
+      backgroundColor: ["#ff4069", "#36a2eb"],
     }]
   },
   options: {
