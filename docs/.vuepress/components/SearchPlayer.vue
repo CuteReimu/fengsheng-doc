@@ -1,7 +1,7 @@
 <template>
   <el-row>
     <div style="display: flex">
-    <el-autocomplete :fetch-suggestions="getHistory()" v-model="name" placeholder="用户名" :debounce="0" @select="onClickRequest" @focus="getData"></el-autocomplete>
+    <el-autocomplete :fetch-suggestions="getHistory()" v-model="name" placeholder="用户名" :debounce="0" @select="onClickRequest"></el-autocomplete>
     <el-button @click="onClickRequest" :disabled="!name">查询</el-button></div>
   </el-row>
   <el-row>
