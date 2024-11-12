@@ -54,6 +54,17 @@ export default hopeTheme({
       // 样式化
       stylize: [
         {
+          matcher: /^./,
+          replacer: ({ tag, attrs, content }) => {
+            if (tag === "s")
+              return {
+                tag: tag,
+                attrs: { ...attrs, style: "color: #999" },
+                content: content,
+              };
+          },
+        },
+        {
           matcher: /^红色?$/,
           replacer: ({ tag, attrs, content }) => {
             if (tag === "strong")
