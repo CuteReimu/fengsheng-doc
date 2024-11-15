@@ -40,7 +40,7 @@ author: 两仪生四象
 - [玛利亚](../skills/extend1.md#m-玛利亚-修女)：含自己阵营的双色**黑**情报、纯**黑**情报
 - [秦圆圆](../skills/extend1.md#q-秦圆圆-风尘侠女)：男性角色、[平衡](../card/card.md)
 - [盛老板](../skills/extend1.md#s-盛老板-富商)：[威逼](../card/card.md)、[风云变幻](../card/card.md)、[截获](../card/card.md)
-- [小九](../skills/extend1.md#x-小九-追梦少年)：含自己阵营的双色黑情报
+- [小九](../skills/extend1.md#x-小九-追梦少年)：含自己阵营的双色**黑**情报
 
 ## 老洋房（二扩）
 
