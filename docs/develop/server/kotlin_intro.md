@@ -79,7 +79,7 @@ val result =
     }
 ```
 
-在上文中，`if`、`else if`和`else`分支的最后一行都是`int`类型的值，所以可以视为一个简单的函数，当n值不同时返回不同的值。最后将这个返回值赋值给`result`变量。
+在上文中，`if`、`else if`和`else`分支的最后一行都是`Int`类型的值，所以可以视为一个简单的函数，当n值不同时返回不同的值。最后将这个返回值赋值给`result`变量。
 
 Kotlin既可以当作普通的面向对象编程语言使用，也可以当作函数式编程语言使用。还是拿`if`语句举例，我们可以用面向对象编程的方式来使用`if`：
 
@@ -138,7 +138,7 @@ class HelloWorld {
 }
 
 // 在类外面也可以声明类的方法
-fun HellowWold2.add4(a: Int, b: Int) = a + b
+fun HellowWorld.add4(a: Int, b: Int) = a + b
 
 // 继承
 class HelloWorld2: HelloWorld {
