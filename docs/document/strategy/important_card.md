@@ -6,6 +6,10 @@ author: 两仪生四象
 
 # 各角色关键卡牌
 
+::: danger 注意
+以下内容中有很多错误，请注意仔细甄别。
+:::
+
 ## 基础角色
 
 - [鄭文先](../skills/base.md#z-鄭文先-日伪报社主编)：[调包](../card/card.md)、[截获](../card/card.md)、[破译](../card/card.md)
