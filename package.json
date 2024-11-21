@@ -12,16 +12,16 @@
   },
   "devDependencies": {
     "@vuepress/bundler-vite": "^2.0.0-rc.18",
-    "@vueuse/shared": "^11.1.0",
+    "@vueuse/shared": "^11.2.0",
     "chart.js": "^4.4.6",
     "dotenv": "^16.4.5",
-    "katex": ">=0.16.10",
+    "katex": "^0.16.11",
     "markmap-lib": "^0.17.2",
     "markmap-toolbar": "^0.17.2",
     "markmap-view": "^0.17.2",
-    "sass-embedded": "^1.80.4",
+    "sass-embedded": "^1.81.0",
     "unplugin-element-plus": "^0.8.0",
-    "vue": "^3.5.12",
+    "vue": "^3.5.13",
     "vuepress": "^2.0.0-rc.18",
     "vuepress-plugin-md-enhance": "^2.0.0-rc.59",
     "vuepress-plugin-search-pro": "^2.0.0-rc.59",
@@ -29,6 +29,6 @@
   },
   "dependencies": {
     "axios": "^1.7.7",
-    "element-plus": "^2.8.6"
+    "element-plus": "^2.8.8"
   }
 }
