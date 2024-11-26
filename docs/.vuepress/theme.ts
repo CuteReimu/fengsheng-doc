@@ -155,11 +155,6 @@ export default hopeTheme({
     markdownTab: {
       codeTabs: true,
     },
-    // 支持搜索
-    searchPro: {
-      indexContent: true,
-      filter: (page) => page.path.startsWith("/document/"),
-    },
     linksCheck: {
       build: "error",
     },
