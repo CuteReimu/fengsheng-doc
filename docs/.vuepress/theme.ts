@@ -156,9 +156,9 @@ export default hopeTheme({
       codeTabs: true,
     },
     // 支持搜索
-    searchPro: {
-      filter: (page) => page.path.startsWith("/document/"),
-    },
+    // searchPro: {
+    //   filter: (page) => page.path.startsWith("/document/"),
+    // },
     linksCheck: {
       build: "error",
     },
