@@ -5,6 +5,7 @@ import dotenv from 'dotenv';
 import * as path2 from "node:path";
 import ElementPlus from 'unplugin-element-plus/vite';
 import { getDirname, path } from "vuepress/utils";
+import { slimsearchPlugin } from '@vuepress/plugin-slimsearch'
 
 const __dirname = getDirname(import.meta.url);
 
@@ -31,4 +32,11 @@ export default defineUserConfig({
       ],
     }
   }),
+  plugins: [
+    slimsearchPlugin({
+      indexContent: true,
+      autoSuggestions: true,
+      filter: (page) => page.path.startsWith("/document/"),
+    }),
+  ],
 });
