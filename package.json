@@ -15,7 +15,7 @@
     "@vuepress/plugin-slimsearch": "^2.0.0-rc.61",
     "@vueuse/shared": "^12.0.0",
     "chart.js": "^4.4.7",
-    "dotenv": "^16.4.5",
+    "dotenv": "^16.4.7",
     "katex": "^0.16.11",
     "markmap-lib": "^0.17.2",
     "markmap-toolbar": "^0.17.2",
