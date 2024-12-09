@@ -27,9 +27,10 @@ export default hopeTheme({
 
   sidebar,
 
-  plugins: {
+  markdown: {
     // 代码块
-    shiki: {
+    highlighter: {
+      type: "shiki",
       langs: ["kotlin", "python", "java"],
       themes: {
         light: "one-light",
@@ -38,126 +39,123 @@ export default hopeTheme({
       lineNumbers: false,
       notationErrorLevel: true,
     },
-    mdEnhance: {
-      // 开启标记
-      mark: true,
-      // 开启属性支持
-      attrs: true,
-      // 剧透
-      spoiler: true,
-      // 使用chart.js
-      chart: true,
-      // 使用思维导图
-      markmap: true,
-      // 脚注
-      footnote: true,
-      // 样式化
-      stylize: [
-        {
-          matcher: /^红色?$/,
-          replacer: ({ tag, attrs, content }) => {
-            if (tag === "strong")
-              return {
-                tag: tag,
-                attrs: { ...attrs, class: "red" },
-                content: content,
-              };
-          },
+    // 开启标记
+    mark: true,
+    // 开启属性支持
+    attrs: true,
+    // 剧透
+    spoiler: true,
+    // 使用chart.js
+    chartjs: true,
+    // 使用思维导图
+    markmap: true,
+    // 脚注
+    footnote: true,
+    // 样式化
+    stylize: [
+      {
+        matcher: /^红色?$/,
+        replacer: ({ tag, attrs, content }) => {
+          if (tag === "strong")
+            return {
+              tag: tag,
+              attrs: { ...attrs, class: "red" },
+              content: content,
+            };
         },
-        {
-          matcher: /^蓝色?$/,
-          replacer: ({ tag, attrs, content }) => {
-            if (tag === "strong")
-              return {
-                tag: tag,
-                attrs: { ...attrs, class: "blue" },
-                content: content,
-              };
-          },
+      },
+      {
+        matcher: /^蓝色?$/,
+        replacer: ({ tag, attrs, content }) => {
+          if (tag === "strong")
+            return {
+              tag: tag,
+              attrs: { ...attrs, class: "blue" },
+              content: content,
+            };
         },
-        {
-          matcher: /^绿色?$/,
-          replacer: ({ tag, attrs, content }) => {
-            if (tag === "strong")
-              return {
-                tag: tag,
-                attrs: { ...attrs, class: "green" },
-                content: content,
-              };
-          },
+      },
+      {
+        matcher: /^绿色?$/,
+        replacer: ({ tag, attrs, content }) => {
+          if (tag === "strong")
+            return {
+              tag: tag,
+              attrs: { ...attrs, class: "green" },
+              content: content,
+            };
         },
-        {
-          matcher: /^黑色?$/,
-          replacer: ({ tag, attrs, content }) => {
-            if (tag === "strong")
-              return {
-                tag: tag,
-                attrs: { ...attrs, class: "black" },
-                content: content,
-              };
-          },
+      },
+      {
+        matcher: /^黑色?$/,
+        replacer: ({ tag, attrs, content }) => {
+          if (tag === "strong")
+            return {
+              tag: tag,
+              attrs: { ...attrs, class: "black" },
+              content: content,
+            };
         },
-        {
-          matcher: "潜伏战线",
-          replacer: ({ tag, attrs, content }) => {
-            if (tag === "strong")
-              return {
-                tag: tag,
-                attrs: { ...attrs, class: "red" },
-                content: content,
-              };
-          },
+      },
+      {
+        matcher: "潜伏战线",
+        replacer: ({ tag, attrs, content }) => {
+          if (tag === "strong")
+            return {
+              tag: tag,
+              attrs: { ...attrs, class: "red" },
+              content: content,
+            };
         },
-        {
-          matcher: "特工机关",
-          replacer: ({ tag, attrs, content }) => {
-            if (tag === "strong")
-              return {
-                tag: tag,
-                attrs: { ...attrs, class: "blue" },
-                content: content,
-              };
-          },
+      },
+      {
+        matcher: "特工机关",
+        replacer: ({ tag, attrs, content }) => {
+          if (tag === "strong")
+            return {
+              tag: tag,
+              attrs: { ...attrs, class: "blue" },
+              content: content,
+            };
         },
-        {
-          matcher: "神秘人",
-          replacer: ({ tag, attrs, content }) => {
-            if (tag === "strong")
-              return {
-                tag: tag,
-                attrs: { ...attrs, class: "green" },
-                content: content,
-              };
-          },
+      },
+      {
+        matcher: "神秘人",
+        replacer: ({ tag, attrs, content }) => {
+          if (tag === "strong")
+            return {
+              tag: tag,
+              attrs: { ...attrs, class: "green" },
+              content: content,
+            };
         },
-        {
-          matcher: /^./,
-          replacer: ({ tag, attrs, content }) => {
-            if (tag === "s")
-              return {
-                tag: tag,
-                attrs: { ...attrs, style: "color: #999" },
-                content: content,
-              };
-          },
+      },
+      {
+        matcher: /^./,
+        replacer: ({ tag, attrs, content }) => {
+          if (tag === "s")
+            return {
+              tag: tag,
+              attrs: { ...attrs, style: "color: #999" },
+              content: content,
+            };
         },
-      ],
-    },
+      },
+    ],
     // 支持容器
-    markdownHint: {
-      hint: true,
-    },
+    hint: true,
     // 支持数学公式
-    markdownMath: {
+    math: {
       type: "katex",
     },
     // 支持代码块分组
-    markdownTab: {
-      codeTabs: true,
-    },
+    codeTabs: true,
     linksCheck: {
       build: "error",
     },
+  },
+
+  plugins: {
     sitemap: false,
     seo: false,
     redirect: false,

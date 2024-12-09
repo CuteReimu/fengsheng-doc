@@ -20,7 +20,7 @@ pageInfo: [ "Author", "Date" ]
 
 ### 按照牌类型分类
 
-::: chart
+::: chartjs
 
 ```js
 const config = {
@@ -66,7 +66,7 @@ const config = {
 
 ### 按照方向分类
 
-::: chart
+::: chartjs
 
 ```js
 const config = {
@@ -94,7 +94,7 @@ const config = {
 :::
 ### 按照颜色分类
 
-::: chart
+::: chartjs
 
 ```js
 const config = {
@@ -124,7 +124,7 @@ const config = {
 
 ### 按照锁定分类
 
-::: chart
+::: chartjs
 
 ```js
 const config = {
