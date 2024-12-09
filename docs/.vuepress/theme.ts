@@ -51,6 +51,8 @@ export default hopeTheme({
     markmap: true,
     // 脚注
     footnote: true,
+    // 任务列表
+    tasklist: true,
     // 样式化
     stylize: [
       {
