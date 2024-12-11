@@ -158,6 +158,11 @@ export default hopeTheme({
   },
 
   plugins: {
+    slimsearch: {
+      indexContent: true,
+      suggestion: true,
+      filter: (page) => page.path.startsWith("/document/"),
+    },
     sitemap: false,
     seo: false,
     redirect: false,

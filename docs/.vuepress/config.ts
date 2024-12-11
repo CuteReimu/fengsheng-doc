@@ -33,11 +33,4 @@ export default defineUserConfig({
       ],
     }
   }),
-  plugins: [
-    slimsearchPlugin({
-      indexContent: true,
-      suggestion: true,
-      filter: (page) => page.path.startsWith("/document/"),
-    }),
-  ],
 });
