@@ -17,7 +17,7 @@ pageInfo: ["Author", "Date", "Word"]
 - [x] 阿芙罗拉
 - [x] 李醒
 - [x] 小九
-- [ ] 商玉
+- [x] 商玉
 - [x] 邵秀
 - [x] 肥原龙川
 - [x] 李宁玉
@@ -50,7 +50,7 @@ pageInfo: ["Author", "Date", "Word"]
 - [x] SP程小蝶
 - [x] 老虎
 - [x] 钱敏
-- [ ] SP连鸢
+- [x] SP连鸢
 - [x] 盛老板
 - [x] 简先生
 - [x] 高桥智子
