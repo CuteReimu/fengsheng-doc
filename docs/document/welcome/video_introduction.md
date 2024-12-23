@@ -2,7 +2,7 @@
 order: -3
 icon: video
 author: 惑星
-pageInfo: [ "Author", "Date" ]
+pageInfo: [ "Author", "PageView", "Date" ]
 ---
 
 # 视频攻略

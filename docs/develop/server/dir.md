@@ -2,7 +2,7 @@
 icon: code
 order: 3
 author: 奇葩の灵梦
-pageInfo: ["Author", "Date", "Word"]
+pageInfo: ["Author", "PageView", "Date", "Word"]
 ---
 
 # 目录结构

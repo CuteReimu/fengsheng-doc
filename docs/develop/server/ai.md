@@ -2,7 +2,7 @@
 icon: lightbulb
 order: -1
 author: 奇葩の灵梦
-pageInfo: ["Author", "Date", "Word"]
+pageInfo: ["Author", "PageView", "Date", "Word"]
 ---
 
 # 角色AI
