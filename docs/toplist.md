@@ -1,7 +1,7 @@
 ---
 icon: trophy
 author: "奇葩の灵梦"
-pageInfo: [ "Author", "PageView" ]
+pageInfo: [ "Author", "PageView", "ReadingTime" ]
 editLink: false
 ---
 

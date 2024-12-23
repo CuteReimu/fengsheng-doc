@@ -2,7 +2,7 @@
 title: 查询
 icon: magnifying-glass
 author: "奇葩の灵梦"
-pageInfo: [ "Author", "PageView" ]
+pageInfo: [ "Author", "PageView", "Date" ]
 comment: false
 editLink: false
 next: false
