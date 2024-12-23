@@ -4,7 +4,11 @@ icon: address-book
 index: false
 dir:
   order: 2
-author: 奇葩の灵梦
+author:
+  - 二宽
+  - 奇葩の灵梦
+  - Death
+  - 惑星
 ---
 
 <Catalog></Catalog>

@@ -1,9 +1,9 @@
 ---
 title: 观战
 icon: gamepad
-lastUpdated: false
-contributors: false
-pageInfo: false
+author: "奇葩の灵梦"
+pageInfo: [ "Author", "PageView" ]
+comment: false
 editLink: false
 next: false
 prev: false

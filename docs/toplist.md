@@ -1,8 +1,7 @@
 ---
 icon: trophy
-lastUpdated: false
-contributors: false
-pageInfo: false
+author: "奇葩の灵梦"
+pageInfo: [ "Author", "PageView" ]
 editLink: false
 ---
 

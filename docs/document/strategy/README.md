@@ -6,7 +6,7 @@ dir:
   order: 4
 lastUpdated: false
 contributors: false
-pageInfo: false
+pageInfo: ["PageView", "Date"]
 ---
 
 <Catalog></Catalog>
