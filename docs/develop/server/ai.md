@@ -67,7 +67,7 @@ pageInfo: ["Author", "PageView", "Date", "Word"]
 - [x] 成年韩梅
 - [x] 哑炮
 - [x] 陈大耳
-- [ ] 边云疆
+- [x] 边云疆
 - [x] 金自来
 - [x] 间谍阿芙罗拉
 - [x] 小铃铛
