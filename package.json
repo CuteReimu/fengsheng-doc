@@ -20,7 +20,7 @@
     "katex": "^0.16.15",
     "markmap-lib": "^0.17.2",
     "markmap-toolbar": "^0.17.2",
-    "markmap-view": "^0.17.2",
+    "markmap-view": "^0.18.5",
     "sass-embedded": "^1.83.0",
     "unplugin-element-plus": "^0.8.0",
     "vue": "^3.5.13",
