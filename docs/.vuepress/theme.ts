@@ -4,7 +4,6 @@ import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 
 export default hopeTheme({
-  iconAssets: "fontawesome",
   repo: "https://github.com/CuteReimu/fengsheng-doc",
   docsDir: "docs",
   docsBranch: "master",
@@ -158,6 +157,9 @@ export default hopeTheme({
   },
 
   plugins: {
+    icon: {
+      assets: "fontawesome",
+    },
     slimsearch: {
       indexContent: true,
       suggestion: true,
