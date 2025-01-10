@@ -14,7 +14,6 @@
     "@vuepress/bundler-vite": "^2.0.0-rc.19",
     "@vuepress/plugin-slimsearch": "^2.0.0-rc.69",
     "@vueuse/shared": "^12.3.0",
-    "@waline/client": "^3.4.3",
     "chart.js": "^4.4.7",
     "dotenv": "^16.4.7",
     "katex": "^0.16.19",

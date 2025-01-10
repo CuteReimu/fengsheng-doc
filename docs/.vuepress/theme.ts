@@ -168,10 +168,6 @@ export default hopeTheme({
     sitemap: false,
     seo: false,
     redirect: false,
-    comment: {
-      provider: "Waline",
-      serverURL: "https://fengsheng-doc-api.vercel.app",
-    },
   },
 
   footer:
