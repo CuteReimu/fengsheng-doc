@@ -16,7 +16,7 @@
     "@vueuse/shared": "^12.3.0",
     "chart.js": "^4.4.7",
     "dotenv": "^16.4.7",
-    "katex": "^0.16.19",
+    "katex": "^0.16.20",
     "markmap-lib": "^0.18.5",
     "markmap-toolbar": "^0.18.5",
     "markmap-view": "^0.18.5",
