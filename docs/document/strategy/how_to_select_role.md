@@ -56,27 +56,27 @@ author: 奇葩の灵梦
 
 **T2角色：强度适中，可以作为选择**
 
-- 拉大牌差类：肥源龙川、程小蝶、端木静、SP李宁玉、老虎、金自来
-- 影响游戏进程类：鬼脚、邵秀、连鸢、王富贵、SP连鸢、韩梅、边云疆、SP白菲菲（二扩）[^spbaifeifei]
-- 多次翻面类：盛老板[^shenglaoban]
-- 特殊类：李宁玉、顾小梦、韩梅（二扩）、小九（二扩）
+- 拉大牌差类：[肥源龙川](../skills/base.md#f-肥原龙川-特务机关长)、[程小蝶](../skills/base.md#c-程小蝶-花旦)、[端木静](../skills/base.md#d-端木静-学生)、[SP李宁玉](../skills/base.md#l-李宁玉-sp-译电科科长)、[老虎](../skills/extend1.md#l-老虎-地下领袖)、[金自来](../skills/extend2.md#j-金自来-老千)
+- 影响游戏进程类：[鬼脚](../skills/base.md#g-鬼脚-黄包车夫)、[邵秀](../skills/base.md#s-邵秀-大家闺秀)、[连鸢](../skills/base.md#l-连鸢-作家)、[王富贵](../skills/base.md#w-王富贵-黑帮老大)、[SP连鸢](../skills/extend1.md#l-连鸢-sp-爱国作家)、[韩梅](../skills/base.md#h-韩梅-卖花女)、[边云疆](../skills/extend2.md#b-边云疆-军人)、[SP白菲菲（二扩）](../skills/extend2.md#b-白菲菲-sp-日本间谍)[^spbaifeifei]
+- 多次翻面类：[盛老板](../skills/extend1.md#s-盛老板-富商)[^shenglaoban]
+- 特殊类：[李宁玉](../skills/base.md#l-李宁玉-译电科科长)、[顾小梦](../skills/base.md#g-顾小梦-译电科科员)、[韩梅（二扩）](../skills/extend2.md#h-韩梅-特务处长)、[小九（二扩）](../skills/extend2.md#x-小九-反特砥柱)
 
-[^spbaifeifei]: SP白菲菲（二扩）：对局拖得越久越强，甚至可以T0。但由于本作风声节奏较快，大部分对局难以打那么久，所以这里排在T2。
-[^shenglaoban]: 盛老板：技能强度很高，可以排T1，但很吃操作，操作不好容易白板，也容易被针对。
+[^spbaifeifei]: [SP白菲菲（二扩）](../skills/extend2.md#b-白菲菲-sp-日本间谍)：对局拖得越久越强，甚至可以T0。但由于本作风声节奏较快，大部分对局难以打那么久，所以这里排在T2。
+[^shenglaoban]: [盛老板](../skills/extend1.md#s-盛老板-富商)：技能强度很高，可以排T1，但很吃操作，操作不好容易白板，也容易被针对。
 
 **T3角色：强度很差，不建议选**
 
-- 技能收益不高：老鳖、白小年、小九（一扩）、韩梅（一扩）、高桥智子、白菲菲、小铃铛
-- 技能难触发：王魁、凌素秋、玛利亚[^maliya]、老汉
-- 受身份影响大：SP韩梅（二扩）、SP小九（二扩）[^spxiaojiu]
+- 技能收益不高：[老鳖](../skills/base.md#l-老鳖-香烟贩子)、[白小年](../skills/base.md#b-白小年-秘书)、[小九（一扩）](../skills/extend1.md#x-小九-追梦少年)、[韩梅（一扩）](../skills/extend1.md#h-韩梅-特务学员)、[高桥智子](../skills/extend1.md#g-高桥智子-艺伎)、[白菲菲](../skills/base.md#b-白菲菲-护士)、[小铃铛](../skills/extend2.md#x-小铃铛-杂耍艺人)
+- 技能难触发：[王魁](../skills/base.md#w-王魁-黑帮打手)、[凌素秋](../skills/extend2.md#l-凌素秋-棋手)、[玛利亚](../skills/extend1.md#m-玛利亚-修女)[^maliya]、[老汉](../skills/base.md#l-老汉-裘家二太太)
+- 受身份影响大：[SP韩梅（二扩）](../skills/extend2.md#h-韩梅-sp-军统特务)、[SP小九（二扩）](../skills/extend2.md#x-小九-sp-情报站长)[^spxiaojiu]
 
-[^maliya]: 玛利亚：很吃队友，如果有技能配合的队友，则强度为T0。但选角色时难以预测队友的角色，并且其实很难凑到可以配合的队友，所以强度不稳定。（7人局以上由于有两个队友，可以考虑）
-[^spxiaojiu]: SP韩梅（二扩）、SP小九（二扩）：技能强度非常受身份的影响，在身份不合适的情况下强度会下降很多。
+[^maliya]: [玛利亚](../skills/extend1.md#m-玛利亚-修女)：很吃队友，如果有技能配合的队友，则强度为T0。但选角色时难以预测队友的角色，并且其实很难凑到可以配合的队友，所以强度不稳定。（7人局以上由于有两个队友，可以考虑）
+[^spxiaojiu]: [SP韩梅（二扩）](../skills/extend2.md#h-韩梅-sp-军统特务)、[SP小九（二扩）](../skills/extend2.md#x-小九-sp-情报站长)：技能强度非常受身份的影响，在身份不合适的情况下强度会下降很多。
 
 **T4角色：强度极差，很容易白板**
 
-- 容易白板：SP端木静、吴志国、王田香、金生火、毛不拔
-- 技能不稳定：白昆山、间谍阿芙罗拉、秦无命[^qinwuming]
-- 技能收益低：李书云、玄青子、池静海
+- 容易白板：[SP端木静](../skills/extend1.md#d-端木静-sp-学联代表)、[吴志国](../skills/base.md#w-吴志国-剿匪大队长)、[王田香](../skills/base.md#w-王田香-特务处长)、[金生火](../skills/base.md#j-金生火-军机处处长)、[毛不拔](../skills/base.md#m-毛不拔-古董商人)
+- 技能不稳定：[白昆山](../skills/base.md#b-白昆山-军官)、[间谍阿芙罗拉](../skills/extend2.md#a-阿芙罗拉-苏联间谍)、[秦无命](../skills/extend2.md#q-秦无命-死士)[^qinwuming]
+- 技能收益低：[李书云](../skills/extend2.md#l-李书云-教授)、[玄青子](../skills/base.md#x-玄青子-算命先生)、[池静海](../skills/extend1.md#c-池镜海-破译专家)
 
-[^qinwuming]: 秦无命：如果是先行者、镇压者、清道夫，则强度为T0。
+[^qinwuming]: [秦无命](../skills/extend2.md#q-秦无命-死士)：如果是[先行者](../card/secret_task.md)、[镇压者](../card/secret_task.md)、[清道夫](../card/secret_task.md)，则强度为T0。
