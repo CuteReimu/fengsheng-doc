@@ -41,9 +41,9 @@ author: 奇葩の灵梦
 - 特殊胜利类：[秦圆圆](../skills/extend1.md#q-秦圆圆-风尘侠女)
 - 爆发类：[SP程小蝶](../skills/extend1.md#c-程小蝶-sp-梨园义士)
 - 影响游戏进程类：[黄济仁](../skills/base.md#h-黄济仁-药铺大夫)、[商玉](../skills/base.md#s-商玉-酒楼掌柜)、[小九（报童）](../skills/base.md#x-小九-报童)
-- 高强度过牌类：[哑炮](skills/extend2.md#y-哑炮-乞丐)[^yapao]
+- 高强度过牌类：[哑炮](../skills/extend2.md#y-哑炮-乞丐)[^yapao]
 
-[^yapao]: [哑炮](skills/extend2.md#y-哑炮-乞丐)：本身强度很高，但是由于无法使用[试探](../card/card.md)找队友，如果自身无法认清队友则会导致强度有所下降。
+[^yapao]: [哑炮](../skills/extend2.md#y-哑炮-乞丐)：本身强度很高，但是由于无法使用[试探](../card/card.md)找队友，如果自身无法认清队友则会导致强度有所下降。
 
 **T1角色：强度在线，可以作为优先选项**
 
