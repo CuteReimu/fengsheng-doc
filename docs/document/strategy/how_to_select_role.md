@@ -51,7 +51,7 @@ author: 奇葩の灵梦
 - 影响游戏进程类：[阿芙罗拉](../skills/base.md#a-阿芙罗拉-赌场荷官)、[钱敏](../skills/extend1.md#q-钱敏-调查科员)
 - 多次翻面类：[鄭文先](../skills/base.md#z-鄭文先-日伪报社主编)
 
-[^spguxiaomeng]: [SP顾小梦](../skills/base.md#g-顾小梦-sp-译电科科员)：不适合做神秘人。
+[^spguxiaomeng]: [SP顾小梦](../skills/base.md#g-顾小梦-sp-译电科科员)：不适合做**神秘人**。
 [^baicanglang]: [白沧浪](../skills/base.md#b-白沧浪-情场浪子)：比较吃队友，如果没有女性队友，则强度大打折扣。但选角色时难以预测队友的角色，所以强度不稳定。
 
 **T2角色：强度适中，可以作为选择**
