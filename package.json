@@ -17,7 +17,7 @@
     "chart.js": "^4.4.7",
     "dotenv": "^16.4.7",
     "katex": "^0.16.21",
-    "markmap-lib": "^0.18.9",
+    "markmap-lib": "^0.18.10",
     "markmap-toolbar": "^0.18.9",
     "markmap-view": "^0.18.9",
     "sass-embedded": "^1.83.4",
