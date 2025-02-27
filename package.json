@@ -11,24 +11,24 @@
     "docs:update-package": "npx vp-update"
   },
   "devDependencies": {
-    "@vuepress/bundler-vite": "^2.0.0-rc.19",
-    "@vuepress/plugin-slimsearch": "^2.0.0-rc.74",
-    "@vueuse/shared": "^12.5.0",
-    "chart.js": "^4.4.7",
+    "@vuepress/bundler-vite": "^2.0.0-rc.20",
+    "@vuepress/plugin-slimsearch": "^2.0.0-rc.80",
+    "@vueuse/shared": "^12.7.0",
+    "chart.js": "^4.4.8",
     "dotenv": "^16.4.7",
     "katex": "^0.16.21",
-    "markmap-lib": "^0.18.9",
-    "markmap-toolbar": "^0.18.9",
-    "markmap-view": "^0.18.9",
-    "sass-embedded": "^1.83.4",
-    "unplugin-element-plus": "^0.9.0",
+    "markmap-lib": "^0.18.10",
+    "markmap-toolbar": "^0.18.10",
+    "markmap-view": "^0.18.10",
+    "sass-embedded": "^1.85.1",
+    "unplugin-element-plus": "^0.9.1",
     "vue": "^3.5.13",
-    "vuepress": "^2.0.0-rc.19",
-    "vuepress-plugin-md-enhance": "^2.0.0-rc.71",
-    "vuepress-theme-hope": "^2.0.0-rc.71"
+    "vuepress": "^2.0.0-rc.20",
+    "vuepress-plugin-md-enhance": "^2.0.0-rc.72",
+    "vuepress-theme-hope": "^2.0.0-rc.73"
   },
   "dependencies": {
-    "axios": "^1.7.9",
-    "element-plus": "^2.9.3"
+    "axios": "^1.8.1",
+    "element-plus": "^2.9.5"
   }
 }

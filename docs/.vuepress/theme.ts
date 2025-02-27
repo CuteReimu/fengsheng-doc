@@ -10,6 +10,7 @@ export default hopeTheme({
   logo: "/images/head.jpg",
   darkmode: "toggle",
   print: false,
+  pageInfo: ["Author", "PageView", "Date", "ReadingTime"],
   navbarLayout: {
     start: ["Brand"],
     center: [],
