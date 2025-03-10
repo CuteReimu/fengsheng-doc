@@ -13,7 +13,7 @@
   "devDependencies": {
     "@vuepress/bundler-vite": "^2.0.0-rc.20",
     "@vuepress/plugin-slimsearch": "^2.0.0-rc.82",
-    "@vueuse/shared": "^12.8.2",
+    "@vueuse/shared": "^13.0.0",
     "chart.js": "^4.4.8",
     "dotenv": "^16.4.7",
     "katex": "^0.16.21",
