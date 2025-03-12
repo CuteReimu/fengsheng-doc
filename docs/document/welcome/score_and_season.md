@@ -168,7 +168,7 @@ val loserAveScore = loserTotalScore / loserScores.size
 val diff = (loserAveScore - winnerAveScore) / 10
 if (player.isWinner()) {
     diff /= when {
-        player.identity == BLACK || diff >= 0 -> 1.0
+        player.identity != BLACK || diff >= 0 -> 1.0
         winnerScores.size + loserScores.size <= 6 -> 2.0 / winnerScores.size
         else -> 3.0 / winnerScores.size
     }
@@ -191,7 +191,7 @@ for score in loserScores:
 loser_ave_score = loser_total_score // len(loser_scores)
 
 diff = (loser_ave_score - winner_ave_score) // 10
-if player.is_winner() and player.identity != BLACK and diff < 0:
+if player.is_winner() and player.identity == BLACK and diff < 0:
     if len(winner_scores) + len(loser_scores) <= 6:
         diff = diff * winnerScores.size / 2.0
     else:
