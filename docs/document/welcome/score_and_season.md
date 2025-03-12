@@ -147,7 +147,7 @@ if 你是神秘人:
 ::: info 特例
 1. 如果你的分数过高或过低，意义就不大了。因此我们取 $180$ ~ $2000$ 分为合理的分数区间，超出这个区间的分数会被限制在这个区间内进行计算。
 2. 这个倍数最低变为0.01倍，不会变为负数。
-3. 如果赢的人平均分比输的人平均分多太多，即使赢了分数也没变化，会影响游戏性。因此我们规定，如果你作为除**神秘人**获胜且分差为正，则分差会除以**潜伏战线**&zwnj;**特工机关**单个阵营的人数。由此，当一个高分玩家作为**神秘人**单独赢了一局时，分数不会增加太少。
+3. 如果赢的人平均分比输的人平均分多太多，即使赢了分数也没变化，会影响游戏性。因此我们规定，如果你作为除**神秘人**获胜且分差为正，则分差会除以 $\dfrac{阵营方单个阵营的人数}{获胜人数}$ 。由此，当一个高分玩家作为**神秘人**单独赢了一局时，分数不会增加太少。
 :::
 
 ::: code-tabs#code
@@ -165,8 +165,16 @@ var loserTotalScore = loserScores.sumOf { score ->
 }
 val loserAveScore = loserTotalScore / loserScores.size
 
+val diff = (loserAveScore - winnerAveScore) / 10
+if (player.isWinner()) {
+    diff /= when {
+        player.identity == BLACK || diff >= 0 -> 1.0
+        winnerScores.size + loserScores.size <= 6 -> 2.0 / winnerScores.size
+        else -> 3.0 / winnerScores.size
+    }
+}
 // 每10分变化1%
-val multiply = max(1.0 + (loserAveScore - winnerAveScore) / 10 / 100.0, 0.1)
+val multiply = max(1.0 + diff / 100.0, 0.1)
 ```
 
 @tab Python
@@ -175,15 +183,21 @@ val multiply = max(1.0 + (loserAveScore - winnerAveScore) / 10 / 100.0, 0.1)
 winner_total_score = 0
 for score in winnerScores:
     winner_total_score += min(2000, max(180, score))
-winner_ave_score = winner_total_score // len(winnerScores)
+winner_ave_score = winner_total_score // len(winner_scores)
 
 loser_total_score = 0
 for score in loserScores:
     loser_total_score += min(2000, max(180, score))
-loser_ave_score = loser_total_score // len(loserScores)
+loser_ave_score = loser_total_score // len(loser_scores)
 
+diff = (loser_ave_score - winner_ave_score) // 10
+if player.is_winner() and player.identity != BLACK and diff < 0:
+    if len(winner_scores) + len(loser_scores) <= 6:
+        diff = diff * winnerScores.size / 2.0
+    else:
+        diff = diff * winnerScores.size / 3.0
 # 每10分变化1%
-multiply = max(1.0 + (loser_ave_score - winner_ave_score) // 10 / 100, 0.1)
+multiply = max(1.0 + diff / 100, 0.1)
 ```
 
 :::
