@@ -34,7 +34,6 @@ const currentPage = ref(1);
 
 const currentChange = n => {
   currentPage.value = n;
-  console.log(currentPage.value);
 };
 
 const totalPage = computed(() => Math.ceil(result.value.length))
