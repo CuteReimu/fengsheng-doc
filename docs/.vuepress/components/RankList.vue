@@ -11,7 +11,12 @@
   <div>
     <el-table border :data="result2">
       <el-table-column prop="rank" label="名次"></el-table-column>
-      <el-table-column prop="name" label="玩家"></el-table-column>
+      <el-table-column label="玩家">
+        <template #default="scope">
+          <router-link :to="'search.md?name='+result2[scope.$index].name" >
+            {{result2[scope.$index].name}}
+          </router-link>
+        </template></el-table-column>
       <el-table-column prop="tier" label="段位"></el-table-column>
       <el-table-column prop="score" label="分数"></el-table-column>
     </el-table>
@@ -22,7 +27,7 @@
 import "element-plus/theme-chalk/dark/css-vars.css";
 import { onMounted, ref, computed } from "vue";
 import Axios from "axios";
-import { ElPagination, ElTable, ElTableColumn } from "element-plus";
+import {ElPagination, ElTable, ElTableColumn} from "element-plus";
 
 const result = ref([]);
 

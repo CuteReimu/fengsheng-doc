@@ -20,6 +20,7 @@ export default hopeTheme({
   encrypt: {
     config: {
       "/search": {password: ["fs"], hint: "在群里输入“查询密码”可获取密码。"},
+      "/ranklist": {password: ["fs"], hint: "在群里输入“查询密码”可获取密码。"},
     },
   },
 
