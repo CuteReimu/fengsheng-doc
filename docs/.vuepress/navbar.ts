@@ -19,11 +19,6 @@ export default navbar([
     activeMatch: '^/develop/',
   },
   {
-    text: '过往赛季',
-    icon: 'trophy',
-    link: '/toplist',
-  },
-  {
     text: '游戏状态',
     icon: 'gamepad',
     link: '/game_status',

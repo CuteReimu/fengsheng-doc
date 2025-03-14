@@ -15,6 +15,7 @@ export default defineUserConfig({
   alias: {
     "@GameStatus": path.resolve(__dirname, "components/GameStatus.vue"),
     "@SearchPlayer": path.resolve(__dirname, "components/SearchPlayer.vue"),
+    "@RankList": path.resolve(__dirname, "components/RankList.vue"),
   },
   lang: "zh-CN",
 
