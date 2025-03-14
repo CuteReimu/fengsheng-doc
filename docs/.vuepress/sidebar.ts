@@ -15,7 +15,7 @@ export default sidebar({
       link: "/search",
     },
     {
-      text: "排行",
+      text: "排行榜",
       icon: "trophy",
       link: "/ranklist",
     },
@@ -37,7 +37,7 @@ export default sidebar({
       link: "/search",
     },
     {
-      text: "排行",
+      text: "排行榜",
       icon: "trophy",
       link: "/ranklist",
     },
@@ -59,7 +59,7 @@ export default sidebar({
       link: "/search",
     },
     {
-      text: "排行",
+      text: "排行榜",
       icon: "trophy",
       link: "/ranklist",
     },
@@ -81,7 +81,7 @@ export default sidebar({
       link: "/search",
     },
     {
-      text: "排行",
+      text: "排行榜",
       icon: "trophy",
       link: "/ranklist",
     },
