@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "@vuepress/bundler-vite": "^2.0.0-rc.20",
-    "@vuepress/plugin-slimsearch": "^2.0.0-rc.82",
+    "@vuepress/plugin-slimsearch": "^2.0.0-rc.80",
     "@vueuse/shared": "^12.8.2",
     "chart.js": "^4.4.8",
     "dotenv": "^16.4.7",
@@ -24,8 +24,8 @@
     "unplugin-element-plus": "^0.9.1",
     "vue": "^3.5.13",
     "vuepress": "^2.0.0-rc.20",
-    "vuepress-plugin-md-enhance": "^2.0.0-rc.74",
-    "vuepress-theme-hope": "^2.0.0-rc.74"
+    "vuepress-plugin-md-enhance": "^2.0.0-rc.73",
+    "vuepress-theme-hope": "2.0.0-rc.73"
   },
   "dependencies": {
     "axios": "^1.8.2",
