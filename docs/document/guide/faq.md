@@ -11,7 +11,7 @@ author:
 
 # 官方FAQ 2.0（含玩家补充）
 
-此为风声说明的解释补充，请搭配[游戏说明书](how_to_play.md)和[补充说明](../strategy/detail_rules.md)使用。
+此为风声说明的解释补充，请搭配[游戏说明书](how_to_play.md)和[补充说明](detail_rules.md)使用。
 
 ## 术语
 

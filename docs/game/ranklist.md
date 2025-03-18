@@ -1,6 +1,7 @@
 ---
-title: 查询
-icon: magnifying-glass
+title: 排行榜
+icon: trophy
+order: -2
 author: "奇葩の灵梦"
 pageInfo: [ "Author", "PageView", "Date" ]
 editLink: false
@@ -8,8 +9,8 @@ next: false
 prev: false
 ---
 
-<SearchPlayer></SearchPlayer>
+<RankList></RankList>
 
 <script setup>
-import SearchPlayer from "@SearchPlayer";
+import RankList from "@RankList";
 </script>

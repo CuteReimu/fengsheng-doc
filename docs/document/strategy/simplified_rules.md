@@ -3,6 +3,7 @@ icon: book
 order: 4
 author: 惑星
 shortTitle: 规则速览
+headerDepth: 0
 ---
 
 # 三分钟读懂规则

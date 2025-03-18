@@ -4,6 +4,7 @@ order: 6
 author:
   - 半藏
   - 惑星
+headerDepth: 0
 ---
 
 # 半藏心经

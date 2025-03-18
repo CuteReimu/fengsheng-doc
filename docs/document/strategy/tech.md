@@ -2,6 +2,7 @@
 icon: lightbulb
 order: 3
 author: 惑星
+headerDepth: 0
 ---
 
 # 基本技巧

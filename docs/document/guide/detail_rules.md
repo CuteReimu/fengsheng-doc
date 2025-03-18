@@ -1,6 +1,6 @@
 ---
 icon: book
-order: 1
+order: 4
 author: 奇葩の灵梦
 ---
 

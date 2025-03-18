@@ -1,6 +1,7 @@
 ---
 title: 观战
 icon: gamepad
+order: 1
 author: "奇葩の灵梦"
 pageInfo: [ "Author", "PageView", "Date" ]
 editLink: false
