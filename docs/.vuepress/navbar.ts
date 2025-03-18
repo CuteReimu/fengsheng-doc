@@ -21,7 +21,7 @@ export default navbar([
   {
     text: '游戏状态',
     icon: 'gamepad',
-    link: '/game/game_status.md',
-    activeMatch: '^/game/',
+    link: '/game_status.md',
+    activeMatch: '^/[A-Za-z0-9_.]+$',
   },
 ]);

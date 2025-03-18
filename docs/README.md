@@ -10,7 +10,7 @@ actions:
     type: primary
   - text: 大神风采
     icon: trophy
-    link: /game/toplist
+    link: /toplist
     type: secondary
 breadcrumbExclude: true
 ---
