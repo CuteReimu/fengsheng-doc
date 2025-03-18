@@ -2,6 +2,7 @@
 icon: address-book
 order: 2
 author: 奇葩の灵梦
+headerDepth: 0
 ---
 
 # 选角色攻略

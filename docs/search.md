@@ -1,6 +1,7 @@
 ---
 title: 查询
 icon: magnifying-glass
+order: 2
 author: "奇葩の灵梦"
 pageInfo: [ "Author", "PageView", "Date" ]
 editLink: false

@@ -2,6 +2,7 @@
 icon: bullhorn
 order: 2
 author: 官方文档
+headerDepth: 0
 ---
 
 # 官方公告
