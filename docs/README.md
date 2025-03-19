@@ -30,6 +30,8 @@ breadcrumbExclude: true
 - 帕鲁风声群：916124348
 - 《风声再临》官方群：161689262
 
+想进一步了解不同版本风声的区别？[点击这里跳转](/document/welcome/compare.md)
+
 ---
 
 <p class="hint-container-title">特别鸣谢</p>
