@@ -25,7 +25,7 @@ headerDepth: 0
 - 将<span class="card-bg">**密令**（<strong style="color:blue;">东风</strong>、<strong style="color:red;">西风</strong>、**静风**，<strong style="color:red;">红色</strong>，&larr;）</span>替换为<span class="card-bg">**密令**（**东风**、<strong style="color:red;">西风</strong>、<strong style="color:blue;">静风</strong>，<strong style="color:red;">红色</strong>，&larr;）</span>
 
 ::: warning 注意
-只有最初发布的一扩版本存在这个问题，新发布的一扩版本已经解决了这个问题。
+只有最初发布的一扩版本存在这个问题。新发布的一扩版本已经解决了这个问题，无需替换。
 :::
 
 <style scoped>
