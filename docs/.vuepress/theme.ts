@@ -169,7 +169,6 @@ export default hopeTheme({
     },
     sitemap: false,
     seo: false,
-    redirect: false,
   },
 
   footer:
