@@ -1,11 +1,10 @@
 ---
+title: 技能相关架构
 icon: code
 order: 2
 author: 奇葩の灵梦
 pageInfo: ["Author", "PageView", "Date", "Word"]
 ---
-
-# 技能相关架构
 
 ```markmap
 ---

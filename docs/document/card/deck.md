@@ -1,12 +1,11 @@
 ---
+title: 牌堆构成
 icon: book
 author:
   - 奇葩の灵梦
   - 惑星
 pageInfo: [ "Author", "PageView", "Date" ]
 ---
-
-# 牌堆构成
 
 ## 总览
 

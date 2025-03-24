@@ -1,11 +1,10 @@
 ---
+title: 目录结构
 icon: code
 order: 3
 author: 奇葩の灵梦
 pageInfo: ["Author", "PageView", "Date", "Word"]
 ---
-
-# 目录结构
 
 - <VPIcon icon="folder" /> **src** - 代码文件夹
   - <VPIcon icon="folder" /> **main** - 项目代码

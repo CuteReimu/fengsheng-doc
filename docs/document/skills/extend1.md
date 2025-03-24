@@ -1,12 +1,11 @@
 ---
+title: 铁屋子（一扩）
 icon: address-book
 order: 2
 author:
   - 奇葩の灵梦
   - Death
 ---
-
-# 铁屋子（一扩）
 
 ## C-程小蝶（SP）（梨园义士）<VPIcon icon="mars" class="blue" /><MaskIcon />
 

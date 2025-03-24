@@ -1,4 +1,5 @@
 ---
+title: 半藏心经
 icon: lightbulb
 order: 6
 author:
@@ -6,8 +7,6 @@ author:
   - 惑星
 headerDepth: 0
 ---
-
-# 半藏心经
 
 ## 卡牌资源分配
 

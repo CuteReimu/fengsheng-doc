@@ -1,10 +1,9 @@
 ---
+title: 三款风声比较
 icon: address-book
 order: 2
 author: 惑星
 ---
-
-# 三款风声比较
 
 *以下内容转载自贴吧用户惑星，不代表我们的观点。*
 

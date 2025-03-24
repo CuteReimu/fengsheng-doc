@@ -1,11 +1,10 @@
 ---
+title: 风声游戏体验心得
 icon: lightbulb
 order: 5
 author: Big Dick
 headerDepth: 0
 ---
-
-# 风声游戏体验心得
 
 ::: danger 注意
 以下内容中有很多错误，请注意仔细甄别。

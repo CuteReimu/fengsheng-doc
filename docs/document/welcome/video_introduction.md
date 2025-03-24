@@ -1,11 +1,10 @@
 ---
+title: 视频攻略
 order: -3
 icon: video
 author: 惑星
 pageInfo: [ "Author", "PageView", "Date" ]
 ---
-
-# 视频攻略
 
 **游戏操作介绍**\
 [<img height="20" width="20" src="/images/bilibili.svg" />耗时一年，我们肝出来了风声桌游的线上版](https://www.bilibili.com/video/BV1RK421x7ie)\

@@ -1,11 +1,10 @@
 ---
+title: 各角色关键卡牌
 icon: book
 order: 7
 author: 两仪生四象
 headerDepth: 0
 ---
-
-# 各角色关键卡牌
 
 ::: danger 注意
 以下内容中有很多错误，请注意仔细甄别。

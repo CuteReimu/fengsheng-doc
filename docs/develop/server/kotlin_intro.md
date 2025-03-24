@@ -1,11 +1,10 @@
 ---
+title: 快速上手Kotlin
 icon: code
 order: 1
 author: 奇葩の灵梦
 pageInfo: ["Author", "PageView", "Date", "Word"]
 ---
-
-# 快速上手Kotlin
 
 《风声·谍战篇》的服务端采用Kotlin语言进行开发。Kotlin是基于Java虚拟机的一种静态类型编程语言，如果你有Java编程经验，那么学习Kotlin将会非常容易。
 

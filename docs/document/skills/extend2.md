@@ -1,4 +1,5 @@
 ---
+title: 老洋房（二扩）
 icon: address-book
 order: 3
 author:
@@ -7,8 +8,6 @@ author:
   - Death
   - 惑星
 ---
-
-# 老洋房（二扩）
 
 ## A-阿芙罗拉（苏联间谍）<VPIcon icon="venus" class="red" /><MaskIcon />
 

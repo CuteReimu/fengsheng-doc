@@ -1,4 +1,5 @@
 ---
+title: 官方FAQ 2.0（含玩家补充）
 shortTitle: 官方FAQ 2.0
 icon: book
 order: 3
@@ -8,8 +9,6 @@ author:
   - 惑星
   - 奇葩の灵梦
 ---
-
-# 官方FAQ 2.0（含玩家补充）
 
 此为风声说明的解释补充，请搭配[游戏说明书](how_to_play.md)和[补充说明](detail_rules.md)使用。
 

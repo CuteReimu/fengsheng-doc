@@ -1,11 +1,10 @@
 ---
+title: 选角色攻略
 icon: address-book
 order: 2
 author: 奇葩の灵梦
 headerDepth: 0
 ---
-
-# 选角色攻略
 
 在群里输入`胜率`可以查看所有角色的胜率表。
 

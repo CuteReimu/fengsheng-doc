@@ -1,12 +1,11 @@
 ---
+title: 游卡《风声》进阶规则1.1  含羁绊规则
 shortTitle: 进阶规则
 author: 官方文档
 icon: book
 order: 5
 headerDepth: 0
 ---
-
-# 游卡《风声》进阶规则1.1  含羁绊规则
 
 ## 羁绊规则
 

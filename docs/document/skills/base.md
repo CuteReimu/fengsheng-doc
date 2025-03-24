@@ -1,12 +1,11 @@
 ---
+title: 基础角色
 icon: address-book
 order: 1
 author:
   - 奇葩の灵梦
   - Death
 ---
-
-# 基础角色
 
 ## A-阿芙罗拉（赌场荷官）<VPIcon icon="venus" class="red" /><MaskIcon />
 
