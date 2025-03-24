@@ -17,6 +17,8 @@ export default hopeTheme({
     end: ["Links", "Language", "Repo", "Outlook", "Search"],
   },
 
+  contributors: false,
+
   encrypt: {
     config: {
       "/search": {password: ["fs"], hint: "在群里输入“查询密码”可获取密码。"},
