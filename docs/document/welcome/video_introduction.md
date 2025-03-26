@@ -4,6 +4,7 @@ order: -3
 icon: video
 author: 惑星
 pageInfo: [ "Author", "PageView", "Date" ]
+headerDepth: 0
 ---
 
 **游戏操作介绍**\

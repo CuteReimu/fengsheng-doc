@@ -17,8 +17,6 @@ export default hopeTheme({
     end: ["Links", "Language", "Repo", "Outlook", "Search"],
   },
 
-  contributors: false,
-
   encrypt: {
     config: {
       "/search": {password: ["fs"], hint: "在群里输入“查询密码”可获取密码。"},
@@ -171,6 +169,33 @@ export default hopeTheme({
     },
     sitemap: false,
     seo: false,
+    git: {
+      contributors: {
+        info: [
+          {
+            username: "CuteReimu",
+            name: "奇葩の灵梦",
+            alias: ["奇葩の灵梦"],
+          },
+          {
+            username: "Death-alter",
+            name: "Death",
+            alias: ["Death"],
+          },
+          {
+            username: "planetmiku",
+            name: "惑星",
+            alias: ["惑星"],
+          },
+          {
+            username: "HagridThick",
+            name: "二宽",
+            alias: ["二宽", "徐晨鸥"],
+          }
+        ],
+        avatar: true,
+      }
+    }
   },
 
   footer:
