@@ -8,7 +8,7 @@ breadcrumb: false
 editLink: false
 next: false
 prev: false
-headerDepth: 0
+toc: false
 ---
 
 <GameStatus></GameStatus>
