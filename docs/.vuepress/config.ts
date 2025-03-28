@@ -1,9 +1,7 @@
 import theme from "./theme.js";
 import { defineUserConfig } from 'vuepress';
-import { viteBundler } from '@vuepress/bundler-vite';
 import dotenv from 'dotenv';
 import * as path2 from "node:path";
-import ElementPlus from 'unplugin-element-plus/vite';
 import { getDirname, path } from "vuepress/utils";
 
 const __dirname = getDirname(import.meta.url);
@@ -24,12 +22,4 @@ export default defineUserConfig({
     ["link", { rel: "icon", href: '/images/head.jpg' }],
   ],
   theme,
-  bundler: viteBundler({
-    viteOptions: {
-      ssr: { noExternal: ['element-plus'] },
-      plugins: [
-        ElementPlus({}),
-      ],
-    }
-  }),
 });

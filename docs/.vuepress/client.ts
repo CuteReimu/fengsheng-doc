@@ -1,4 +1,6 @@
 import {defineClientConfig} from 'vuepress/client';
+import 'element-plus/dist/index.css'
+import "element-plus/theme-chalk/dark/css-vars.css";
 import MaskIcon from './components/MaskIcon.vue';
 
 export default defineClientConfig({
