@@ -37,7 +37,7 @@ headerDepth: 0
 
 **T0角色：版本之子，选了准没错**
 
-- 封锁类：[张一挺](../skills/base.md#z-张一挺-司令)、陈大耳
+- 封锁类：[张一挺](../skills/base.md#z-张一挺-司令)、[陈大耳](../skills/extend2.md#c-陈大耳-包打听)
 - 特殊胜利类：[秦圆圆](../skills/extend1.md#q-秦圆圆-风尘侠女)
 - 爆发类：[SP程小蝶](../skills/extend1.md#c-程小蝶-sp-梨园义士)
 - 影响游戏进程类：[黄济仁](../skills/base.md#h-黄济仁-药铺大夫)、[商玉](../skills/base.md#s-商玉-酒楼掌柜)、[小九（报童）](../skills/base.md#x-小九-报童)

@@ -1,7 +1,7 @@
 ---
 title: 各角色关键卡牌
 icon: book
-order: 7
+order: -1
 author: 两仪生四象
 headerDepth: 0
 ---
@@ -52,13 +52,13 @@ headerDepth: 0
 - [陈安娜](../skills/extend2.md#c-陈安娜-速记员)：双色**黑**情报
 - [陈大耳](../skills/extend2.md#c-陈大耳-包打听)：[截获](../card/card.md)、[调包](../card/card.md)、[误导](../card/card.md)
 - [韩梅（特务处长）](../skills/extend2.md#h-韩梅-特务处长)：[误导](../card/card.md)、[截获](../card/card.md)
-- [SP韩梅](../skills/extend2.md#h-韩梅-sp-军统特务)：非**特**{.blue}非**诱**{.green}的小九、**蓝色**情报、纯**黑**情报
+- [SP韩梅](../skills/extend2.md#h-韩梅-sp-军统特务)：非**特**{.blue}非[**诱**{.green}](../card/secret_task.md)的小九、**蓝色**情报、纯**黑**情报
 - [金自来](../skills/extend2.md#j-金自来-老千)：[调包](../card/card.md)
 - [李书云](../skills/extend2.md#l-李书云-教授)：非纯**黑**情报
 - [凌素秋](../skills/extend2.md#l-凌素秋-棋手)：-1[试探](../card/card.md)
 - [秦无命](../skills/extend2.md#q-秦无命-死士)：[澄清](../card/card.md)、纯**黑**情报
 - [小九](../skills/extend2.md#x-小九-反特砥柱)：[截获](../card/card.md)、含自己阵营的双色**黑**情报
-- [SP小九](../skills/extend2.md#x-小九-sp-情报站长)：非**潜**{.red}非**诱**{.green}韩梅，**红色**情报
+- [SP小九](../skills/extend2.md#x-小九-sp-情报站长)：非**潜**{.red}非[**诱**{.green}](../card/secret_task.md)韩梅，**红色**情报
 - [小铃铛](../skills/extend2.md#x-小铃铛-杂耍艺人)：[调虎离山](../card/card.md)、&larr;&rarr;方向情报
 - [哑炮](../skills/extend2.md#y-哑炮-乞丐)：[试探](../card/card.md)、[威逼](../card/card.md)
 - [孙守谟](../skills/extend2.md#非正式-孙守謨-参谋)：&uarr;方向情报
