@@ -12,8 +12,8 @@
   },
   "devDependencies": {
     "@vuepress/bundler-vite": "^2.0.0-rc.20",
-    "@vuepress/plugin-redirect": "^2.0.0-rc.86",
-    "@vuepress/plugin-slimsearch": "^2.0.0-rc.86",
+    "@vuepress/plugin-redirect": "^2.0.0-rc.91",
+    "@vuepress/plugin-slimsearch": "^2.0.0-rc.91",
     "@vueuse/shared": "^13.0.0",
     "chart.js": "^4.4.8",
     "dotenv": "^16.4.7",
@@ -21,11 +21,11 @@
     "markmap-lib": "^0.18.11",
     "markmap-toolbar": "^0.18.10",
     "markmap-view": "^0.18.10",
-    "sass-embedded": "^1.86.0",
+    "sass-embedded": "^1.86.1",
     "vue": "^3.5.13",
     "vuepress": "^2.0.0-rc.20",
-    "vuepress-plugin-md-enhance": "^2.0.0-rc.76",
-    "vuepress-theme-hope": "2.0.0-rc.76"
+    "vuepress-plugin-md-enhance": "^2.0.0-rc.78",
+    "vuepress-theme-hope": "2.0.0-rc.78"
   },
   "dependencies": {
     "axios": "^1.8.4",
