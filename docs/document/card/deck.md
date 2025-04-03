@@ -213,7 +213,7 @@ const config = {
 <script setup>
 import "element-plus/theme-chalk/dark/css-vars.css";
 import { ref, computed } from "vue";
-import { ElTable, ElTableColumn, ElSwitch, ElText } from "element-plus";
+import { ElTable, ElTableColumn, ElSwitch } from "element-plus";
 
 const filterHandler = (value, row, column) => {
   const property = column['property'];
