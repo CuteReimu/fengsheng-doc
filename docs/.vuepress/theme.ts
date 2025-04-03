@@ -3,7 +3,17 @@ import { hopeTheme } from "vuepress-theme-hope";
 import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 
+import dotenv from 'dotenv';
+import * as path2 from "node:path";
+
+dotenv.config({path: path2.resolve(process.cwd(), '.env.local')})
+dotenv.config()
+
+console.log(process.env);
+
 export default hopeTheme({
+  favicon: "/images/head.jpg",
+  hostname: process.env.VITE_HOST_NAME || null,
   repo: "https://github.com/CuteReimu/fengsheng-doc",
   docsDir: "docs",
   docsBranch: "master",
