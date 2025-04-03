@@ -8,9 +8,9 @@ actions:
     icon: lightbulb
     link: /document/welcome/welcome
     type: primary
-  - text: 大神风采
-    icon: trophy
-    link: /game/toplist
+  - text: 开发文档
+    icon: code
+    link: /develop/server/
     type: secondary
 breadcrumbExclude: true
 ---
@@ -19,7 +19,7 @@ breadcrumbExclude: true
 
 我们是游卡《风声·谍战篇》。本文档也是针对这个版本的风声。
 
-除[官方规则](/document/guide/)下的页面外，其它页面均由各位玩家编写。
+除[官方规则](document/guide/)下的页面外，其它页面均由各位玩家编写。
 
 - 我们的联机群：364857312
 - 游卡官方风声交流群：1018152879
@@ -30,7 +30,7 @@ breadcrumbExclude: true
 - 帕鲁风声群：916124348
 - 《风声再临》官方群：161689262
 
-想进一步了解不同版本风声的区别？[点击这里跳转](/document/welcome/compare.md)
+想进一步了解不同版本风声的区别？[点击这里跳转](document/welcome/compare.md)
 
 ---
 
