@@ -40,8 +40,6 @@ jobs:
         npm cache clean --force
     - name: Prepare environment
       run: |
-        rm -rf docs/game
-        mv -f .github/.gh-page-temp/* docs/.vuepress
         echo "VITE_SITE_BASE=/fengsheng-doc/" > .env.local
         echo "VITE_HOST_NAME=https://cutereimu.github.io" >> .env.local
     - name: Build
