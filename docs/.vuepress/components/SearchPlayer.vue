@@ -28,12 +28,12 @@
   </el-table>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import "element-plus/theme-chalk/dark/css-vars.css";
-import {onMounted, ref} from "vue";
+import { onMounted, ref } from "vue";
 import Axios from "axios";
 import { ElRow, ElText, ElAutocomplete, ElButton, ElTable, ElTableColumn } from "element-plus";
-import { useRoute, useRouter } from "vue-router"
+import { useRoute, useRouter } from "vue-router";
 
 const route = useRoute();
 const router = useRouter();

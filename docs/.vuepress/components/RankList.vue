@@ -9,7 +9,7 @@
     />
   </div>
   <div>
-    <el-table border :data="result2">
+    <el-table border :data="result2" empty-text="加载中">
       <el-table-column prop="rank" label="名次"></el-table-column>
       <el-table-column label="玩家">
         <template #default="scope">
@@ -23,7 +23,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import "element-plus/theme-chalk/dark/css-vars.css";
 import { onMounted, ref, computed } from "vue";
 import Axios from "axios";

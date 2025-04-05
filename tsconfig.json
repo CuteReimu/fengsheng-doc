@@ -1,8 +1,10 @@
 {
   "compilerOptions": {
-    "module": "NodeNext",
+    "types": ["vite/client"],
+    "module": "ESNext",
     "moduleResolution": "NodeNext",
-    "target": "ES2022"
+    "target": "ES2022",
+    "esModuleInterop": true
   },
   "include": [
     "docs/.vuepress/**/*.ts",

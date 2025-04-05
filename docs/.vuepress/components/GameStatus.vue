@@ -66,13 +66,29 @@
   </el-row>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import "element-plus/theme-chalk/dark/css-vars.css";
 import { onMounted, ref } from "vue";
 import Axios from "axios";
 import { ElRow, ElText, ElButton, ElTable, ElTableColumn } from "element-plus";
 
-const gs = ref([]);
+interface Player {
+  name: string;
+  role_name: string;
+  alive: boolean;
+  is_turn: boolean;
+  cards: number;
+  message_cards: number[];
+}
+
+interface Room {
+  id: number;
+  turn: number;
+  play_time: number;
+  players: Player[];
+}
+
+const gs = ref<Room[]>([]);
 
 const getStatus = (player) => {
   if (!player.alive) {
@@ -87,7 +103,7 @@ const getStatus = (player) => {
 const doRequest = () => {
   Axios.get(import.meta.env.VITE_REQUEST_URL, {})
     .then((response) => {
-      gs.value = response.data;
+      gs.value = response.data as Room[];
     })
     .catch((error) => {
       console.error(error);
