@@ -32,7 +32,7 @@
 import "element-plus/theme-chalk/dark/css-vars.css";
 import { onMounted, ref } from "vue";
 import Axios from "axios";
-import { ElRow, ElText, ElAutocomplete, ElButton, ElTable, ElTableColumn } from "element-plus";
+import { ElRow, ElText, ElAutocomplete, ElButton, ElTable, ElTableColumn, ElMessage } from "element-plus";
 import { useRoute, useRouter } from "vue-router";
 
 const route = useRoute();
@@ -93,9 +93,11 @@ const doRequest = () => {
         }
       });
       history.value.reverse();
+      ElMessage.success("查询成功");
     })
     .catch((error) => {
       console.error(error);
+      ElMessage.error("查询失败");
     });
 };
 
@@ -109,7 +111,7 @@ const getHistory = () => {
 };
 
 onMounted(() => {
-  name.value = route.query.name || "";
+  name.value = route.query.name as string || "";
   if (name.value) doRequest();
 });
 </script>

@@ -70,7 +70,7 @@
 import "element-plus/theme-chalk/dark/css-vars.css";
 import { onMounted, ref } from "vue";
 import Axios from "axios";
-import { ElRow, ElText, ElButton, ElTable, ElTableColumn } from "element-plus";
+import { ElRow, ElText, ElButton, ElTable, ElTableColumn, ElMessage } from "element-plus";
 
 interface Player {
   name: string;
@@ -104,9 +104,11 @@ const doRequest = () => {
   Axios.get(import.meta.env.VITE_REQUEST_URL, {})
     .then((response) => {
       gs.value = response.data as Room[];
+      ElMessage.success("刷新成功");
     })
     .catch((error) => {
       console.error(error);
+      ElMessage.error("刷新失败");
     });
 };
 
