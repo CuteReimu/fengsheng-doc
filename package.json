@@ -22,7 +22,7 @@
     "markmap-toolbar": "^0.18.10",
     "markmap-view": "^0.18.10",
     "mermaid": "^11.6.0",
-    "sass-embedded": "^1.86.1",
+    "sass-embedded": "^1.86.3",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0",
     "vuepress": "^2.0.0-rc.20",
