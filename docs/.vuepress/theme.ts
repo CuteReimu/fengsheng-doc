@@ -65,6 +65,8 @@ export default hopeTheme({
     footnote: true,
     // 任务列表
     tasklist: true,
+    // mermaid
+    mermaid: true,
     // 样式化
     stylize: [
       {

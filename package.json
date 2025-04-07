@@ -21,6 +21,7 @@
     "markmap-lib": "^0.18.11",
     "markmap-toolbar": "^0.18.10",
     "markmap-view": "^0.18.10",
+    "mermaid": "^11.6.0",
     "sass-embedded": "^1.86.1",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0",
