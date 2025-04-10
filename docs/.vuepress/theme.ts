@@ -43,13 +43,14 @@ export default hopeTheme({
     // 代码块
     highlighter: {
       type: "shiki",
-      langs: ["kotlin", "python", "java", "erlang"],
+      langs: ["kotlin", "python", "java", "erlang", "elixir", "console"],
       themes: {
         light: "one-light",
         dark: "one-dark-pro",
       },
       lineNumbers: false,
       notationErrorLevel: true,
+      notationWordHighlight: true,
     },
     // 开启标记
     mark: true,
