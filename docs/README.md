@@ -10,7 +10,7 @@ actions:
     type: primary
   - text: 开发文档
     icon: code
-    link: /develop/server/
+    link: /develop/
     type: secondary
 breadcrumbExclude: true
 ---

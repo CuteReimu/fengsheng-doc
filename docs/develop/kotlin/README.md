@@ -1,9 +1,9 @@
 ---
-title: 服务端开发
-icon: server
+title: 服务端语言入门
+icon: code
 index: false
 dir: 
-  order: 2
+  order: 1
 lastUpdated: false
 contributors: false
 author: 奇葩の灵梦
