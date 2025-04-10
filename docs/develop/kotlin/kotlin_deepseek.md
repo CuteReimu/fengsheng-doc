@@ -7,6 +7,10 @@ pageInfo: ["Author", "PageView", "Date", "Word"]
 headerDepth: 1
 ---
 
+::: warning 注意
+以下内容由AI生成，请注意仔细甄别。
+:::
+
 本文深入解析Kotlin语言的核心设计理念与语法特性，通过语言设计者的视角揭示其背后的技术决策。
 
 ## 空安全类型系统

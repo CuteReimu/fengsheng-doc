@@ -43,7 +43,7 @@ export default hopeTheme({
     // 代码块
     highlighter: {
       type: "shiki",
-      langs: ["kotlin", "python", "java"],
+      langs: ["kotlin", "python", "java", "erlang"],
       themes: {
         light: "one-light",
         dark: "one-dark-pro",
