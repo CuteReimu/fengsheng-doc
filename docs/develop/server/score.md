@@ -1,7 +1,7 @@
 ---
 title: 分数计算逻辑
 icon: calculator
-order: -1
+order: -2
 author: 奇葩の灵梦
 pageInfo: ["Author", "PageView", "Date"]
 toc: false
