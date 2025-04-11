@@ -67,7 +67,6 @@
 </template>
 
 <script setup lang="ts">
-import "element-plus/theme-chalk/dark/css-vars.css";
 import { onMounted, ref } from "vue";
 import Axios from "axios";
 import { ElRow, ElText, ElButton, ElTable, ElTableColumn, ElMessage } from "element-plus";

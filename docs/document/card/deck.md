@@ -211,7 +211,6 @@ const config = {
 </el-table>
 
 <script setup>
-import "element-plus/theme-chalk/dark/css-vars.css";
 import { ref, computed } from "vue";
 import { ElTable, ElTableColumn, ElSwitch } from "element-plus";
 

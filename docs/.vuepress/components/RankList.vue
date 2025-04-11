@@ -24,7 +24,6 @@
 </template>
 
 <script setup lang="ts">
-import "element-plus/theme-chalk/dark/css-vars.css";
 import { onMounted, ref, computed } from "vue";
 import Axios from "axios";
 import {ElPagination, ElTable, ElTableColumn, ElLoading, ElMessage} from "element-plus";
