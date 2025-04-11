@@ -14,7 +14,7 @@
     "@vuepress/bundler-vite": "^2.0.0-rc.20",
     "@vuepress/plugin-redirect": "^2.0.0-rc.91",
     "@vuepress/plugin-slimsearch": "^2.0.0-rc.91",
-    "@vueuse/shared": "^13.0.0",
+    "@vueuse/shared": "^13.1.0",
     "chart.js": "^4.4.8",
     "dotenv": "^16.4.7",
     "katex": "^0.16.21",
