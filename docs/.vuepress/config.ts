@@ -9,6 +9,7 @@ export default defineUserConfig({
     "@GameStatus": path.resolve(__dirname, "components/GameStatus.vue"),
     "@SearchPlayer": path.resolve(__dirname, "components/SearchPlayer.vue"),
     "@RankList": path.resolve(__dirname, "components/RankList.vue"),
+    "@WinRate": path.resolve(__dirname, "components/WinRate.vue"),
   },
   base: process.env.VITE_SITE_BASE as '/' | `/${string}/`,
   lang: "zh-CN",
