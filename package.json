@@ -28,7 +28,7 @@
     "vue-router": "^4.5.0",
     "vuepress": "^2.0.0-rc.20",
     "vuepress-plugin-md-enhance": "^2.0.0-rc.78",
-    "vuepress-theme-hope": "2.0.0-rc.78"
+    "vuepress-theme-hope": "2.0.0-rc.79"
   },
   "dependencies": {
     "axios": "^1.8.4",
