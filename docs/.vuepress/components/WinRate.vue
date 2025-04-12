@@ -1,7 +1,9 @@
 <template>
   <Scatter
+    :height="300"
     :data="chartData"
     :options="chartOptions"
+    :plugins="[ChartDataLabels]"
   />
 </template>
 
@@ -10,7 +12,7 @@ import { onMounted, ref, computed } from "vue";
 import Axios from "axios";
 
 import { Scatter } from 'vue-chartjs';
-import {ChartData, ChartOptions, type DefaultDataPoint, Point} from "chart.js";
+import {ChartData, ChartOptions} from "chart.js";
 import {
   Chart as ChartJS,
   Title,
@@ -20,19 +22,23 @@ import {
   CategoryScale,
   LinearScale,
 } from 'chart.js';
-import {ElMessage} from "element-plus";
+import ChartDataLabels from 'chartjs-plugin-datalabels';
+import { ElMessage } from "element-plus";
 ChartJS.register(Title, Tooltip, PointElement, CategoryScale, LinearScale);
 
 const data = ref<{[key: string]: [number, number]}>({});
 
 const chartData = computed<ChartData<"scatter">>(() => {
+  const d = Object.entries(data.value).filter(([,item]) => {
+    return item[0] >= 10;
+  })
   return {
-    labels: Object.keys(data.value),
+    labels: d.map(([key]) => key),
     datasets: [{
-      data: Object.values(data.value).map((item) => {
-        return {x: item[0], y: item[1]/item[0]*100};
+      data: d.map(([key, item]) => {
+        return {label: key, x: item[0], y: item[1]/item[0]*100};
       }),
-      backgroundColor: 'rgb(255, 99, 132)'
+      backgroundColor: 'rgb(59, 169, 120)'
     }],
   };
 });
@@ -58,6 +64,15 @@ const chartOptions: ChartOptions<"scatter"> = {
         },
       }
     },
+    datalabels: {
+      color: "rgb(59, 169, 120)", // 标签颜色
+      anchor: "center", // 标签位置（相对于点）
+      align: "top",     // 文本对齐方式
+      formatter: (value) => {
+        console.log(value);
+        return value.label; // 自定义标签内容
+      }
+    }
   },
   scales: {
     x: {
