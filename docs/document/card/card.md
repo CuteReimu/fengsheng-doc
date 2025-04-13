@@ -27,6 +27,10 @@ author:
 
 ## FAQ
 
+::: info 注意
+“一名角色”指任意一名角色，包含自己。“其他角色”指除自己外的一名角色，不含自己。
+:::
+
 在【试探】【密令】的右下角会显示其描述中的颜色，例如：
 
 - 【试探】右下角显示<span style="color:white; background-color:var(--red-color);">+1</span><span style="color:white; background-color:var(--blue-color);">-1</span><span style="color:white; background-color:var(--green-color);">-1</span>，代表**潜伏战线**摸一张牌，**特工机关**或**神秘人**弃一张牌。
@@ -62,7 +66,7 @@ author:
 
 ### 截获
 
-- 情报在自己面前时可以使用【截获】，但并不执行任何操作。可以用来触发一些技能（例如[“盛老板”的**深藏**](../skills/extend1.md#s-盛老板-富商)）。
+- 待收情报在自己面前时可以使用【截获】，但并不执行任何操作。可以用来触发一些技能（例如[“盛老板”的**深藏**](../skills/extend1.md#s-盛老板-富商)）。
 
 ### 密令
 
