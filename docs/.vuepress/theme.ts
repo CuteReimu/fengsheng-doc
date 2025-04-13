@@ -18,13 +18,14 @@ export default hopeTheme({
   docsDir: "docs",
   docsBranch: "master",
   logo: "/images/head.jpg",
-  darkmode: "toggle",
+  darkmode: "disable",
+  fullscreen: true,
   print: false,
   pageInfo: ["Author", "PageView", "Date", "ReadingTime"],
   navbarLayout: {
     start: ["Brand"],
     center: [],
-    end: ["Links", "Language", "Repo", "Outlook", "Search"],
+    end: ["Links", "Language", "Repo", "Search", "Outlook"],
   },
   routeLocales,
 
