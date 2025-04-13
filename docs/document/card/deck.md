@@ -13,7 +13,8 @@ pageInfo: [ "Author", "PageView", "Date" ]
 根据[官方公告](../guide/announcement.md#引入一扩后建议对卡牌数量进行调整)，引入一扩后建议对卡牌数量进行调整。
 - 下表中，括号外的数字表示调整之后的数量，括号内的数字表示调整之前的数量。
 - 各分类统计图中的统计数据全部基于调整后的卡牌数量。
-  :::
+
+:::
 
 ![](/images/deck.png)
 
@@ -65,89 +66,15 @@ const config = {
 
 ### 按照方向分类
 
-::: chartjs
+<DeckDir></DeckDir>
 
-```js
-const config = {
-  type: "doughnut",
-  data: {
-    labels: ["←", "↑", "→"],
-    datasets: [{
-      label: "数量",
-      data: [38, 34, 38],
-      hoverOffset: 4,
-      backgroundColor: ["#ff4069", "#36a2eb", "#ff9f40"],
-      rotation: 180,
-    }]
-  },
-  options: {
-    plugins: {
-      legend: {
-        position: "right",
-      },
-    },
-  }
-};
-```
-
-:::
 ### 按照颜色分类
 
-::: chartjs
-
-```js
-const config = {
-  type: "doughnut",
-  data: {
-    labels: ["红", "红黑", "黑", "蓝黑", "蓝", "红蓝"],
-    datasets: [{
-      label: "数量",
-      data: [25, 12, 32, 12, 25, 4],
-      hoverOffset: 4,
-      backgroundColor: ["#ed6e86", "#9e4a5a", "#a0a0a0", "#3a6b99", "#57a0e5", "#9268f7"],
-      rotation: 2 / 110 * 360,
-    }]
-  },
-  options: {
-    cutout: 1,
-    plugins: {
-      legend: {
-        position: "right",
-      },
-    },
-  }
-};
-```
-
-:::
+<DeckColor></DeckColor>
 
 ### 按照锁定分类
 
-::: chartjs
-
-```js
-const config = {
-  type: "doughnut",
-  data: {
-    labels: ["锁定", "无锁"],
-    datasets: [{
-      label: "数量",
-      data: [41, 69],
-      hoverOffset: 4,
-      backgroundColor: ["#ff4069", "#36a2eb"],
-    }]
-  },
-  options: {
-    plugins: {
-      legend: {
-        position: "right",
-      },
-    },
-  }
-};
-```
-
-:::
+<DeckLockable></DeckLockable>
 
 ## 详细牌堆构成
 
@@ -155,7 +82,8 @@ const config = {
 
 - 有一张[密令](../card/card.md)的颜色在某些版本是错误的，具体见[官方公告](../guide/announcement.md#关于-密令-的勘误)，本表格中是修正后的数据。
 - 根据[官方公告](../guide/announcement.md#引入一扩后建议对卡牌数量进行调整)，引入一扩后建议对卡牌数量进行调整，你可以点击下方滑块切换显示。
-  :::
+
+:::
 
 <el-switch
   inactive-text="显示数量调整后卡牌"
@@ -213,6 +141,9 @@ const config = {
 <script setup>
 import { ref, computed } from "vue";
 import { ElTable, ElTableColumn, ElSwitch } from "element-plus";
+import DeckDir from "@DeckDir";
+import DeckColor from "@DeckColor";
+import DeckLockable from "@DeckLockable";
 
 const filterHandler = (value, row, column) => {
   const property = column['property'];
