@@ -25,16 +25,20 @@ author:
 |                   调虎离山<br/>（二扩）                    | 出牌阶段，指定一名角色，令其本回合技能无效或者不能出牌。                                                                                                             |
 | <div style="width:max-content">欲擒故纵<br/>（二扩）</div> | 传递阶段，代替正常的传出情报，改为将你面前的一张**红色**或**蓝色**情报面朝上传出，然后你摸两张牌。                                                                                    |
 
-## FAQ
-
-::: info 注意
-如果明确说明是“其他角色”，即指除自己外的一名角色，不含自己。如果没有明确说明“其他”，则包含自己。（实体版的部分卡牌漏写了“其他”二字，本FAQ中所有卡牌均与官方设计师进行过确认，最终以本FAQ中的效果为准）
+::: warning 注意
+实体版的部分卡牌的描述有所遗漏，所有卡牌均与官方设计师进行过确认，最终以本FAQ中的效果为准。
 :::
 
-在【试探】【密令】的右下角会显示其描述中的颜色，例如：
+## FAQ
+
+线上版中，【试探】【密令】的右下角会显示其描述中的颜色，例如：
 
 - 【试探】右下角显示<span style="color:white; background-color:var(--red-color);">+1</span><span style="color:white; background-color:var(--blue-color);">-1</span><span style="color:white; background-color:var(--green-color);">-1</span>，代表**潜伏战线**摸一张牌，**特工机关**或**神秘人**弃一张牌。
 - 【密令】右下角显示<span style="color:white; background-color:var(--red-color);">东</span><span style="color:white; background-color:var(--blue-color);">西</span><span style="color:white; background-color:black;">静</span>，代表“东风”对应**红色**，“西风”对应**蓝色**，“静风”对应**黑色**。
+
+::: info 注意
+如果明确说明是“其他角色”，即指除自己外的一名角色，不含自己。如果没有明确说明“其他”，则包含自己。
+:::
 
 ### 澄清
 
