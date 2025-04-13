@@ -32,6 +32,14 @@ author:
 - 【试探】右下角显示<span style="color:white; background-color:var(--red-color);">+1</span><span style="color:white; background-color:var(--blue-color);">-1</span><span style="color:white; background-color:var(--green-color);">-1</span>，代表**潜伏战线**摸一张牌，**特工机关**或**神秘人**弃一张牌。
 - 【密令】右下角显示<span style="color:white; background-color:var(--red-color);">东</span><span style="color:white; background-color:var(--blue-color);">西</span><span style="color:white; background-color:black;">静</span>，代表“东风”对应**红色**，“西风”对应**蓝色**，“静风”对应**黑色**。
 
+### 澄清
+
+- 【澄清】可以弃掉**红**&zwnj;**黑**/**蓝**&zwnj;**黑**双色情报。
+- 【澄清】可以在自己的出牌阶段和其他角色濒死时使用。
+  - 如果是在自己的出牌阶段使用，可以对任意一名角色使用。
+  - 如果是在其他角色濒死时使用，只能对求澄清的角色使用。
+  - 如果一名角色濒死的同时宣胜，例如2**红**2**黑**的**潜伏战线**获得了一张**红**&zwnj;**黑**双色情报，由于宣胜优先于濒死，他将立即获胜，无法对其使用【澄清】弃掉其双色情报阻止其获胜。
+
 ### 试探
 
 - 【试探】只能对其他角色使用，不能对自己使用。
