@@ -3,7 +3,7 @@ title: 角色技能
 icon: address-book
 index: false
 dir:
-  order: 2
+  order: 3
 author:
   - 二宽
   - 奇葩の灵梦

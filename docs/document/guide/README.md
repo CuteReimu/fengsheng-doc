@@ -3,7 +3,7 @@ title: 官方规则
 icon: book
 index: false
 dir:
-  order: 3
+  order: 4
 lastUpdated: false
 contributors: false
 author: 官方文档
