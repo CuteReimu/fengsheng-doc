@@ -164,7 +164,7 @@ const chartOptions = computed<ChartOptions<"scatter">>(() => {
     },
     interaction: {
       intersect: false,
-      mode: 'index',
+      mode: 'nearest',
     },
   }
 });
