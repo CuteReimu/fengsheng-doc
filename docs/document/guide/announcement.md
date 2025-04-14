@@ -3,7 +3,7 @@ title: 官方公告
 icon: bullhorn
 order: 2
 author: 官方文档
-headerDepth: 0
+toc: false
 ---
 
 ## 引入一扩后建议对卡牌数量进行调整

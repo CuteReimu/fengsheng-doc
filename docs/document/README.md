@@ -5,7 +5,7 @@ index: false
 lastUpdated: false
 contributors: false
 pageInfo: ["PageView", "Date"]
-headerDepth: 0
+toc: false
 sidebar: false
 ---
 

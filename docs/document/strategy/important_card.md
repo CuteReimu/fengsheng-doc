@@ -3,7 +3,7 @@ title: 各角色关键卡牌
 icon: book
 order: -1
 author: 两仪生四象
-headerDepth: 0
+toc: false
 ---
 
 ::: danger 注意

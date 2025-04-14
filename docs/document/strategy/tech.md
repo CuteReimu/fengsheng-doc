@@ -3,7 +3,7 @@ title: 基本技巧
 icon: lightbulb
 order: 3
 author: 惑星
-headerDepth: 0
+toc: false
 ---
 
 ## 风声判断身份基本技巧

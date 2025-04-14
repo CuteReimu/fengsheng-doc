@@ -4,7 +4,8 @@ shortTitle: 新手必看基础战术
 icon: user-secret
 order: -3
 author: 墨策
-headerDepth: 1
+toc:
+  level: 1
 ---
 
 ::: warning 注意

@@ -4,7 +4,7 @@ icon: lightbulb
 order: -1
 author: 奇葩の灵梦
 pageInfo: ["Author", "PageView", "Date", "Word"]
-headerDepth: 0
+toc: false
 ---
 
 *以下勾选的是已经完成的角色AI*

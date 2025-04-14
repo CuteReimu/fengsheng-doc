@@ -7,7 +7,7 @@ lastUpdated: false
 contributors: false
 author: 奇葩の灵梦
 pageInfo: ["Author", "PageView", "Date"]
-headerDepth: 0
+toc: false
 ---
 
 <Catalog></Catalog>

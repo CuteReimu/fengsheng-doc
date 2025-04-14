@@ -3,7 +3,7 @@ title: 选角色攻略
 icon: address-book
 order: 2
 author: 奇葩の灵梦
-headerDepth: 0
+toc: false
 ---
 
 你可以查看[角色出场率与胜率分布](../../game/winrate.md)，优先选择图中位置偏上的角色。

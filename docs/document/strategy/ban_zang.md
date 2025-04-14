@@ -5,7 +5,7 @@ order: 6
 author:
   - 半藏
   - 惑星
-headerDepth: 0
+toc: false
 ---
 
 ## 卡牌资源分配

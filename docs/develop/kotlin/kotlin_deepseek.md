@@ -4,7 +4,8 @@ icon: code
 order: 2
 author: Kotlin语言委员会
 pageInfo: ["Author", "PageView", "Date", "Word"]
-headerDepth: 1
+toc:
+  level: 1
 ---
 
 ::: warning 注意

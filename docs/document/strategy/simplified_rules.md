@@ -4,7 +4,7 @@ icon: book
 order: 4
 author: 惑星
 shortTitle: 规则速览
-headerDepth: 0
+toc: false
 ---
 
 游戏开始时，你会获得一个身份：
