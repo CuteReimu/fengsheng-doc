@@ -1,6 +1,5 @@
 <template>
   <Scatter
-    :height="300"
     :data="chartData"
     :options="chartOptions"
   />
@@ -73,6 +72,7 @@ const chartOptions = computed<ChartOptions<"scatter">>(() => {
   }
 
   return {
+    aspectRatio: 1,
     plugins: {
       title: {
         display: true,

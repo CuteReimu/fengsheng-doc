@@ -20,49 +20,7 @@ pageInfo: [ "Author", "PageView", "Date" ]
 
 ### 按照牌类型分类
 
-::: chartjs
-
-```js
-const config = {
-  type: "bar",
-  data: {
-    labels: ["试探", "平衡", "威逼", "利诱", "澄清", "破译", "调包", "截获", "误导", "风云变幻", "密令", "调虎离山", "欲擒故纵"],
-    datasets: [{
-      label: "数量",
-      data: [12, 8, 14, 8, 6, 10, 12, 12, 10, 2, 6, 4, 6],
-      hoverOffset: 4,
-      backgroundColor: ["#9ad0f5"],
-    }]
-  },
-  options: {
-    plugins: {
-      legend: {
-        display: false,
-      },
-    },
-    scales: {
-      x: {
-        border: {
-          color: '#e5e5e5',
-        },
-        grid: {
-          display: false,
-        },
-      },
-      y: {
-        border: {
-          display: false
-        },
-        grid: {
-          color: '#e5e5e5',
-        }
-      },
-    }
-  }
-};
-```
-
-:::
+<DeckCard></DeckCard>
 
 ### 按照方向分类
 
@@ -141,6 +99,7 @@ const config = {
 <script setup>
 import { ref, computed } from "vue";
 import { ElTable, ElTableColumn, ElSwitch } from "element-plus";
+import DeckCard from "@DeckCard";
 import DeckDir from "@DeckDir";
 import DeckColor from "@DeckColor";
 import DeckLockable from "@DeckLockable";

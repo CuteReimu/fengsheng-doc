@@ -60,7 +60,7 @@ export default hopeTheme({
     // 剧透
     spoiler: true,
     // 使用chart.js
-    chartjs: true,
+    chartjs: false,
     // 使用思维导图
     markmap: true,
     // 脚注

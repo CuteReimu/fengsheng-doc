@@ -13,6 +13,7 @@ export default defineUserConfig({
     "@DeckDir": path.resolve(__dirname, "components/DeckDir.vue"),
     "@DeckColor": path.resolve(__dirname, "components/DeckColor.vue"),
     "@DeckLockable": path.resolve(__dirname, "components/DeckLockable.vue"),
+    "@DeckCard": path.resolve(__dirname, "components/DeckCard.vue"),
   },
   base: process.env.VITE_SITE_BASE as '/' | `/${string}/`,
   lang: "zh-CN",
