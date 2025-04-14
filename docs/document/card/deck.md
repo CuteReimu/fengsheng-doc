@@ -24,15 +24,29 @@ pageInfo: [ "Author", "PageView", "Date" ]
 
 ### 按照方向分类
 
-<DeckDir></DeckDir>
+<DeckPie
+  :labels='["←", "↑", "→"]'
+  :data='[38, 34, 38]'
+  :colors='["#ff4069", "#36a2eb", "#ff9f40"]'
+  :rotation='180'
+/>
 
 ### 按照颜色分类
 
-<DeckColor></DeckColor>
+<DeckPie
+  :labels='["红", "红黑", "黑", "蓝黑", "蓝", "红蓝"]'
+  :data='[25, 12, 32, 12, 25, 4]'
+  :colors='["#ed6e86", "#9e4a5a", "#a0a0a0", "#3a6b99", "#57a0e5", "#9268f7"]'
+  :rotation='2 / 110 * 360'
+/>
 
 ### 按照锁定分类
 
-<DeckLockable></DeckLockable>
+<DeckPie
+  :labels='["锁定", "无锁"]'
+  :data='[41, 69]'
+  :colors='["#ff4069", "#36a2eb"]'
+/>
 
 ## 详细牌堆构成
 
@@ -100,9 +114,7 @@ pageInfo: [ "Author", "PageView", "Date" ]
 import { ref, computed } from "vue";
 import { ElTable, ElTableColumn, ElSwitch } from "element-plus";
 import DeckCard from "@DeckCard";
-import DeckDir from "@DeckDir";
-import DeckColor from "@DeckColor";
-import DeckLockable from "@DeckLockable";
+import DeckPie from "@DeckPie";
 
 const filterHandler = (value, row, column) => {
   const property = column['property'];

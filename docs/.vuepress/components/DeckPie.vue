@@ -1,6 +1,6 @@
 <template>
   <div class="my-chartjs-wrapper">
-    <Doughnut
+    <Pie
       :data="chartData"
       :options="chartOptions"
     />
@@ -8,25 +8,33 @@
 </template>
 
 <script setup lang="ts">
-import { Doughnut } from 'vue-chartjs';
+import {Pie} from 'vue-chartjs';
 import {ChartData, ChartOptions} from "chart.js";
 import {Chart as ChartJS, ArcElement} from 'chart.js';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
 
 ChartJS.register(ArcElement, ChartDataLabels);
 
-const labels = ["锁定", "无锁"];
+interface Props {
+  labels: string[]
+  colors: string[]
+  data: number[]
+  rotation?: number
+}
 
-const chartData: ChartData<"doughnut"> = {
-  labels,
+const props = defineProps<Props>();
+
+const chartData: ChartData<"pie"> = {
+  labels: props.labels,
   datasets: [{
     label: "数量",
-    data: [41, 69],
-    hoverOffset: 4,
-    backgroundColor: ["#ff4069", "#36a2eb"],
+    data: props.data,
+    hoverOffset: 10,
+    backgroundColor: props.colors,
+    rotation: props.rotation,
   }]
 };
-const chartOptions: ChartOptions<"doughnut"> = {
+const chartOptions: ChartOptions<"pie"> = {
   plugins: {
     legend: {
       display: false,
@@ -35,9 +43,12 @@ const chartOptions: ChartOptions<"doughnut"> = {
       enabled: false,
     },
     datalabels: {
+      align: props.data.some((v) => v < 10) ? "end" : "center",
       color: "#FFFFFF", // 标签颜色
       formatter: (value, ctx) => {
-        return `${labels[ctx.dataIndex]} 共 ${value} 张`; // 自定义标签内容
+        return props.data.some((v) => v < 10) ?
+          `${props.labels[ctx.dataIndex]}${value}张` :
+          `${props.labels[ctx.dataIndex]} 共 ${value} 张`// 自定义标签内容
       },
     },
   },
