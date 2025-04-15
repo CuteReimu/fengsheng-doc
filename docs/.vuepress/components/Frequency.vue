@@ -90,8 +90,6 @@ const chartOptions = computed<ChartOptions<"line">>(() => {
   minDisplayDate.setDate(minDisplayDate.getDate() - 29); // 始终显示最后30天
 
   return {
-    responsive: true,
-    maintainAspectRatio: true,
     scales: {
       x: {
         ticks: {
@@ -105,20 +103,21 @@ const chartOptions = computed<ChartOptions<"line">>(() => {
       },
     },
     plugins: {
+      title: {
+        display: true,
+        text: '近期场次与参与人次',
+        font: {size: 20}
+      },
       datalabels: null,
       legend: {
         labels: {
-          usePointStyle: true,
-          boxHeight: 8,
-          useBorderRadius: true,
-          borderRadius: 0,
-          boxPadding: 5,
+          boxHeight: 2,
+          borderWidth: 0,
         },
-        onClick: () => {},
       },
       tooltip: {
         usePointStyle: true,
-        borderWidth: 0,
+        borderWidth: 2,
         boxWidth: 8,
         boxPadding: 5,
       },
@@ -127,14 +126,14 @@ const chartOptions = computed<ChartOptions<"line">>(() => {
           newLine: {
             xMin: '04-12',
             xMax: '04-12',
-            borderColor: 'rgba(255,87,34,0.65)',
+            borderColor: 'rgb(59, 169, 120)',
             borderWidth: 2,
             borderDash: [6, 6],
             label: {
               display: true,
               content: "统计规则调整", // 修改标签文本
               position: 'start',
-              backgroundColor: 'rgba(255,87,34,0.8)',
+              backgroundColor: 'rgb(59, 169, 120, 0.8)',
             }
           }
         }
