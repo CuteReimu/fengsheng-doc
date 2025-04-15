@@ -38,7 +38,7 @@ const labels = [
 
 const chartData = computed<ChartData<"scatter">>(() => {
   const d = Object.entries(data.value).filter(([, item]) => {
-    return item[0] >= 10;
+    return item[0] > 0;
   });
   const colors = d.map(([key]) => {
     if (labels[0].includes(key)) return "rgb(59, 169, 120)";
@@ -59,7 +59,7 @@ const chartData = computed<ChartData<"scatter">>(() => {
 const chartOptions = computed<ChartOptions<"scatter">>(() => {
   // 排序后取中间值
   const sortedY = Object.values(data.value).filter(item => {
-    return item[0] >= 10;
+    return item[0] > 0;
   }).map(item => item[1] / item[0]).sort();
   const mid = Math.floor(sortedY.length / 2)
 
