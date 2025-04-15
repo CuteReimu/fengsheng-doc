@@ -1,7 +1,7 @@
 ---
 title: 胜率
 icon: percent
-order: 2
+order: 3
 author: "奇葩の灵梦"
 pageInfo: [ "Author", "PageView", "Date" ]
 breadcrumb: false

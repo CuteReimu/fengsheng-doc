@@ -12,6 +12,7 @@ export default defineUserConfig({
     "@WinRate": path.resolve(__dirname, "components/WinRate.vue"),
     "@DeckCard": path.resolve(__dirname, "components/DeckCard.vue"),
     "@DeckPie": path.resolve(__dirname, "components/DeckPie.vue"),
+    "@Frequency": path.resolve(__dirname, "components/Frequency.vue"),
   },
   base: process.env.VITE_SITE_BASE as '/' | `/${string}/`,
   lang: "zh-CN",
