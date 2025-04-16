@@ -1,5 +1,5 @@
 ---
-title: 查询
+title: 玩家查询
 icon: magnifying-glass
 order: 2
 author: "奇葩の灵梦"

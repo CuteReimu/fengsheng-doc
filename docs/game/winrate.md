@@ -1,5 +1,5 @@
 ---
-title: 胜率
+title: 角色胜率
 icon: percent
 order: 3
 author: "奇葩の灵梦"
