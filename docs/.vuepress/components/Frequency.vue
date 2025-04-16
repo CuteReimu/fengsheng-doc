@@ -137,6 +137,7 @@ const chartOptions = computed<ChartOptions<"line">>(() => {
         borderWidth: 2,
         boxWidth: 8,
         boxPadding: 5,
+        reverse: true,
       },
       annotation: {
         annotations: {
