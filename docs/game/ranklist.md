@@ -9,6 +9,8 @@ editLink: false
 next: false
 prev: false
 toc: false
+gitInclude:
+  - ../.vuepress/components/RankList.vue
 ---
 
 <RankList></RankList>
