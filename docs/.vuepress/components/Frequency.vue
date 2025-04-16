@@ -91,7 +91,7 @@ const chartOptions = computed<ChartOptions<"line">>(() => {
 
   let totalCount = 0, totalPc = 0, count = 0;
   const currentDate = new Date(minDisplayDate);
-  for (let i = 0; i <= 30; i++) {
+  for (let i = 0; i < 30; i++) { // 小于30，近期均值不包含今天
     const dateStr = currentDate.toISOString().slice(0, 10);
     const y = currentDate.getFullYear(), m = currentDate.getMonth() + 1, d = currentDate.getDate();
     if (y > 2025 || (y == 2025 && m > 4) || (y == 2025 && m == 4 && d >= 12)) {
