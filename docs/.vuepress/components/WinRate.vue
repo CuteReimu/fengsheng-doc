@@ -110,7 +110,10 @@ const chartOptions = computed<ChartOptions<"scatter">>(() => {
       },
       tooltip: {
         callbacks: {
-          label: function ({raw, dataset}) {
+          title: (a) => {
+            return a.map(i => i.label).join(" ");
+          },
+          label: ({raw, dataset}) => {
             const p = raw as ScatterDataPoint;
             let trialsAmount = 0;
             for (let i = 0; i < dataset.data.length; i++) {
