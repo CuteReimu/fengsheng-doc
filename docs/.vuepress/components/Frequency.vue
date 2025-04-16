@@ -93,15 +93,12 @@ const chartOptions = computed<ChartOptions<"line">>(() => {
   const currentDate = new Date(minDisplayDate);
   for (let i = 0; i < 30; i++) { // 小于30，近期均值不包含今天
     const dateStr = currentDate.toISOString().slice(0, 10);
-    const y = currentDate.getFullYear(), m = currentDate.getMonth() + 1, d = currentDate.getDate();
-    if (y > 2025 || (y == 2025 && m > 4) || (y == 2025 && m == 4 && d >= 12)) {
-      const value = rawData.find((value) => value.date.slice(0, 10) === dateStr);
-      if (value) {
-        totalCount += value.count;
-        totalPc += value.pc;
-      }
-      count++;
+    const value = rawData.find((value) => value.date.slice(0, 10) === dateStr);
+    if (value) {
+      totalCount += value.count;
+      totalPc += value.pc;
     }
+    count++;
     currentDate.setDate(currentDate.getDate() + 1);
   }
   const aveCount = Math.round(totalCount / count * 10) / 10;
@@ -141,17 +138,17 @@ const chartOptions = computed<ChartOptions<"line">>(() => {
       },
       annotation: {
         annotations: {
-          newLine: {
-            xMin: '04-12',
-            xMax: '04-12',
-            borderColor: 'rgb(59, 169, 120)',
-            borderWidth: 2,
-            borderDash: [6, 6],
+          avePc: {
+            yMin: avePc,
+            yMax: avePc,
+            borderColor: 'rgba(41,50,225)',
+            borderWidth: 1,
+            borderDash: [5, 4],
             label: {
               display: true,
-              content: "统计规则调整", // 修改标签文本
+              content: `${avePc}`, // 修改标签文本
               position: 'start',
-              backgroundColor: 'rgb(59, 169, 120, 0.8)',
+              backgroundColor: 'rgba(41,50,225,0.7)',
             }
           },
           aveCount: {
@@ -165,19 +162,6 @@ const chartOptions = computed<ChartOptions<"line">>(() => {
               content: `${aveCount}`, // 修改标签文本
               position: 'start',
               backgroundColor: 'rgba(225,6,2,0.7)',
-            }
-          },
-          avePc: {
-            yMin: avePc,
-            yMax: avePc,
-            borderColor: 'rgba(41,50,225)',
-            borderWidth: 1,
-            borderDash: [5, 4],
-            label: {
-              display: true,
-              content: `${avePc}`, // 修改标签文本
-              position: 'start',
-              backgroundColor: 'rgba(41,50,225,0.7)',
             }
           },
         }
