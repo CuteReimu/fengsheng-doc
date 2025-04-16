@@ -159,6 +159,10 @@ const chartOptions = computed<ChartOptions<"scatter">>(() => {
           display: true,
           text: '胜率（%）',
           font: {size: 18},
+        },
+        ticks: {
+          autoSkip: true,
+          stepSize: 2.5,
         }
       },
     },

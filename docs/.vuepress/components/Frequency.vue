@@ -87,8 +87,25 @@ const chartOptions = computed<ChartOptions<"line">>(() => {
 
   const maxDisplayDate = new Date(rawData[rawData.length - 1].date);
   const minDisplayDate = new Date(maxDisplayDate);
-  minDisplayDate.setDate(minDisplayDate.getDate() - 29); // 始终显示最后30天
+  minDisplayDate.setDate(minDisplayDate.getDate() - 30); // 始终显示最后30天
 
+  let totalCount = 0, totalPc = 0, count = 0;
+  const currentDate = new Date(minDisplayDate);
+  for (let i = 0; i <= 30; i++) {
+    const dateStr = currentDate.toISOString().slice(0, 10);
+    const y = currentDate.getFullYear(), m = currentDate.getMonth() + 1, d = currentDate.getDate();
+    if (y > 2025 || (y == 2025 && m > 4) || (y == 2025 && m == 4 && d >= 12)) {
+      const value = rawData.find((value) => value.date.slice(0, 10) === dateStr);
+      if (value) {
+        totalCount += value.count;
+        totalPc += value.pc;
+      }
+      count++;
+    }
+    currentDate.setDate(currentDate.getDate() + 1);
+  }
+  const aveCount = Math.round(totalCount / count * 10) / 10;
+  const avePc = Math.round(totalPc / count * 10) / 10;
   return {
     scales: {
       x: {
@@ -135,7 +152,33 @@ const chartOptions = computed<ChartOptions<"line">>(() => {
               position: 'start',
               backgroundColor: 'rgb(59, 169, 120, 0.8)',
             }
-          }
+          },
+          aveCount: {
+            yMin: aveCount,
+            yMax: aveCount,
+            borderColor: 'rgba(225,6,2)',
+            borderWidth: 1,
+            borderDash: [5, 4],
+            label: {
+              display: true,
+              content: `${aveCount}`, // 修改标签文本
+              position: 'start',
+              backgroundColor: 'rgba(225,6,2,0.7)',
+            }
+          },
+          avePc: {
+            yMin: avePc,
+            yMax: avePc,
+            borderColor: 'rgba(41,50,225)',
+            borderWidth: 1,
+            borderDash: [5, 4],
+            label: {
+              display: true,
+              content: `${avePc}`, // 修改标签文本
+              position: 'start',
+              backgroundColor: 'rgba(41,50,225,0.7)',
+            }
+          },
         }
       },
     },
