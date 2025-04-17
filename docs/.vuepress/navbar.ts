@@ -21,7 +21,15 @@ export default navbar([
   {
     text: '游戏状态',
     icon: 'gamepad',
-    link: '/game/game_status.md',
+    prefix: '/game/',
     activeMatch: '^/game/',
+    children: [
+      'game_status.md',
+      'search.md',
+      'winrate.md',
+      'frequency.md',
+      'ranklist.md',
+      'toplist.md',
+    ]
   },
 ]);
