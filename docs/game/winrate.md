@@ -1,6 +1,6 @@
 ---
 title: 角色胜率
-icon: percent
+icon: user-check
 order: 3
 author: "奇葩の灵梦"
 pageInfo: [ "Author", "PageView", "Date" ]
