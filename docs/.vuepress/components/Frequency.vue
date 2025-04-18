@@ -179,10 +179,22 @@ const chartOptions = computed<ChartOptions<"line">>(() => {
           autoSkip: true,
           maxRotation: 0 // 日期标签倾斜显示
         },
+        grid: {
+          offset: false,
+        },
       },
       y: {
+        border: {
+          display: false,
+        },
         type: 'linear',
         position: 'right',
+        grid: {
+          drawTicks: false,
+        },
+        ticks: {
+          display: true,
+        },
       },
     },
     plugins: {
