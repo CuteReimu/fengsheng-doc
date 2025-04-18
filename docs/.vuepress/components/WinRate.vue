@@ -3,19 +3,25 @@
     :data="chartData"
     :options="chartOptions"
   />
+  <p></p>
+  <Bar
+      :data="chartData2"
+      :options="chartOptions2"
+  />
 </template>
 
 <script setup lang="ts">
 import {onMounted, ref, computed} from "vue";
 import Axios from "axios";
 
-import {Scatter} from 'vue-chartjs';
+import {Scatter, Bar} from 'vue-chartjs';
 import {ChartData, ChartOptions} from "chart.js";
 import {
   Chart as ChartJS,
   Title,
   Tooltip,
   ScatterDataPoint,
+  BarElement,
   PointElement,
   CategoryScale,
   LinearScale,
@@ -26,7 +32,7 @@ import ChartDataLabels from 'chartjs-plugin-datalabels';
 import Annotation from 'chartjs-plugin-annotation';
 import {ElMessage} from "element-plus";
 
-ChartJS.register(Title, Tooltip, PointElement, CategoryScale, LinearScale, Legend, ChartDataLabels, Annotation);
+ChartJS.register(Title, Tooltip, BarElement, PointElement, CategoryScale, LinearScale, Legend, ChartDataLabels, Annotation);
 
 const data = ref<{ [key: string]: [number, number] }>({});
 
@@ -35,6 +41,19 @@ const labels = [
   ["秦圆圆", "SP程小蝶", "老虎", "钱敏", "SP连鸢", "盛老板", "简先生", "高桥智子", "玛利亚", "青年小九", "青年韩梅", "池镜海", "SP端木静"],
   ["陈安娜", "凌素秋", "成年韩梅", "哑炮", "陈大耳", "边云疆", "金自来", "间谍阿芙罗拉", "小铃铛", "SP白菲菲", "李书云", "成年小九", "秦无命", "SP韩梅", "SP小九", "孙守謨", "王响"]
 ];
+
+const winRates = ref<{[key: string]: number}>({
+  "总胜率": 32.42,
+  "潜伏/军情": 34.64,
+  "神秘人": 25.01,
+  "镇压者": 17.66,
+  "簒夺者": 26.21,
+  "双面间谍": 26.68,
+  "诱变者": 40.31,
+  "先行者": 25.38,
+  "搅局者": 21.00,
+  "清道夫": 19.71,
+});
 
 const chartData = computed<ChartData<"scatter">>(() => {
   const d = Object.entries(data.value).filter(([, item]) => {
@@ -175,6 +194,82 @@ const chartOptions = computed<ChartOptions<"scatter">>(() => {
     },
   }
 });
+
+const chartData2 = computed<ChartData<"bar">>(() => {
+  const h = winRates.value;
+  return {
+    labels: Object.keys(h),
+    datasets: [{
+      label: '胜率',
+      data: Object.values(h),
+      backgroundColor: "#9ad0f5",
+    }]
+  };
+});
+const chartOptions2 = computed<ChartOptions<"bar">>(() => {
+  const h = winRates.value;
+  return {
+    scales: {
+      x: {
+        border: {
+          color: '#e5e5e5',
+        },
+        grid: {
+          display: false,
+        },
+      },
+      y: {
+        border: {
+          display: false
+        },
+        grid: {
+          color: '#e5e5e5',
+        },
+        title: {
+          display: true,
+          text: '胜率（%）',
+          font: {size: 18},
+        },
+        beginAtZero: true,
+      },
+    },
+    plugins: {
+      title: {
+        display: true,
+        text: '各身份胜率统计',
+        font: {size: 20}
+      },
+      datalabels: {
+        color: "#FFFFFF", // 标签颜色
+        formatter: (value) => {
+          return `${value.toFixed()}%`; // 自定义标签内容
+        },
+      },
+      tooltip: {
+        callbacks: {
+          label: (ctx) => {
+            return `${ctx.raw}%`;
+          }
+        }
+      },
+      legend: {
+        display: false,
+      },
+      annotation: {
+        annotations: {
+          medianLine: {
+            yMin: h["总胜率"],
+            yMax: h["总胜率"],
+            borderColor: 'rgba(255,87,34)',
+            borderWidth: 2,
+            borderDash: [6, 6],
+          }
+        }
+      },
+    },
+  };
+});
+
 
 const doRequest = () => {
   Axios.get(import.meta.env.VITE_REQUEST_URL.replace("getallgames", "winrate2"), {})
