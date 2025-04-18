@@ -27,6 +27,8 @@ toc: false
 只有最初发布的一扩版本存在这个问题。新发布的一扩版本已经解决了这个问题，无需替换。
 :::
 
+另外，部分版本的[“密令”](../card/card.md)牌上缺少“暗置标志”，属于印刷错误，[“密令”](../card/card.md)必须面朝下打出。
+
 <style scoped>
 span.card-bg {
   color: black;
