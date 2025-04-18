@@ -28,6 +28,7 @@ import {
   LineElement,
 } from 'chart.js';
 import Annotation from 'chartjs-plugin-annotation';
+import {AnnotationOptions} from 'chartjs-plugin-annotation';
 import {ElMessage} from "element-plus";
 
 ChartJS.register(Title, Tooltip, BarElement, PointElement, LineElement, CategoryScale, LinearScale, Legend, Annotation);
@@ -93,6 +94,8 @@ const chartOptions = computed<ChartOptions<"line">>(() => {
     return {};
   }
 
+  const annotations: AnnotationOptions[] = [];
+
   const maxDisplayDate = new Date(rawData[rawData.length - 1].date);
   const minDisplayDate = new Date(maxDisplayDate);
   minDisplayDate.setDate(minDisplayDate.getDate() - 30); // 始终显示最后30天
@@ -101,6 +104,17 @@ const chartOptions = computed<ChartOptions<"line">>(() => {
   const currentDate = new Date(minDisplayDate);
   for (let i = 0; i < 30; i++) { // 小于30，近期均值不包含今天
     const dateStr = currentDate.toISOString().slice(0, 10);
+    if (currentDate.getDay() === 0) {
+      annotations.push(
+          {
+            xMin: dateStr.slice(5, 10),
+            xMax: dateStr.slice(5, 10),
+            borderColor: 'rgb(59, 169, 120)',
+            borderWidth: 1,
+            borderDash: [5, 4],
+          }
+      )
+    }
     const value = rawData.find((value) => value.date.slice(0, 10) === dateStr);
     if (value) {
       totalCount += value.count;
@@ -111,6 +125,34 @@ const chartOptions = computed<ChartOptions<"line">>(() => {
   }
   const aveCount = Math.round(totalCount / count * 10) / 10;
   const avePc = Math.round(totalPc / count * 10) / 10;
+  annotations.push(
+    {
+      yMin: avePc,
+      yMax: avePc,
+      borderColor: 'rgba(41,50,225)',
+      borderWidth: 2,
+      borderDash: [6, 6],
+      label: {
+        display: true,
+        content: `${avePc}`, // 修改标签文本
+        position: 'start',
+        backgroundColor: 'rgba(41,50,225,0.7)',
+      }
+    },
+    {
+      yMin: aveCount,
+      yMax: aveCount,
+      borderColor: 'rgba(225,6,2)',
+      borderWidth: 2,
+      borderDash: [6, 6],
+      label: {
+        display: true,
+        content: `${aveCount}`, // 修改标签文本
+        position: 'start',
+        backgroundColor: 'rgba(225,6,2,0.7)',
+      }
+    },
+  );
   return {
     scales: {
       x: {
@@ -145,34 +187,7 @@ const chartOptions = computed<ChartOptions<"line">>(() => {
         reverse: true,
       },
       annotation: {
-        annotations: {
-          avePc: {
-            yMin: avePc,
-            yMax: avePc,
-            borderColor: 'rgba(41,50,225)',
-            borderWidth: 1,
-            borderDash: [5, 4],
-            label: {
-              display: true,
-              content: `${avePc}`, // 修改标签文本
-              position: 'start',
-              backgroundColor: 'rgba(41,50,225,0.7)',
-            }
-          },
-          aveCount: {
-            yMin: aveCount,
-            yMax: aveCount,
-            borderColor: 'rgba(225,6,2)',
-            borderWidth: 1,
-            borderDash: [5, 4],
-            label: {
-              display: true,
-              content: `${aveCount}`, // 修改标签文本
-              position: 'start',
-              backgroundColor: 'rgba(225,6,2,0.7)',
-            }
-          },
-        }
+        annotations
       },
     },
     interaction: {
