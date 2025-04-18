@@ -3,18 +3,24 @@
     :data="chartData"
     :options="chartOptions"
   />
+  <p></p>
+  <Bar
+      :data="chartData2"
+      :options="chartOptions2"
+  />
 </template>
 
 <script setup lang="ts">
 import {onMounted, ref, computed} from "vue";
 import Axios from "axios";
 
-import {Line} from 'vue-chartjs';
+import {Line, Bar} from 'vue-chartjs';
 import {ChartData, ChartOptions} from "chart.js";
 import {
   Chart as ChartJS,
   Title,
   Tooltip,
+  BarElement,
   PointElement,
   CategoryScale,
   LinearScale,
@@ -24,13 +30,15 @@ import {
 import Annotation from 'chartjs-plugin-annotation';
 import {ElMessage} from "element-plus";
 
-ChartJS.register(Title, Tooltip, PointElement, LineElement, CategoryScale, LinearScale, Legend, Annotation);
+ChartJS.register(Title, Tooltip, BarElement, PointElement, LineElement, CategoryScale, LinearScale, Legend, Annotation);
 
 interface DataType {
   date: string
   count: number
   pc: number
 }
+
+const hours = ref<number[]>([]);
 
 const data = ref<DataType[]>([]);
 
@@ -119,7 +127,7 @@ const chartOptions = computed<ChartOptions<"line">>(() => {
     plugins: {
       title: {
         display: true,
-        text: '近期场次与参与人次',
+        text: '近期每日活跃度',
         font: {size: 20}
       },
       datalabels: null,
@@ -174,10 +182,77 @@ const chartOptions = computed<ChartOptions<"line">>(() => {
   }
 });
 
+const chartData2 = computed<ChartData<"bar">>(() => {
+  const h = hours.value;
+  const total = h.reduce((sum, value) => sum + value, 0);
+  return {
+    labels: h.map(((_, index) => index+0.5)),
+    datasets: [{
+      label: '活跃系数',
+      data: h.map((value) => value / total * 100),
+      backgroundColor: 'rgba(54, 162, 235, 0.4)',
+      borderColor: 'rgba(54, 162, 235, 1)',
+      barPercentage: 1.0,
+      categoryPercentage: 1.0,
+    }]
+  };
+});
+const chartOptions2 = computed<ChartOptions<"bar">>(() => {
+  return {
+    scales: {
+      x: {
+        grid: {
+          offset: false,
+        },
+        type: 'linear',
+        min: 0,
+        max: 24,
+        offset: false,
+        ticks: {
+          autoSkip: false,
+          callback: (value) => {
+            const hour = Math.floor(value as number);
+            return `${hour}:00`;
+          },
+          stepSize: 2,
+        },
+        stacked: true,
+      },
+      y: {
+        title: {
+          display: true,
+          text: '活跃系数',
+          font: {size: 18},
+        },
+        beginAtZero: true,
+      }
+    },
+    plugins: {
+      title: {
+        display: true,
+        text: '全天活跃度',
+        font: {size: 20}
+      },
+      tooltip: {
+        callbacks: {
+          title: ([ctx]) => {
+            const hour = Math.floor(ctx.parsed.x);
+            return `${hour}:00 - ${hour+1}:00`;
+          }
+        }
+      },
+      legend: {
+        display: false,
+      },
+    },
+  };
+});
+
 const doRequest = () => {
   Axios.get(import.meta.env.VITE_REQUEST_URL.replace("getallgames", "frequency"), {})
       .then((response) => {
         data.value = response.data.data;
+        hours.value = response.data.hours;
       })
       .catch((error) => {
         console.error(error);
