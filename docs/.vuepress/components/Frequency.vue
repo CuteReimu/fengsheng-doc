@@ -233,6 +233,7 @@ const chartOptions2 = computed<ChartOptions<"bar">>(() => {
         text: '全天活跃度',
         font: {size: 20}
       },
+      datalabels: null,
       tooltip: {
         callbacks: {
           title: ([ctx]) => {

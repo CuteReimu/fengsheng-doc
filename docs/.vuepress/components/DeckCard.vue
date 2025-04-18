@@ -46,7 +46,8 @@ const chartOptions: ChartOptions<"bar"> = {
       },
       grid: {
         color: '#e5e5e5',
-      }
+      },
+      beginAtZero: true,
     },
   }
 };
