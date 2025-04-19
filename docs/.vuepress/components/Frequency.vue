@@ -131,16 +131,17 @@ const chartOptions = computed<ChartOptions<"line">>(() => {
   }
   const aveCount = Math.round(totalCount / count * 10) / 10;
   const avePc = Math.round(totalPc / count * 10) / 10;
+  const avePcCount = Math.round((totalPc - totalCount) / count * 10) / 10;
   annotations.push(
     {
-      yMin: avePc - aveCount,
-      yMax: avePc - aveCount,
+      yMin: avePcCount,
+      yMax: avePcCount,
       borderColor: 'rgba(59, 169, 120, 0.4)',
       borderWidth: 2,
       borderDash: [6, 6],
       label: {
         display: true,
-        content: `${avePc - aveCount}`, // 修改标签文本
+        content: `${avePcCount}`, // 修改标签文本
         position: 'start',
         backgroundColor: 'rgba(59, 169, 120, 0.7)',
       }
