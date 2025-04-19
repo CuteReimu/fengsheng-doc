@@ -118,6 +118,12 @@ const chartOptions = computed<ChartOptions<"line">>(() => {
             borderColor: 'rgb(59, 169, 120)',
             borderWidth: 1,
             borderDash: [5, 4],
+            label: {
+              display: true,
+              content: '周日', // 修改标签文本
+              position: 'end',
+              backgroundColor: 'rgba(59, 169, 120, 0.5)',
+            }
           }
       )
     }
