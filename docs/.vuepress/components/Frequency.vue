@@ -108,7 +108,7 @@ const chartOptions = computed<ChartOptions<"line">>(() => {
 
   let totalCount = 0, totalPc = 0, count = 0;
   const currentDate = new Date(minDisplayDate);
-  for (let i = 0; i < 30; i++) { // 小于30，近期均值不包含今天
+  for (let i = 0; i <= 30; i++) {
     const dateStr = currentDate.toISOString().slice(0, 10);
     if (currentDate.getDay() === 0) {
       annotations.push(
@@ -127,6 +127,7 @@ const chartOptions = computed<ChartOptions<"line">>(() => {
           }
       )
     }
+    if (i === 30) continue; // 均值不包含今天
     const value = rawData.find((value) => value.date.slice(0, 10) === dateStr);
     if (value) {
       totalCount += value.count;
