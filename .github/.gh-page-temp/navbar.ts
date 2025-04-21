@@ -15,7 +15,7 @@ export default navbar([
   {
     text: '开发相关',
     icon: 'code',
-    link: '/develop/,
+    link: '/develop/',
     activeMatch: '^/develop/',
   },
 ]);
