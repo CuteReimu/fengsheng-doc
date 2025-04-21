@@ -15,7 +15,7 @@ export default navbar([
   {
     text: '开发相关',
     icon: 'code',
-    link: '/develop/server/kotlin_intro.md',
+    link: '/develop/,
     activeMatch: '^/develop/',
   },
 ]);
