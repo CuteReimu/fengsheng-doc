@@ -4,7 +4,7 @@ icon: book
 index: false
 lastUpdated: false
 contributors: false
-pageInfo: ["PageView", "Date"]
+pageInfo: ["Author", "PageView", "Date"]
 toc: false
 sidebar: false
 author:
