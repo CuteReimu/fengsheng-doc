@@ -219,4 +219,4 @@ export default hopeTheme({
     "  。",
   copyright: false,
   displayFooter: true,
-});
+}, { custom: true });
