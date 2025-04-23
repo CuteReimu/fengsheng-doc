@@ -25,6 +25,24 @@ export default defineUserConfig({
 
   head: [
     [
+      "script",
+      {
+        src: "//unpkg.com/vue@3.5.13/dist/vue.global.prod.js",
+      },
+    ],
+    [
+      "script",
+      {
+        src: "//unpkg.com/vue-router@4.5.0/dist/vue-router.global.prod.js",
+      },
+    ],
+    [
+      "script",
+      {
+        src: "https://cdn.jsdelivr.net/npm/axios@1.8.4/dist/axios.min.js",
+      },
+    ],
+    [
       "link",
       {
         rel: "stylesheet",
@@ -56,6 +74,9 @@ export default defineUserConfig({
       worker: {
         rollupOptions: {
           external: [
+            "vue",
+            "vue-router",
+            "axios",
             "element-plus",
             "chart.js",
             "chartjs-plugin-datalabels",

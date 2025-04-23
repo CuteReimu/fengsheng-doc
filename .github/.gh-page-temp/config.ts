@@ -20,6 +20,18 @@ export default defineUserConfig({
     [
       "script",
       {
+        src: "//unpkg.com/vue@3.5.13/dist/vue.global.prod.js",
+      },
+    ],
+    [
+      "script",
+      {
+        src: "//unpkg.com/vue-router@4.5.0/dist/vue-router.global.prod.js",
+      },
+    ],
+    [
+      "script",
+      {
         src: "https://cdn.jsdelivr.net/npm/chart.js@4.4.9",
       },
     ],
@@ -36,6 +48,8 @@ export default defineUserConfig({
       worker: {
         rollupOptions: {
           external: [
+            "vue",
+            "vue-router",
             "chart.js",
             "chartjs-plugin-datalabels",
           ],
