@@ -199,7 +199,6 @@ const chartData2 = computed<ChartData<"bar">>(() => {
 const chartOptions2 = computed<ChartOptions<"bar">>(() => {
   const h = winRates.value;
   const ave = h.find(item => item.identity === "总胜率")?.rate;
-  console.log(ave);
   const annotations: AnnotationOptions[] = [];
   if (ave) {
     annotations.push({
@@ -277,7 +276,6 @@ const doRequest = () => {
             rate: Math.round(v1 / v0 * 10000) / 100,
           });
         }
-        console.log(rates);
         winRates.value = rates;
       })
       .catch((error) => {

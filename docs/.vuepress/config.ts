@@ -1,6 +1,7 @@
 import theme from "./theme.js";
 import { defineUserConfig } from 'vuepress';
 import { getDirname, path } from "vuepress/utils";
+import { viteBundler } from '@vuepress/bundler-vite';
 
 const __dirname = getDirname(import.meta.url);
 
@@ -21,4 +22,46 @@ export default defineUserConfig({
 
   title: '《风声·谍战篇》FAQ',
   theme,
+
+  head: [
+    [
+      "link",
+      {
+        rel: "stylesheet",
+        href: "//unpkg.com/element-plus@2.9.7/dist/index.css",
+      },
+    ],
+    [
+      "script",
+      {
+        src: "//unpkg.com/element-plus@2.9.8",
+      },
+    ],
+    [
+      "script",
+      {
+        src: "https://cdn.jsdelivr.net/npm/chart.js@4.4.9",
+      },
+    ],
+    [
+      "script",
+      {
+        src: "https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0",
+      },
+    ],
+  ],
+
+  bundler: viteBundler({
+    viteOptions: {
+      worker: {
+        rollupOptions: {
+          external: [
+            "element-plus",
+            "chart.js",
+            "chartjs-plugin-datalabels",
+          ],
+        },
+      },
+    }
+  }),
 });
