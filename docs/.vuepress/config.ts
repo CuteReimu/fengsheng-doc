@@ -46,7 +46,7 @@ export default defineUserConfig({
       "link",
       {
         rel: "stylesheet",
-        href: "//unpkg.com/element-plus@2.9.7/dist/index.css",
+        href: "//unpkg.com/element-plus@2.9.8/dist/index.css",
       },
     ],
     [
