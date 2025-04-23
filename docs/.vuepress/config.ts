@@ -27,44 +27,55 @@ export default defineUserConfig({
     [
       "script",
       {
-        src: "//unpkg.com/vue@3.5.13/dist/vue.global.prod.js",
+        src: "https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js",
+        async: "false",
       },
     ],
     [
       "script",
       {
-        src: "//unpkg.com/vue-router@4.5.0/dist/vue-router.global.prod.js",
-      },
-    ],
-    [
-      "script",
-      {
-        src: "https://cdn.jsdelivr.net/npm/axios@1.8.4/dist/axios.min.js",
+        src: "https://unpkg.com/vue-router@4.5.0/dist/vue-router.global.js",
+        defer: true,
       },
     ],
     [
       "link",
       {
         rel: "stylesheet",
-        href: "//unpkg.com/element-plus@2.9.8/dist/index.css",
+        href: "https://unpkg.com/element-plus@2.9.8/dist/index.css",
       },
     ],
     [
       "script",
       {
-        src: "//unpkg.com/element-plus@2.9.8",
+        src: "https://unpkg.com/element-plus@2.9.8/dist/index.full.js",
       },
     ],
     [
       "script",
       {
-        src: "https://cdn.jsdelivr.net/npm/chart.js@4.4.9",
+        src: "https://unpkg.com/chart.js@4.4.9/dist/chart.umd.js",
+        async: "false",
       },
     ],
     [
       "script",
       {
-        src: "https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0",
+        src: "https://unpkg.com/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.js",
+        defer: true,
+      },
+    ],
+    [
+      "script",
+      {
+        src: "https://unpkg.com/chartjs-plugin-annotation@3.1.0/dist/chartjs-plugin-annotation.min.js",
+        defer: true,
+      },
+    ],
+    [
+      "script",
+      {
+        src: "https://unpkg.com/axios@1.8.4/dist/axios.min.js",
       },
     ],
   ],
@@ -80,6 +91,7 @@ export default defineUserConfig({
             "element-plus",
             "chart.js",
             "chartjs-plugin-datalabels",
+            "chartjs-plugin-annotation",
           ],
         },
       },

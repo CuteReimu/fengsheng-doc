@@ -21,24 +21,28 @@ export default defineUserConfig({
       "script",
       {
         src: "//unpkg.com/vue@3.5.13/dist/vue.global.prod.js",
+        async: "false",
       },
     ],
     [
       "script",
       {
         src: "//unpkg.com/vue-router@4.5.0/dist/vue-router.global.prod.js",
+        defer: true,
       },
     ],
     [
       "script",
       {
-        src: "https://cdn.jsdelivr.net/npm/chart.js@4.4.9",
+        src: "https://unpkg.com/chart.js@4.4.9/dist/chart.umd.js",
+        async: "false",
       },
     ],
     [
       "script",
       {
-        src: "https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0",
+        src: "https://unpkg.com/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.js",
+        defer: true,
       },
     ],
   ],
