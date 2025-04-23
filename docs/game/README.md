@@ -4,7 +4,7 @@ icon: gamepad
 index: false
 lastUpdated: false
 contributors: false
-pageInfo: ["PageView", "Date"]
+pageInfo: false
 sidebar: false
 redirectTo: game_status
 ---

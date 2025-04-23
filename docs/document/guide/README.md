@@ -6,8 +6,7 @@ dir:
   order: 4
 lastUpdated: false
 contributors: false
-author: 官方文档
-pageInfo: ["Author", "PageView", "Date"]
+pageInfo: false
 ---
 
 <Catalog></Catalog>

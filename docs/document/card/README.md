@@ -6,11 +6,7 @@ dir:
   order: 2
 lastUpdated: false
 contributors: false
-author:
-  - 二宽
-  - 惑星
-  - 奇葩の灵梦
-pageInfo: ["Author", "PageView", "Date"]
+pageInfo: false
 ---
 
 <Catalog></Catalog>
