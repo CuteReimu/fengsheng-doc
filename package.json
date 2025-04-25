@@ -35,6 +35,6 @@
     "vuepress-theme-hope": "2.0.0-rc.82"
   },
   "dependencies": {
-    "axios": "^1.8.4"
+    "axios": "^1.9.0"
   }
 }
