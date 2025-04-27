@@ -42,3 +42,7 @@ html[data-theme="dark"] {
   padding: 5px;
   max-height: 350px;
 }
+
+#markdown-content a:not(.header-anchor):not(.vp-catalog a):not(.table-of-contents a) {
+  text-decoration: underline !important;
+}
