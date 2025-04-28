@@ -176,7 +176,7 @@ export default hopeTheme({
 
   plugins: {
     icon: {
-      assets: "fontawesome-with-brands",
+      assets: "fontawesome",
     },
     slimsearch: {
       indexContent: true,
