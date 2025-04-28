@@ -2,7 +2,7 @@
 title: 卡牌的使用技巧
 icon: book
 order: 7
-author: 奇葩の灵梦
+author: 奇葩的灵梦
 toc: false
 ---
 

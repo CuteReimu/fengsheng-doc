@@ -2,7 +2,7 @@
 title: 神秘人列表
 icon: book
 author:
-  - 奇葩の灵梦
+  - 奇葩的灵梦
   - 惑星
   - 二宽
 ---

@@ -2,12 +2,10 @@
 title: 卡牌列表
 icon: book
 author:
-  - 奇葩の灵梦
+  - 奇葩的灵梦
   - 惑星
   - 二宽
 ---
-
-游戏中，Windows上将鼠标悬停在卡牌上/手机端长按卡牌，即可查看卡牌的效果。这里也有个列表：
 
 |                         卡牌                         | 效果                                                                                                                                       |
 |:--------------------------------------------------:|------------------------------------------------------------------------------------------------------------------------------------------|
@@ -28,7 +26,6 @@ author:
 :::: warning 注意
 如果明确说明是“**其他**角色”，即指除自己外的一名角色，不含自己。如果没有明确说明“**其他**”，则包含自己。
 
-实体版的部分卡牌的描述有所遗漏，所有卡牌均与官方设计师进行过确认，**最终以本FAQ中的效果为准**。
 ::: details 速查表
 
 | 卡牌   | 对自己 | 对无手牌目标 |
@@ -43,13 +40,6 @@ author:
 
 :::
 ::::
-
-::: tip 提示
-线上版中，【试探】【密令】的右下角会显示其描述中的颜色，例如：
-
-- 【试探】右下角显示<span style="color:white; background-color:var(--red-color);">+1</span><span style="color:white; background-color:var(--blue-color);">-1</span><span style="color:white; background-color:var(--green-color);">-1</span>，代表**潜伏战线**摸一张牌，**特工机关**或**神秘人**弃一张牌。
-- 【密令】右下角显示<span style="color:white; background-color:var(--red-color);">东</span><span style="color:white; background-color:var(--blue-color);">西</span><span style="color:white; background-color:black;">静</span>，代表“东风”对应**红色**，“西风”对应**蓝色**，“静风”对应**黑色**。
-  :::
 
 ## FAQ
 

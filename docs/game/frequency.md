@@ -2,7 +2,7 @@
 title: 近期活跃
 icon: chart-line
 order: 4
-author: "奇葩の灵梦"
+author: "奇葩的灵梦"
 pageInfo: [ "Author", "PageView", "Date" ]
 breadcrumb: false
 editLink: false

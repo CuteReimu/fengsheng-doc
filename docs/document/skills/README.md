@@ -4,7 +4,7 @@ icon: address-book
 dir:
   order: 3
 author:
-  - 奇葩の灵梦
+  - 奇葩的灵梦
   - 惑星
 ---
 
@@ -21,13 +21,13 @@ author:
 [秦圆圆](extend1.md#q-秦圆圆-风尘侠女)、[SP程小蝶](extend1.md#c-程小蝶-sp-梨园义士)、[老虎](extend1.md#l-老虎-地下领袖)、[钱敏](extend1.md#q-钱敏-调查科员)、[SP连鸢](extend1.md#l-连鸢-sp-爱国作家)、[盛老板](extend1.md#s-盛老板-富商)、[简先生](extend1.md#j-简先生-话剧演员)、[高桥智子](extend1.md#g-高桥智子-艺伎)、[玛利亚](extend1.md#m-玛利亚-修女)、[青年小九](extend1.md#x-小九-追梦少年)、[青年韩梅](extend1.md#h-韩梅-特务学员)、[池镜海](extend1.md#c-池镜海-破译专家)、[SP端木静](extend1.md#d-端木静-sp-学联代表)（13）
 
 ### **二扩角色**
-[陈安娜](extend2.md#c-陈安娜-速记员)、[凌素秋](extend2.md#l-凌素秋-棋手)、[成年韩梅](extend2.md#h-韩梅-特务处长)、[哑炮](extend2.md#y-哑炮-乞丐)、[陈大耳](extend2.md#c-陈大耳-包打听)、[边云疆](extend2.md#b-边云疆-军人)、[金自来](extend2.md#j-金自来-老千)、[间谍阿芙罗拉](extend2.md#a-阿芙罗拉-苏联间谍)、[小铃铛](extend2.md#x-小铃铛-杂耍艺人)、[SP白菲菲](extend2.md#b-白菲菲-sp-日本间谍)、[李书云](extend2.md#l-李书云-教授)、[成年小九](extend2.md#x-小九-反特砥柱)、[秦无命](extend2.md#q-秦无命-死士)、[SP韩梅](extend2.md#h-韩梅-sp-军统特务)、[SP小九](extend2.md#x-小九-sp-情报站长)（15）
+[陈安娜](extend2.md#c-陈安娜-速记员)、[凌素秋](extend2.md#l-凌素秋-棋手)、[成年韩梅](extend2.md#h-韩梅-特务处长)、[哑炮](extend2.md#y-哑炮-乞丐)、[陈大耳](extend2.md#c-陈大耳-包打听)、[边云疆](extend2.md#b-边云疆-军人)、[金自来](extend2.md#j-金自来-老千)、[间谍阿芙罗拉](extend2.md#a-阿芙罗拉-间谍)、[小铃铛](extend2.md#x-小铃铛-杂耍艺人)、[SP白菲菲](extend2.md#b-白菲菲-sp-间谍)、[李书云](extend2.md#l-李书云-教授)、[成年小九](extend2.md#x-小九-反特砥柱)、[秦无命](extend2.md#q-秦无命-死士)、[SP韩梅](extend2.md#h-韩梅-sp-军统特务)、[SP小九](extend2.md#x-小九-sp-情报站长)（15）
 
 ### **二扩未入选角色**
-[孙守謨（参谋）](extend2.md#非正式-孙守謨-参谋)、[王响（火车司机）](extend2.md#非正式-王响-火车司机)（2）
+[孙守謨（参谋）](extend2.md#未入选-孙守謨-参谋)、[王响（火车司机）](extend2.md#未入选-王响-火车司机)（2）
 
 ## **便携版**
 **不包含SP系列角色**
 - 基础角色：[顾小梦（SP）（译电科科员）](base.md#g-顾小梦-sp-译电科科员)、[李宁玉（SP）（译电科科长）](base.md#l-李宁玉-sp-译电科科长)、[墨红霜（SP）（危险情人）](base.md#m-墨红霜-sp-危险情人)
 - 铁屋子：[程小蝶（SP）（梨园义士）](extend1.md#c-程小蝶-sp-梨园义士)、[端木静（SP）（学联代表）](extend1.md#d-端木静-sp-学联代表)、[连鸢（SP）（爱国作家）](extend1.md#l-连鸢-sp-爱国作家)
-- 老洋房：[白菲菲（SP）（日本间谍）](extend2.md#b-白菲菲-sp-日本间谍)、[韩梅（SP）（军统特务）](extend2.md#h-韩梅-sp-军统特务)、[小九（SP）（情报站长）](extend2.md#x-小九-sp-情报站长)
+- 老洋房：[白菲菲（SP）（间谍）](extend2.md#b-白菲菲-sp-间谍)、[韩梅（SP）（军统特务）](extend2.md#h-韩梅-sp-军统特务)、[小九（SP）（情报站长）](extend2.md#x-小九-sp-情报站长)

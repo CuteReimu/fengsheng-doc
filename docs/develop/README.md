@@ -5,7 +5,7 @@ index: false
 sidebar: false
 lastUpdated: false
 contributors: false
-author: 奇葩の灵梦
+author: 奇葩的灵梦
 pageInfo: false
 ---
 

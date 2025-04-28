@@ -2,7 +2,7 @@
 title: 玩家查询
 icon: magnifying-glass
 order: 2
-author: "奇葩の灵梦"
+author: "奇葩的灵梦"
 pageInfo: [ "Author", "PageView", "Date" ]
 breadcrumb: false
 editLink: false

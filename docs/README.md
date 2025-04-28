@@ -1,46 +1,30 @@
 ---
 home: true
 icon: home
-title: 风声·谍战篇
+title: 《风声》桌游规则整理
 heroImage: /images/head.jpg
 actions:
-  - text: 规则入门
-    icon: lightbulb
-    link: /document/welcome/welcome
+  - text: 开始浏览
+    icon: play
+    link: /document/
     type: primary
-  - text: 开发文档
-    icon: code
-    link: /develop/
-    type: secondary
 breadcrumbExclude: true
 ---
 
-::: info 关于我们
+::: info 关于
 
-我们是游卡《风声·谍战篇》。本文档也是针对这个版本的风声。
+游卡出版的《风声》桌游是我平日里非常喜欢的一款桌游，在业余时间，我也会经常和朋友们一起游玩。
 
-除[官方规则](document/guide/)下的页面外，其它页面均由各位玩家编写。
+本文档是我在游玩《风声》桌游时，对一些规则和玩法的总结，以及一些热心玩家们的补充。
 
-- 我们的联机群：::b:qq =17::364857312
-- 游卡官方风声交流群：::b:qq =17::1018152879
+<p class="hint-container-title">重要声明</p>
 
-如果你想要体验其它版本的风声，请移步到：
+**本文档是个人整理的民间版本规则文档，与游卡桌游无任何关联，规则最终解释权归游卡官方所有。**
 
-- 《风声·黑名单》群：::b:qq =17::314904480
-- 帕鲁风声群：::b:qq =17::916124348
-- 《风声再临》官方群：::b:qq =17::161689262
+《风声》名称、角色及美术资源版权均属游卡桌游，文档内容为玩家原创解读。考虑到美术版权问题，本文档中不会包含任何游卡《风声》的美术素材。
 
-想进一步了解不同版本风声的区别？[点击这里跳转](document/welcome/compare.md)
+禁止将本文档用于商业用途或赛事裁判依据，争议场景请以游卡官方规则书为准。
 
----
-
-<p class="hint-container-title">特别鸣谢</p>
-
-- 游卡风声设计师：老金、[::b:github =20 /#3c3c43::二宽](https://github.com/HagridThick)
-- 服务器开发：[::b:github =20 /#3c3c43::奇葩の灵梦](https://github.com/CuteReimu)
-- 客户端开发：[::b:github =20 /#3c3c43::Death](https://github.com/Death-alter)
-- AI开发：[::b:github =20 /#3c3c43::南宫先森](https://github.com/zc-meng)、[::b:github =20 /#3c3c43::奇葩の灵梦](https://github.com/CuteReimu)、[::b:github =20 /#3c3c43::惑星](https://github.com/planetmiku)
-- 服务器赞助：[::b:github =20 /#3c3c43::丁鸽子](https://github.com/dingleshu)、星ztx、wyyd、阿揣、[::b:github =20 /#3c3c43::惑星](https://github.com/planetmiku)
-- 以及对《风声》热爱的你们
+若发现内容错误，请通过邮箱联系（cutereimu@vip.qq.com），我将及时修正并致谢贡献者。
 
 :::
