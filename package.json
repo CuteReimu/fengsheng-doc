@@ -11,28 +11,27 @@
     "docs:update-package": "npx vp-update"
   },
   "devDependencies": {
-    "@vuepress/bundler-vite": "^2.0.0-rc.21",
-    "@vuepress/plugin-git": "^2.0.0-rc.96",
-    "@vuepress/plugin-redirect": "^2.0.0-rc.94",
-    "@vuepress/plugin-slimsearch": "^2.0.0-rc.94",
+    "@vuepress/bundler-vite": "^2.0.0-rc.22",
+    "@vuepress/plugin-git": "^2.0.0-rc.98",
+    "@vuepress/plugin-redirect": "^2.0.0-rc.98",
+    "@vuepress/plugin-slimsearch": "^2.0.0-rc.98",
     "@vueuse/shared": "^13.1.0",
     "chart.js": "4.4.9",
-    "chartjs-plugin-annotation": "3.1.0",
     "chartjs-plugin-datalabels": "2.2.0",
     "dotenv": "^16.5.0",
-    "element-plus": "2.9.8",
+    "element-plus": "2.9.9",
     "katex": "^0.16.22",
     "markmap-lib": "^0.18.11",
     "markmap-toolbar": "^0.18.10",
     "markmap-view": "^0.18.10",
     "mermaid": "^11.6.0",
-    "sass-embedded": "^1.86.3",
+    "sass-embedded": "^1.87.0",
     "vue": "3.5.13",
     "vue-chartjs": "^5.3.2",
-    "vue-router": "4.5.0",
-    "vuepress": "^2.0.0-rc.21",
-    "vuepress-plugin-md-enhance": "^2.0.0-rc.81",
-    "vuepress-theme-hope": "2.0.0-rc.82"
+    "vue-router": "4.5.1",
+    "vuepress": "^2.0.0-rc.22",
+    "vuepress-plugin-md-enhance": "^2.0.0-rc.83",
+    "vuepress-theme-hope": "2.0.0-rc.83"
   },
   "dependencies": {
     "axios": "^1.8.4"
