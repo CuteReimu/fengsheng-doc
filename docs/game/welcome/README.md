@@ -7,7 +7,7 @@ dir:
 lastUpdated: false
 contributors: false
 author:
-  - 奇葩の灵梦
+  - 奇葩的灵梦
   - 惑星
 pageInfo: false
 ---

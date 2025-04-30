@@ -1,5 +1,5 @@
 ---
-title: 个人攻略
+title: 玩家攻略
 icon: lightbulb
 index: false
 dir:

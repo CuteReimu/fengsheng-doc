@@ -2,7 +2,7 @@
 title: 牌堆构成
 icon: book
 author:
-  - 奇葩の灵梦
+  - 奇葩的灵梦
   - 惑星
 pageInfo: [ "Author", "PageView", "Date" ]
 ---
@@ -10,7 +10,8 @@ pageInfo: [ "Author", "PageView", "Date" ]
 ## 总览
 
 ::: info 注意
-根据[官方公告](../guide/announcement.md#引入一扩后建议对卡牌数量进行调整)，引入一扩后建议对卡牌数量进行调整。
+
+因为引入一扩后建议对卡牌数量进行调整，删掉部分[试探](card.md)。
 - 下表中，括号外的数字表示调整之后的数量，括号内的数字表示调整之前的数量。
 - 各分类统计图中的统计数据全部基于调整后的卡牌数量。
 
@@ -49,13 +50,6 @@ pageInfo: [ "Author", "PageView", "Date" ]
 />
 
 ## 详细牌堆构成
-
-::: info 注意
-
-- 有一张[密令](../card/card.md)的颜色在某些版本是错误的，具体见[官方公告](../guide/announcement.md#关于-密令-的勘误)，本表格中是修正后的数据。
-- 根据[官方公告](../guide/announcement.md#引入一扩后建议对卡牌数量进行调整)，引入一扩后建议对卡牌数量进行调整，你可以点击下方滑块切换显示。
-
-:::
 
 <el-switch
   inactive-text="显示数量调整后卡牌"

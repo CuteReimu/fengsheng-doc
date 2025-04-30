@@ -12,6 +12,10 @@ dotenv.config({path: path2.resolve(process.cwd(), '.env.local')})
 dotenv.config()
 
 export default hopeTheme({
+  author: {
+    name: "奇葩的灵梦",
+    url: "https://cutereimu.cn",
+  },
   favicon: "/images/head.jpg",
   hostname: process.env.VITE_HOST_NAME || null,
   repo: "https://github.com/CuteReimu/fengsheng-doc",
@@ -21,7 +25,6 @@ export default hopeTheme({
   darkmode: "disable",
   fullscreen: true,
   print: false,
-  pageInfo: ["Author", "PageView", "Date", "ReadingTime"],
   navbarLayout: {
     start: ["Brand"],
     center: [],
@@ -187,7 +190,7 @@ export default hopeTheme({
         info: [
           {
             username: "CuteReimu",
-            name: "奇葩の灵梦",
+            name: "奇葩的灵梦",
             alias: ["奇葩の灵梦"],
           },
           {
@@ -206,17 +209,15 @@ export default hopeTheme({
             alias: ["二宽", "徐晨鸥"],
           }
         ],
-        avatar: true,
-      }
+        transform: (v) => {
+          v.forEach(item => item.url = "");
+          return v
+        },
+      },
     }
   },
 
-  footer:
-    "我们的项目完全开源，如果你想要对项目做贡献，可以前往我们的" +
-    '  <a href="https://github.com/CuteReimu/TheMessage" class="external-link" target="_blank" rel="noopener noreferrer">服务端代码仓库</a>' +
-    "  和" +
-    '  <a href="https://github.com/Death-alter/TheMessage" class="external-link" target="_blank" rel="noopener noreferrer">客户端代码仓库</a>' +
-    "  。",
-  copyright: false,
   displayFooter: true,
+  footer: process.env.VITE_FOOTER,
+  license: "MIT",
 }, { custom: true });
