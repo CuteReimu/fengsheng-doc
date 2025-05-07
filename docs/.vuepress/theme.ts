@@ -2,8 +2,6 @@ import { hopeTheme } from "vuepress-theme-hope";
 
 import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
-import linksCheck from "./linksCheck.js";
-import routeLocales from "./routeLocales.js";
 
 import dotenv from 'dotenv';
 import * as path2 from "node:path";
@@ -30,7 +28,6 @@ export default hopeTheme({
     center: [],
     end: ["Links", "Language", "Repo", "Outlook", "Search"],
   },
-  routeLocales,
 
   encrypt: {
     config: {
@@ -171,7 +168,9 @@ export default hopeTheme({
     },
     // 支持代码块分组
     codeTabs: true,
-    linksCheck,
+    linksCheck: {
+      build: "error",
+    },
   },
 
   plugins: {
