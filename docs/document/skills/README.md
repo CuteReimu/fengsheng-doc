@@ -4,8 +4,10 @@ icon: address-book
 dir:
   order: 3
 author:
-  - 奇葩的灵梦
-  - 惑星
+  - name: 奇葩的灵梦
+    url: https://cutereimu.cn
+  - name: 惑星
+    url: https://space.bilibili.com/34070734
 ---
 
 <Catalog></Catalog>

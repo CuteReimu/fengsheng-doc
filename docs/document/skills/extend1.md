@@ -3,7 +3,8 @@ title: 铁屋子（一扩）
 icon: address-book
 order: 2
 author:
-  - 奇葩的灵梦
+  - name: 奇葩的灵梦
+    url: https://cutereimu.cn
   - Death
 ---
 

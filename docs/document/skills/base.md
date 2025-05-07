@@ -3,7 +3,8 @@ title: 基础角色
 icon: address-book
 order: 1
 author:
-  - 奇葩的灵梦
+  - name: 奇葩的灵梦
+    url: https://cutereimu.cn
   - Death
 ---
 

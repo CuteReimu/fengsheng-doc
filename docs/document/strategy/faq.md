@@ -4,8 +4,10 @@ icon: book
 order: 1
 author:
   - 二宽
-  - 惑星
-  - 奇葩的灵梦
+  - name: 惑星
+    url: https://space.bilibili.com/34070734
+  - name: 奇葩的灵梦
+    url: https://cutereimu.cn
 toc:
   levels: 3
 ---
