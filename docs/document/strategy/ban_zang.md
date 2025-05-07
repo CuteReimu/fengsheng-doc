@@ -3,7 +3,8 @@ title: 半藏心经
 icon: lightbulb
 order: 6
 author:
-  - 半藏
+  - name: 半藏
+    url: https://space.bilibili.com/16957960
   - name: 惑星
     url: https://space.bilibili.com/34070734
 toc: false
