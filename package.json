@@ -13,7 +13,7 @@
   "devDependencies": {
     "@vuepress/bundler-vite": "^2.0.0-rc.22",
     "@vuepress/plugin-git": "^2.0.0-rc.98",
-    "@vuepress/plugin-redirect": "^2.0.0-rc.98",
+    "@vuepress/plugin-redirect": "^2.0.0-rc.102",
     "@vuepress/plugin-slimsearch": "^2.0.0-rc.98",
     "@vueuse/shared": "^13.1.0",
     "chart.js": "4.4.9",
