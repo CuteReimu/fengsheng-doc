@@ -2,7 +2,9 @@
 title: 三分钟读懂规则
 icon: book
 order: 4
-author: 惑星
+author:
+  - name: 惑星
+    url: https://space.bilibili.com/34070734
 shortTitle: 规则速览
 toc: false
 ---

@@ -2,8 +2,10 @@
 title: 卡牌列表
 icon: book
 author:
-  - 奇葩の灵梦
-  - 惑星
+  - name: 奇葩の灵梦
+    url: https://cutereimu.cn
+  - name: 惑星
+    url: https://space.bilibili.com/34070734
   - 二宽
 ---
 

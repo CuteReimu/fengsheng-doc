@@ -6,8 +6,12 @@ order: 3
 author:
   - 官方文档
   - 二宽
-  - 惑星
-  - 奇葩の灵梦
+  - name: 惑星
+    url: https://space.bilibili.com/34070734
+  - name: 奇葩的灵梦
+    url: https://cutereimu.cn
+toc:
+  levels: 3
 ---
 
 此为风声说明的解释补充，请搭配[游戏说明书](how_to_play.md)和[补充说明](detail_rules.md)使用。

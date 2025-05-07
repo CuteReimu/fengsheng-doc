@@ -4,7 +4,8 @@ icon: lightbulb
 order: 6
 author:
   - 半藏
-  - 惑星
+  - name: 惑星
+    url: https://space.bilibili.com/34070734
 toc: false
 ---
 

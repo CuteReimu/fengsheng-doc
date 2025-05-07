@@ -4,9 +4,11 @@ icon: address-book
 order: 3
 author:
   - 二宽
-  - 奇葩の灵梦
+  - name: 奇葩の灵梦
+    url: https://cutereimu.cn
   - Death
-  - 惑星
+  - name: 惑星
+    url: https://space.bilibili.com/34070734
 ---
 
 ## A-阿芙罗拉（苏联间谍）<VPIcon icon="venus" class="red" /><MaskIcon />
