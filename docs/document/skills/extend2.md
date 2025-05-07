@@ -3,10 +3,11 @@ title: 老洋房（二扩）
 icon: address-book
 order: 3
 author:
-  - 二宽
+  - name: 二宽
+    url: https://github.com/HagridThick
   - name: 奇葩の灵梦
     url: https://cutereimu.cn
-  - Death
+  - name: Death
   - name: 惑星
     url: https://space.bilibili.com/34070734
 ---

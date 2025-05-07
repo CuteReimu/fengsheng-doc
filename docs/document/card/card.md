@@ -6,7 +6,8 @@ author:
     url: https://cutereimu.cn
   - name: 惑星
     url: https://space.bilibili.com/34070734
-  - 二宽
+  - name: 二宽
+    url: https://github.com/HagridThick
 ---
 
 游戏中，Windows上将鼠标悬停在卡牌上/手机端长按卡牌，即可查看卡牌的效果。这里也有个列表：

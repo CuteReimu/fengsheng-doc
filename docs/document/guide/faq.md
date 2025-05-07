@@ -4,8 +4,9 @@ shortTitle: 官方FAQ 2.0
 icon: book
 order: 3
 author:
-  - 官方文档
-  - 二宽
+  - name: 官方文档
+  - name: 二宽
+    url: https://github.com/HagridThick
   - name: 惑星
     url: https://space.bilibili.com/34070734
   - name: 奇葩的灵梦
