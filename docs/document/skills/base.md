@@ -5,7 +5,7 @@ order: 1
 author:
   - name: 奇葩的灵梦
     url: https://cutereimu.cn
-  - Death
+  - name: Death
 ---
 
 ## A-阿芙罗拉（赌场荷官）<VPIcon icon="venus" class="red" /><MaskIcon />

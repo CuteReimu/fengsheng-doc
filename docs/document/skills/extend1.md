@@ -5,7 +5,7 @@ order: 2
 author:
   - name: 奇葩的灵梦
     url: https://cutereimu.cn
-  - Death
+  - name: Death
 ---
 
 ## C-程小蝶（SP）（梨园义士）<VPIcon icon="mars" class="blue" /><MaskIcon />

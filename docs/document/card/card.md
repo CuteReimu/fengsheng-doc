@@ -6,7 +6,8 @@ author:
     url: https://cutereimu.cn
   - name: 惑星
     url: https://space.bilibili.com/34070734
-  - 二宽
+  - name: 二宽
+    url: https://github.com/HagridThick
 ---
 
 |                         卡牌                         | 效果                                                                                                                                       |
