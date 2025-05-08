@@ -13,6 +13,7 @@ actions:
     link: /develop/
     type: secondary
 breadcrumbExclude: true
+contributors: content
 ---
 
 ::: info 关于我们
