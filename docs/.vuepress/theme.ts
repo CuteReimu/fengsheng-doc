@@ -12,7 +12,8 @@ dotenv.config()
 export default hopeTheme({
   favicon: "/images/head.jpg",
   hostname: process.env.VITE_HOST_NAME || null,
-  repo: "https://github.com/CuteReimu/fengsheng-doc",
+  repo: "https://github.com/CuteReimu/fengsheng-doc/tree/gh-pages",
+  docsRepo: "https://github.com/CuteReimu/fengsheng-doc",
   docsDir: "docs",
   docsBranch: "gh-pages",
   logo: "/images/head.jpg",
