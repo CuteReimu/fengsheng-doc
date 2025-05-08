@@ -2,7 +2,6 @@
 title: 选角色攻略
 icon: address-book
 order: 2
-author: 奇葩の灵梦
 toc: false
 ---
 

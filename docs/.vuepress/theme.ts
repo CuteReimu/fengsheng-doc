@@ -13,6 +13,12 @@ export default hopeTheme({
   favicon: "/images/head.jpg",
   hostname: process.env.VITE_HOST_NAME || null,
   repo: "https://github.com/CuteReimu/fengsheng-doc/tree/gh-pages",
+
+  author: {
+    name: "奇葩の灵梦",
+    url: "https://cutereimu.cn",
+  },
+
   docsRepo: "https://github.com/CuteReimu/fengsheng-doc",
   docsDir: "docs",
   docsBranch: "gh-pages",

@@ -9,7 +9,7 @@ author:
     url: https://github.com/HagridThick
   - name: 惑星
     url: https://space.bilibili.com/34070734
-  - name: 奇葩的灵梦
+  - name: 奇葩の灵梦
     url: https://cutereimu.cn
 toc:
   levels: 3

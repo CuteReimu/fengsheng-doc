@@ -2,7 +2,6 @@
 title: 如何游戏
 icon: lightbulb
 order: 1
-author: 奇葩の灵梦
 ---
 
 如果你是新人，强烈建议看完这个文档，这将帮助你更快地上手游戏。
