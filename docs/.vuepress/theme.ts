@@ -203,7 +203,11 @@ export default hopeTheme({
             username: "HagridThick",
             name: "二宽",
             alias: ["二宽", "徐晨鸥"],
-          }
+          },
+          {
+            username: "zc-meng",
+            name: "南宫先森",
+          },
         ],
         avatar: true,
       }
