@@ -22,17 +22,12 @@ export default hopeTheme({
   focus: false,
   fullscreen: true,
   print: false,
+  contributors: "content",
   pageInfo: ["Author", "PageView", "Date", "ReadingTime"],
   navbarLayout: {
     start: ["Brand"],
     center: [],
     end: ["Links", "Language", "Repo", "Outlook", "Search"],
-  },
-
-  encrypt: {
-    config: {
-      "/game/": {password: ["fs"], hint: "在群里输入“查询密码”可获取密码。"},
-    },
   },
 
   navbar,
@@ -43,7 +38,6 @@ export default hopeTheme({
     // 代码块
     highlighter: {
       type: "shiki",
-      langs: ["kotlin", "python", "java", "erlang", "elixir", "console"],
       themes: {
         light: "one-light",
         dark: "one-dark-pro",
@@ -58,8 +52,6 @@ export default hopeTheme({
     attrs: true,
     // 剧透
     spoiler: true,
-    // 使用chart.js
-    chartjs: false,
     // 使用思维导图
     markmap: true,
     // 脚注

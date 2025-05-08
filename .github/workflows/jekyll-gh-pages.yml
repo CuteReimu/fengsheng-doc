@@ -42,7 +42,6 @@ jobs:
       run: |
         echo "VITE_SITE_BASE=/fengsheng-doc/" > .env.local
         echo "VITE_HOST_NAME=https://cutereimu.github.io" >> .env.local
-        echo "VITE_REQUEST_URL=${{ secrets.VITE_REQUEST_URL }}" >> .env.local
     - name: Build
       run: |
         npm install
