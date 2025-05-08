@@ -37,7 +37,6 @@ jobs:
     - name: Prepare environment
       run: |
         echo "VITE_REQUEST_URL=${{ secrets.VITE_REQUEST_URL }}" > .env.local
-        echo "VITE_REQUEST_PAGE_VIEW=${{ secrets.VITE_REQUEST_PAGE_VIEW }}" >> .env.local
     - name: Build
       run: |
         npm install

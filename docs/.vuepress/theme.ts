@@ -2,8 +2,6 @@ import { hopeTheme } from "vuepress-theme-hope";
 
 import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
-import linksCheck from "./linksCheck.js";
-import routeLocales from "./routeLocales.js";
 
 import dotenv from 'dotenv';
 import * as path2 from "node:path";
@@ -16,9 +14,11 @@ export default hopeTheme({
   hostname: process.env.VITE_HOST_NAME || null,
   repo: "https://github.com/CuteReimu/fengsheng-doc",
   docsDir: "docs",
-  docsBranch: "master",
+  docsBranch: "gh-pages",
   logo: "/images/head.jpg",
   darkmode: "disable",
+  pure: true,
+  focus: false,
   fullscreen: true,
   print: false,
   pageInfo: ["Author", "PageView", "Date", "ReadingTime"],
@@ -27,12 +27,10 @@ export default hopeTheme({
     center: [],
     end: ["Links", "Language", "Repo", "Outlook", "Search"],
   },
-  routeLocales,
 
   encrypt: {
     config: {
-      "/search": {password: ["fs"], hint: "在群里输入“查询密码”可获取密码。"},
-      "/ranklist": {password: ["fs"], hint: "在群里输入“查询密码”可获取密码。"},
+      "/game/": {password: ["fs"], hint: "在群里输入“查询密码”可获取密码。"},
     },
   },
 
@@ -168,7 +166,9 @@ export default hopeTheme({
     },
     // 支持代码块分组
     codeTabs: true,
-    linksCheck,
+    linksCheck: {
+      build: "error",
+    },
   },
 
   plugins: {
@@ -219,4 +219,4 @@ export default hopeTheme({
     "  。",
   copyright: false,
   displayFooter: true,
-}, { custom: true });
+});

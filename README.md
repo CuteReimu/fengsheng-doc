@@ -1,10 +1,10 @@
 # 《风声·谍战篇》FAQ
 
 ![](https://img.shields.io/node/v/vuepress-theme-hope?logo=nodedotjs&color=yellow "node")
-[![](https://img.shields.io/github/actions/workflow/status/CuteReimu/fengsheng-doc/build.yml?branch=master)](https://github.com/CuteReimu/fengsheng-doc/actions/workflows/build.yml "代码分析")
-![](https://img.shields.io/github/commit-activity/y/CuteReimu/fengsheng-doc "提交数量")
+[![](https://img.shields.io/github/actions/workflow/status/CuteReimu/fengsheng-doc/build.yml?branch=gh-pages)](https://github.com/CuteReimu/fengsheng-doc/actions/workflows/build.yml "代码分析")
+![](https://img.shields.io/github/commit-activity/y/CuteReimu/fengsheng-doc/gh-pages "提交数量")
 [![](https://img.shields.io/github/contributors/CuteReimu/fengsheng-doc)](https://github.com/CuteReimu/fengsheng-doc/graphs/contributors "贡献者")
-[![](https://img.shields.io/github/license/CuteReimu/fengsheng-doc)](https://github.com/CuteReimu/fengsheng-doc/blob/kotlin/LICENSE "许可协议")
+[![](https://img.shields.io/github/license/CuteReimu/fengsheng-doc)](https://github.com/CuteReimu/fengsheng-doc/blob/gh-pages/LICENSE "许可协议")
 
 ## 开始
 

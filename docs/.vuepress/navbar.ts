@@ -29,7 +29,6 @@ export default navbar([
       'winrate.md',
       'frequency.md',
       'ranklist.md',
-      'toplist.md',
     ]
   },
 ]);
