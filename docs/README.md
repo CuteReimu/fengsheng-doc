@@ -37,11 +37,11 @@ contributors: content
 
 <p class="hint-container-title">特别鸣谢</p>
 
-- 游卡风声设计师：老金、[::b:github =20 /#3c3c43::二宽](https://github.com/HagridThick)
-- 服务器开发：[::b:github =20 /#3c3c43::奇葩の灵梦](https://github.com/CuteReimu)
-- 客户端开发：[::b:github =20 /#3c3c43::Death](https://github.com/Death-alter)
-- AI开发：[::b:github =20 /#3c3c43::南宫先森](https://github.com/zc-meng)、[::b:github =20 /#3c3c43::奇葩の灵梦](https://github.com/CuteReimu)、[::b:github =20 /#3c3c43::惑星](https://github.com/planetmiku)
-- 服务器赞助：[::b:github =20 /#3c3c43::丁鸽子](https://github.com/dingleshu)、星ztx、wyyd、阿揣、[::b:github =20 /#3c3c43::惑星](https://github.com/planetmiku)
+- 游卡风声设计师：老金、二宽
+- 服务器开发：奇葩の灵梦
+- 客户端开发：Death
+- AI开发：南宫先森、奇葩の灵梦、惑星
+- 服务器赞助：丁鸽子、星ztx、wyyd、阿揣、惑星
 - 以及对《风声》热爱的你们
 
 :::
