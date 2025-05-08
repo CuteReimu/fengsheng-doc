@@ -29,46 +29,13 @@ export default hopeTheme({
     end: ["Links", "Language", "Repo", "Outlook", "Search"],
   },
 
-  encrypt: {
-    config: {
-      "/search": {password: ["fs"], hint: "在群里输入“查询密码”可获取密码。"},
-      "/ranklist": {password: ["fs"], hint: "在群里输入“查询密码”可获取密码。"},
-    },
-  },
-
   navbar,
 
   sidebar,
 
   markdown: {
-    // 代码块
-    highlighter: {
-      type: "shiki",
-      langs: ["kotlin", "python", "java", "erlang", "elixir", "console"],
-      themes: {
-        light: "one-light",
-        dark: "one-dark-pro",
-      },
-      lineNumbers: false,
-      notationErrorLevel: true,
-      notationWordHighlight: true,
-    },
     // 开启标记
     mark: true,
-    // 开启属性支持
-    attrs: true,
-    // 剧透
-    spoiler: true,
-    // 使用chart.js
-    chartjs: false,
-    // 使用思维导图
-    markmap: true,
-    // 脚注
-    footnote: true,
-    // 任务列表
-    tasklist: true,
-    // mermaid
-    mermaid: true,
     // 样式化
     stylize: [
       {
@@ -162,12 +129,6 @@ export default hopeTheme({
     ],
     // 支持容器
     hint: true,
-    // 支持数学公式
-    math: {
-      type: "katex",
-    },
-    // 支持代码块分组
-    codeTabs: true,
     linksCheck: {
       build: "error",
     },
@@ -182,6 +143,7 @@ export default hopeTheme({
       suggestion: true,
       filter: (page) => page.path.startsWith("/document/"),
     },
+    redirect: false,
     sitemap: false,
     seo: false,
     git: {
@@ -208,10 +170,6 @@ export default hopeTheme({
             alias: ["二宽", "徐晨鸥"],
           }
         ],
-        transform: (v) => {
-          v.forEach(item => item.url = "");
-          return v
-        },
       },
     }
   },
