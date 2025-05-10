@@ -8,9 +8,9 @@
 
 ## 开始
 
-本项目使用了 [VuePress Theme Hope](https://theme-hope.vuejs.press/zh/) 框架，需要 Node.js v18.19.0 以上版本。
+本项目使用了 [VuePress Theme Hope](https://theme-hope.vuejs.press/zh/) 框架，需要 Node.js v20.6.0 以上版本。
 
-推荐安装 Node.js v20。然后执行：
+安装 Node.js 后，执行：
 
 ```sh
 npm install
