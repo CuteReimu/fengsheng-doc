@@ -4,6 +4,7 @@ icon: book
 index: false
 pageInfo: [ "Author", "PageView", "Date" ]
 sidebar: false
+toc: false
 ---
 
 ::: tip 提示
