@@ -11,18 +11,18 @@
     "docs:update-package": "npx vp-update"
   },
   "devDependencies": {
-    "@vuepress/bundler-vite": "^2.0.0-rc.22",
-    "@vuepress/plugin-slimsearch": "^2.0.0-rc.102",
+    "@vuepress/bundler-vite": "^2.0.0-rc.23",
+    "@vuepress/plugin-slimsearch": "^2.0.0-rc.104",
     "chart.js": "4.4.9",
     "chartjs-plugin-datalabels": "2.2.0",
     "dotenv": "^16.5.0",
-    "element-plus": "2.9.9",
-    "sass-embedded": "^1.87.0",
+    "element-plus": "2.9.10",
+    "sass-embedded": "^1.88.0",
     "vue": "3.5.13",
     "vue-chartjs": "^5.3.2",
     "vue-router": "4.5.1",
-    "vuepress": "^2.0.0-rc.22",
-    "vuepress-plugin-md-enhance": "^2.0.0-rc.87",
-    "vuepress-theme-hope": "2.0.0-rc.87"
+    "vuepress": "^2.0.0-rc.23",
+    "vuepress-plugin-md-enhance": "^2.0.0-rc.88",
+    "vuepress-theme-hope": "2.0.0-rc.88"
   }
 }
