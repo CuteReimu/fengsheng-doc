@@ -174,7 +174,6 @@ export default hopeTheme({
     }
   },
 
-  displayFooter: true,
   footer: process.env.VITE_FOOTER,
   license: "CC BY-NC-SA 4.0",
 }, { custom: true });

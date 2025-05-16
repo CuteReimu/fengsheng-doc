@@ -9,6 +9,7 @@ actions:
     link: /document/
     type: primary
 breadcrumbExclude: true
+footer: true
 ---
 
 ::: info 关于
