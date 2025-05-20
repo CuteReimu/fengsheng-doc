@@ -34,6 +34,7 @@ export default hopeTheme({
   sidebar,
 
   markdown: {
+    attrs: true,
     // 开启标记
     mark: true,
     // 样式化

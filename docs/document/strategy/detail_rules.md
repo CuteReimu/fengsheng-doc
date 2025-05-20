@@ -1,7 +1,7 @@
 ---
 title: 《风声》规则补充说明
 icon: book
-order: 2
+order: 3
 ---
 
 ::: warning 注意

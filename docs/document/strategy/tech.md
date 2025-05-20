@@ -1,7 +1,7 @@
 ---
 title: 基本技巧
 icon: lightbulb
-order: 3
+order: 4
 author:
   - name: 惑星
     url: https://space.bilibili.com/34070734
