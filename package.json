@@ -12,24 +12,24 @@
   },
   "devDependencies": {
     "@vuepress/bundler-vite": "^2.0.0-rc.23",
-    "@vuepress/plugin-slimsearch": "^2.0.0-rc.104",
-    "@vueuse/shared": "^13.2.0",
+    "@vuepress/plugin-slimsearch": "^2.0.0-rc.106",
+    "@vueuse/shared": "^13.3.0",
     "chart.js": "4.4.9",
     "chartjs-plugin-datalabels": "2.2.0",
     "dotenv": "^16.5.0",
-    "element-plus": "2.9.10",
+    "element-plus": "2.9.11",
     "katex": "^0.16.22",
     "markmap-lib": "^0.18.11",
     "markmap-toolbar": "^0.18.10",
     "markmap-view": "^0.18.10",
     "mermaid": "^11.6.0",
-    "sass-embedded": "^1.88.0",
-    "vue": "3.5.13",
+    "sass-embedded": "^1.89.0",
+    "vue": "3.5.15",
     "vue-chartjs": "^5.3.2",
     "vue-router": "4.5.1",
     "vuepress": "^2.0.0-rc.23",
-    "vuepress-plugin-md-enhance": "^2.0.0-rc.88",
-    "vuepress-theme-hope": "2.0.0-rc.88"
+    "vuepress-plugin-md-enhance": "^2.0.0-rc.89",
+    "vuepress-theme-hope": "2.0.0-rc.89"
   },
   "dependencies": {
     "axios": "^1.9.0"
