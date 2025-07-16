@@ -6,7 +6,7 @@ import sidebar from "./sidebar.js";
 import dotenv from 'dotenv';
 import * as path2 from "node:path";
 
-dotenv.config({path: path2.resolve(process.cwd(), '.env.local')})
+dotenv.config({path: path2.resolve(process.cwd(), '.env.local'), override: true})
 dotenv.config()
 
 export default hopeTheme({
