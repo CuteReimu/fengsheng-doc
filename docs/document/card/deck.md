@@ -285,7 +285,7 @@ watch(disableLines, () => {
   const scrollY = window.scrollY;
   nextTick(() => {
     window.scrollTo(0, scrollY);
-  }, 0);
+  });
 });
 </script>
 
