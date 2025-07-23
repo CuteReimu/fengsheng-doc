@@ -107,7 +107,7 @@ pageInfo: [ "Author", "PageView", "Date" ]
 </el-table>
 
 <script setup>
-import { ref, computed } from "vue";
+import { ref, computed, watch, nextTick } from "vue";
 import { ElTable, ElTableColumn, ElSwitch } from "element-plus";
 import DeckCard from "@DeckCard";
 import DeckPie from "@DeckPie";
@@ -279,6 +279,14 @@ const disabledLines = [0, 3, 8, 11, 13, 16, 54, 55];
 const deck2 = deck1.filter((card) => !disabledLines.includes(card.id - 1));
 const disableLines = ref(false); 
 const deck = computed(() => disableLines.value ? deck1 : deck2);
+
+// Watch for changes in disableLines to preserve scroll position
+watch(disableLines, () => {
+  const scrollY = window.scrollY;
+  nextTick(() => {
+    window.scrollTo(0, scrollY);
+  });
+});
 </script>
 
 <style scoped>
