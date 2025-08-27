@@ -21,7 +21,7 @@
     "vue": "3.5.20",
     "vue-chartjs": "^5.3.2",
     "vue-router": "4.5.1",
-    "vuepress": "^2.0.0-rc.24",
+    "vuepress": "^2.0.0-rc.25",
     "vuepress-plugin-md-enhance": "^2.0.0-rc.94",
     "vuepress-theme-hope": "2.0.0-rc.94"
   }
