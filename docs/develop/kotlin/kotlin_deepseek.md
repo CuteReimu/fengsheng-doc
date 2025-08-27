@@ -5,7 +5,7 @@ order: 2
 author: Kotlin语言委员会
 pageInfo: ["Author", "PageView", "Date", "Word"]
 toc:
-  level: 1
+  levels: 2
 ---
 
 ::: warning 注意

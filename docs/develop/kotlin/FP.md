@@ -6,7 +6,7 @@ order: 3
 author: 编程范式研究院
 pageInfo: ["Author", "PageView", "Date", "Word"]
 toc:
-  level: 1
+  levels: 2
 ---
 
 ::: warning 注意

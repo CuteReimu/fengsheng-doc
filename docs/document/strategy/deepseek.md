@@ -5,7 +5,7 @@ icon: user-secret
 order: -3
 author: 墨策
 toc:
-  level: 1
+  levels: 2
 ---
 
 ::: warning 注意
