@@ -6,7 +6,6 @@ author:
   - name: 惑星
     url: https://space.bilibili.com/34070734
 shortTitle: 规则速览
-toc: false
 ---
 
 游戏开始时，你会获得一个身份：

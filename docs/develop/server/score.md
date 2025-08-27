@@ -3,7 +3,6 @@ title: 分数计算逻辑
 icon: calculator
 order: -2
 pageInfo: ["Author", "PageView", "Date"]
-toc: false
 ---
 
 ## 接收情报的分数计算

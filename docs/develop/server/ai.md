@@ -3,7 +3,6 @@ title: 角色AI
 icon: lightbulb
 order: -1
 pageInfo: ["Author", "PageView", "Date", "Word"]
-toc: false
 ---
 
 *以下勾选的是已经完成的角色AI*

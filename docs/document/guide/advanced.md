@@ -4,7 +4,6 @@ shortTitle: 进阶规则
 author: 官方文档
 icon: book
 order: 5
-toc: false
 ---
 
 ## 羁绊规则

@@ -3,7 +3,6 @@ title: 一分钟读懂游戏操作
 icon: lightbulb
 order: -1
 author: 惑星
-toc: false
 ---
 
 1. 在群里输入`注册 名字`即可注册，第一次登录的输入就是你的密码。

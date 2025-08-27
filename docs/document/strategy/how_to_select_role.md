@@ -2,7 +2,6 @@
 title: 选角色攻略
 icon: address-book
 order: 2
-toc: false
 ---
 
 你也可以在群里输入`胜率图`，优先选择图中位置偏上的角色。

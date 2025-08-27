@@ -3,7 +3,6 @@ title: 目录结构
 icon: folder
 order: 3
 pageInfo: ["Author", "PageView", "Date", "Word"]
-toc: false
 ---
 
 - ::folder:: **src** - 代码文件夹
