@@ -22,7 +22,7 @@ export default hopeTheme({
   logo: "/images/head.jpg",
   darkmode: "disable",
   fullscreen: true,
-  print: false,
+  print: true,
   navbarLayout: {
     start: ["Brand"],
     center: [],
