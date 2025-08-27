@@ -7,7 +7,6 @@ author:
     url: https://space.bilibili.com/16957960
   - name: 惑星
     url: https://space.bilibili.com/34070734
-toc: false
 ---
 
 ## 卡牌资源分配

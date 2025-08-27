@@ -5,7 +5,6 @@ order: 4
 author:
   - name: 惑星
     url: https://space.bilibili.com/34070734
-toc: false
 ---
 
 ## 风声判断身份基本技巧
