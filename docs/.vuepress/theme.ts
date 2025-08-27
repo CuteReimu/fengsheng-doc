@@ -27,7 +27,7 @@ export default hopeTheme({
   pure: true,
   focus: false,
   fullscreen: true,
-  print: false,
+  print: true,
   contributors: "content",
   pageInfo: ["Author", "PageView", "Date", "ReadingTime"],
   navbarLayout: {
