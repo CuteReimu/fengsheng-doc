@@ -172,7 +172,9 @@ export default hopeTheme({
           }
         ],
       },
-    }
+    },
+
+    photoSwipe: false,
   },
 
   footer: process.env.VITE_FOOTER,
