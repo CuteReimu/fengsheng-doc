@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "@vuepress/bundler-vite": "^2.0.0-rc.26",
-    "@vuepress/plugin-slimsearch": "^2.0.0-rc.114",
+    "@vuepress/plugin-slimsearch": "^2.0.0-rc.115",
     "chart.js": "4.5.1",
     "chartjs-plugin-datalabels": "2.2.0",
     "dotenv": "^17.2.3",
