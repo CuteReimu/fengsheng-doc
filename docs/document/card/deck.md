@@ -7,6 +7,8 @@ author:
   - name: 惑星
     url: https://space.bilibili.com/34070734
 pageInfo: [ "Author", "PageView", "Date" ]
+gitInclude:
+  - "../../.vuepress/public/images/deck.png"
 ---
 
 ## 总览
