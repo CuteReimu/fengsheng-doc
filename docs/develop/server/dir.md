@@ -28,7 +28,7 @@ pageInfo: ["Author", "PageView", "Date", "Word"]
       - RobotPlayer.kt # 机器人玩家
       - ScoreFactory.kt # 分数与段位系统
       - Statistics.kt # 统计玩家的一些数据
-      - ...# 其它文件：框架相关代码
+      - …# 其它文件：框架相关代码
     - proto # 协议文件
       - common.proto # 一些枚举定义、卡牌结构体定义等需要在其它文件都使用到的通用定义
       - errorcode.proto # 目前只存放了一条协议`error_message_toc`
@@ -37,7 +37,7 @@ pageInfo: ["Author", "PageView", "Date", "Word"]
       - role.proto # 角色技能协议
     - resources/# 资源文件
   - test/# 单元测试代码
-- ...# 其它文件：工程相关文件
+- …# 其它文件：工程相关文件
 
 :::
 
