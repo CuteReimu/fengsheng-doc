@@ -1,6 +1,7 @@
 import theme from "./theme.js";
-import { defineUserConfig } from 'vuepress';
+import { defineUserConfig } from "vuepress";
 import { getDirname, path } from "vuepress/utils";
+import { markdownFileTreePlugin } from "@vuepress/plugin-markdown-file-tree";
 
 const __dirname = getDirname(import.meta.url);
 
@@ -14,4 +15,6 @@ export default defineUserConfig({
 
   title: '《风声·谍战篇》FAQ',
   theme,
+
+  plugins: [markdownFileTreePlugin()],
 });
