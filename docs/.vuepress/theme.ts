@@ -208,6 +208,11 @@ export default hopeTheme({
             username: "zc-meng",
             name: "南宫先森",
           },
+          {
+            username: "Copilot",
+            avatar: "https://avatars.githubusercontent.com/in/1143301?v=4",
+            url: "https://github.com/apps/copilot-swe-agent",
+          }
         ],
         avatar: true,
       }
