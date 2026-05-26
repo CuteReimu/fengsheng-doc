@@ -1,6 +1,7 @@
 import theme from "./theme.js";
 import { defineUserConfig } from 'vuepress';
 import { getDirname, path } from "vuepress/utils";
+import { llmsPlugin } from '@vuepress/plugin-llms';
 
 const __dirname = getDirname(import.meta.url);
 
@@ -14,4 +15,6 @@ export default defineUserConfig({
 
   title: '《风声》桌游规则整理',
   theme,
+
+  plugins: [llmsPlugin()],
 });
