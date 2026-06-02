@@ -37,7 +37,7 @@ author: 两仪生四象
 
 ## 铁屋子（一扩）
 
-- [池镜海](../skills/extend1.md#c-池镜海-[破译](../card/card.md)专家)：[截获](../card/card.md)、[误导](../card/card.md)
+- [池镜海](../skills/extend1.md#c-池镜海-破译专家)：[截获](../card/card.md)、[误导](../card/card.md)
 - [高桥智子](../skills/extend1.md#g-高桥智子-艺伎)：[利诱](../card/card.md)
 - [简先生](../skills/extend1.md#j-简先生-话剧演员)：[试探](../card/card.md)
 - [玛利亚](../skills/extend1.md#m-玛利亚-修女)：含自己阵营的双色**黑**情报、纯**黑**情报
