@@ -39,3 +39,6 @@ coverage
 *.tsbuildinfo
 
 .obsidian/*
+
+.venv/
+__pycache__/
