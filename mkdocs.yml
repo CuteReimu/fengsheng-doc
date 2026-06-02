@@ -1,0 +1,34 @@
+site_name: 风声文档
+docs_dir: docs/document
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.indexes
+
+exclude_docs: |
+  card/deck.md
+
+hooks:
+  - hooks.py
+
+markdown_extensions:
+  - pymdownx.mark
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+plugins:
+  - privacy
+  - offline
+  - search
+
+# 离线搜索可用
+extra:
+  offline:
+    enabled: true
+
+extra_javascript:
+  - https://unpkg.com/mermaid@11/dist/mermaid.min.js
