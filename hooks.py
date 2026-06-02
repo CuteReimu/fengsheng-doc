@@ -143,6 +143,7 @@ def on_page_markdown(markdown, page, config, **kwargs):
     # stylize：关键词加色
     for pattern, repl in _STYLIZE:
         markdown = pattern.sub(repl, markdown)
+    markdown = re.sub(r'@tab\s+(\w+)', r'\1代码：', markdown)
     return markdown
 
 
