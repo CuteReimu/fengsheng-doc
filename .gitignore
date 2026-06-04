@@ -44,3 +44,4 @@ coverage
 __pycache__/
 
 /site/
+/.cache/
