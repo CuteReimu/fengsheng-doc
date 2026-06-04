@@ -10,10 +10,10 @@
 
 本项目使用了 [VuePress Theme Hope](https://theme-hope.vuejs.press/zh/) 框架，需要 Node.js v20.6.0 以上版本。
 
-安装 Node.js 后，执行：
+安装 Node.js 和 pnpm 后，执行：
 
 ```sh
-npm install
+pnpm install --frozen-lockfile
 ```
 
 接下来就可以启动本地调试或者打包了。
