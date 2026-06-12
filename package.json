@@ -17,7 +17,7 @@
     "chart.js": "^4.5.1",
     "chartjs-plugin-datalabels": "^2.2.0",
     "dotenv": "^17.4.2",
-    "element-plus": "^2.14.0",
+    "element-plus": "^2.14.2",
     "sass-embedded": "^1.99.0",
     "vue": "^3.5.34",
     "vue-chartjs": "^5.3.3",
