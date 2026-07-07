@@ -158,14 +158,10 @@ if 你是神秘人:
 @tab Kotlin
 
 ```kotlin
-var winnerTotalScore = winnerScores.sumOf { score ->
-    score.coerceIn(180..2000)
-}
+var winnerTotalScore = winnerScores.sum()
 val winnerAveScore = winnerTotalScore / winnerScores.size
 
-var loserTotalScore = loserScores.sumOf { score ->
-    score.coerceIn(180..2000)
-}
+var loserTotalScore = loserScores.sum()
 val loserAveScore = loserTotalScore / loserScores.size
 
 val diff = (loserAveScore - winnerAveScore) / 10
@@ -185,12 +181,12 @@ val multiply = max(1.0 + diff / 100.0, 0.1)
 ```python
 winner_total_score = 0
 for score in winnerScores:
-    winner_total_score += min(2000, max(180, score))
+    winner_total_score += score
 winner_ave_score = winner_total_score // len(winner_scores)
 
 loser_total_score = 0
 for score in loserScores:
-    loser_total_score += min(2000, max(180, score))
+    loser_total_score += score
 loser_ave_score = loser_total_score // len(loser_scores)
 
 diff = (loser_ave_score - winner_ave_score) // 10
