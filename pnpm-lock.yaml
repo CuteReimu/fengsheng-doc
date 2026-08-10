@@ -27,8 +27,8 @@ importers:
         specifier: ^17.4.2
         version: 17.4.2
       element-plus:
-        specifier: ^2.14.3
-        version: 2.14.3(vue@3.5.40)
+        specifier: ^2.14.4
+        version: 2.14.4(vue@3.5.40)
       sass-embedded:
         specifier: ^1.100.0
         version: 1.100.0
@@ -1448,8 +1448,8 @@ packages:
   electron-to-chromium@1.5.400:
     resolution: {integrity: sha512-96EWDNjM59SYflgeV5Ylsf4EMiq1a25YjCnJH7cxn/AF2H3pILRweaUnoLax0yKHWdpOzY6JKEu45e8irqZIHA==}
 
-  element-plus@2.14.3:
-    resolution: {integrity: sha512-pJcvxcpZjYruNzuJhAeVwnbYjfNgzBKnWHwSVEhwzM2/kcLI3brzmtIBxtPqd4hQWJfD1PRnjoc1WipLw2eBGg==}
+  element-plus@2.14.4:
+    resolution: {integrity: sha512-vMKR9tFcLeNrJgFXA3zhUn6YuRKUQW9d0btakBR8U1Iq8MfzkjMOGcgs5de2VgiLldHt69brmuBHpxc3bK4ZgQ==}
     peerDependencies:
       vue: ^3.3.7
 
@@ -4209,7 +4209,7 @@ snapshots:
 
   electron-to-chromium@1.5.400: {}
 
-  element-plus@2.14.3(vue@3.5.40):
+  element-plus@2.14.4(vue@3.5.40):
     dependencies:
       '@ctrl/tinycolor': 4.2.0
       '@element-plus/icons-vue': 2.3.2(vue@3.5.40)
