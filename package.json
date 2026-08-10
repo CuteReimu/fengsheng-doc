@@ -19,7 +19,7 @@
     "dotenv": "^17.4.2",
     "element-plus": "^2.14.3",
     "sass-embedded": "^1.100.0",
-    "vue": "^3.5.40",
+    "vue": "^3.5.41",
     "vue-chartjs": "^5.3.4",
     "vue-router": "^5.2.0",
     "vuepress": "2.0.0-rc.31",
