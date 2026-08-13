@@ -2,3 +2,4 @@ docs/** -linguist-documentation
 docs/.vuepress/** -linguist-documentation
 
 docs/document/card/*.md linguist-language=MDX
+*.md linguist-detectable
